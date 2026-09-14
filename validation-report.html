@@ -1,471 +1,557 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<title>CLAP validation report</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=IBM+Plex+Mono&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#f7f3ea;--surface:#f4efe5;--paper:#ede6d8;--ink:#221c14;--muted:#6e6353;
-      --accent:#b14b2c;--line:#d2c7b2}
-*{box-sizing:border-box;margin:0}
-body{background:var(--bg);color:var(--ink);font:14px/1.5 "Inter",-apple-system,sans-serif;
-     padding:28px;max-width:1100px;margin:0 auto}
-h1{font-family:"Cinzel",Georgia,serif;font-size:22px;letter-spacing:.04em;margin-bottom:4px}
-h2{font-family:"Cinzel",Georgia,serif;font-size:15px;margin:0 0 10px}
-.sub{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--muted);
-     margin-bottom:22px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;
-      padding:16px;margin-bottom:16px;
-      box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 2px 6px -2px rgba(90,74,53,.16)}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
-.chip{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:3px 10px;
-      font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px}
-.chip b{color:var(--accent)}
-table{width:100%;border-collapse:collapse;font-size:12.5px}
-th{text-align:left;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;
-   text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding:6px 8px;
-   border-bottom:1px solid var(--line)}
-td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
-audio{height:28px;max-width:220px}
-.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;color:var(--muted)}
-
-.good{color:#3e8e5a}.bad{color:var(--accent)}</style></head><body>
-<h1>CLAP CLUSTERING — EAR TEST</h1>
-<div class="sub">100 tracks from rap, metal, classical, dance, country charts · model laion/clap-htsat-unfused ·
-silhouette 0.218 · genre purity
-<b class="good">78%</b>
-(gate: ≥70%)</div>
+<title>CLAP validation — ear test</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>.good{color:var(--ok)}.bad{color:var(--flare)}
+.card{margin-bottom:16px}audio{height:30px;max-width:230px}</style></head><body>
+<div class="wrap" style="padding-top:34px">
+<a class="logo" href="index.html">RADA<b style="color:var(--flare)">R</b></a>
+<h1 style="margin-top:18px">Clustering, validated by ear</h1>
+<p class="mono" style="margin:8px 0 24px">100 tracks from rap, metal, classical, dance, country charts ·
+model laion/clap-htsat-unfused · silhouette 0.218 · genre purity
+<b class="good">78%</b> (gate ≥70%)</p>
 
 <div class="card">
-  <h2>Cluster 0 <span class="mono">— majority: dance
-    (91% pure, 11 tracks)</span></h2>
-  <table><tr><th>Preview</th><th>Track</th><th>Artist</th><th>True genre</th></tr>
+  <h3>Cluster 0 <span class="mono">— majority dance
+    (91% pure · 11 tracks)</span></h3>
+  <table><tr><th style="width:44px"></th><th>Track</th><th>Artist</th><th>Chart it came from</th></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/9/9/0/a990c4479a173b99797090a448afe9bf.mp3?hdnea=exp=1789385570~acl=/api/1/1/a/9/9/0/a990c4479a173b99797090a448afe9bf.mp3*~data=user_id=0,application_id=42~hmac=8c43bda11873001aa0dd4d917cbfd0663d64bb64a4cc9ab9bc4cd6bd387e8da2"></audio></td>
-      <td>Starships</td><td>Nicki Minaj</td>
+  <tr><td><button class="play" data-dz="28852751" data-title="Starships"
+        data-artist="Nicki Minaj">▶</button></td>
+      <td>Starships</td><td style="color:var(--muted)">Nicki Minaj</td>
       <td class="mono bad">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/a/5/0/4a502942465c7d20da6ca658c15258f0.mp3?hdnea=exp=1789385570~acl=/api/1/1/4/a/5/0/4a502942465c7d20da6ca658c15258f0.mp3*~data=user_id=0,application_id=42~hmac=2d1a4ed474613da9ce6bf2dedcdd465ddcb3107e80cbfada32dc13b727f67b3d"></audio></td>
-      <td>Talk To You (ft. 54 Ultra)</td><td>ANOTR</td>
+  <tr><td><button class="play" data-dz="3784724892" data-title="Talk To You (ft. 54 Ultra)"
+        data-artist="ANOTR">▶</button></td>
+      <td>Talk To You (ft. 54 Ultra)</td><td style="color:var(--muted)">ANOTR</td>
       <td class="mono ">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/9/8/1/0/98178ee4545d11da6f344c241716439c.mp3?hdnea=exp=1789385570~acl=/api/1/1/9/8/1/0/98178ee4545d11da6f344c241716439c.mp3*~data=user_id=0,application_id=42~hmac=70b398373120fc7bf4aff96b87c6849046701ef2d413577100532bfef3feec32"></audio></td>
-      <td>No Broke Boys</td><td>Disco Lines</td>
+  <tr><td><button class="play" data-dz="3410229851" data-title="No Broke Boys"
+        data-artist="Disco Lines">▶</button></td>
+      <td>No Broke Boys</td><td style="color:var(--muted)">Disco Lines</td>
       <td class="mono ">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/8/9/b/0/89be9dc3220dfb9b189b0f7ea012677f.mp3?hdnea=exp=1789385570~acl=/api/1/1/8/9/b/0/89be9dc3220dfb9b189b0f7ea012677f.mp3*~data=user_id=0,application_id=42~hmac=a6e03047d4abb98fe7a5224ca845a95a2fe6e3b12bc0d1d866aee9f4c706b483"></audio></td>
-      <td>New Religion</td><td>Bebe Rexha</td>
+  <tr><td><button class="play" data-dz="3850680281" data-title="New Religion"
+        data-artist="Bebe Rexha">▶</button></td>
+      <td>New Religion</td><td style="color:var(--muted)">Bebe Rexha</td>
       <td class="mono ">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/b/6/0/1b6ebe530f845d95682814d9e3c81562.mp3?hdnea=exp=1789385570~acl=/api/1/1/1/b/6/0/1b6ebe530f845d95682814d9e3c81562.mp3*~data=user_id=0,application_id=42~hmac=26df8639184dc0b2c3909c9868874d723d661a3c02f1646a08a6104f5e6793c7"></audio></td>
-      <td>Good Girl</td><td>Cloonee</td>
+  <tr><td><button class="play" data-dz="4124060341" data-title="Good Girl"
+        data-artist="Cloonee">▶</button></td>
+      <td>Good Girl</td><td style="color:var(--muted)">Cloonee</td>
       <td class="mono ">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/e/e/9/0/ee9343b8c6302f49270fd6e96321276c.mp3?hdnea=exp=1789385570~acl=/api/1/1/e/e/9/0/ee9343b8c6302f49270fd6e96321276c.mp3*~data=user_id=0,application_id=42~hmac=4f5cec6ea712623a30ed7272c09106da8b106461a900f1dff7f4582cee8bd8f4"></audio></td>
-      <td>This Is What You Came For</td><td>Calvin Harris</td>
+  <tr><td><button class="play" data-dz="123883254" data-title="This Is What You Came For"
+        data-artist="Calvin Harris">▶</button></td>
+      <td>This Is What You Came For</td><td style="color:var(--muted)">Calvin Harris</td>
       <td class="mono ">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/d/c/2/0/dc2b099165cca051ba728d9a905ac5a3.mp3?hdnea=exp=1789385570~acl=/api/1/1/d/c/2/0/dc2b099165cca051ba728d9a905ac5a3.mp3*~data=user_id=0,application_id=42~hmac=cacc4c02ee85130d72888a4dd42ff0b158dae8ce02518d0db3646b1f688d313e"></audio></td>
-      <td>The Days (NOTION Remix)</td><td>CHRYSTAL</td>
+  <tr><td><button class="play" data-dz="3069116671" data-title="The Days (NOTION Remix)"
+        data-artist="CHRYSTAL">▶</button></td>
+      <td>The Days (NOTION Remix)</td><td style="color:var(--muted)">CHRYSTAL</td>
       <td class="mono ">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/d/0/0/1d033ce828381a25538d1ea6bee3313b.mp3?hdnea=exp=1789385570~acl=/api/1/1/1/d/0/0/1d033ce828381a25538d1ea6bee3313b.mp3*~data=user_id=0,application_id=42~hmac=0d132ff0555800f2d916ae3766caedc723f43ae55b3dbe878b5068983e5f455b"></audio></td>
-      <td>Blessings</td><td>Calvin Harris</td>
+  <tr><td><button class="play" data-dz="3344642921" data-title="Blessings"
+        data-artist="Calvin Harris">▶</button></td>
+      <td>Blessings</td><td style="color:var(--muted)">Calvin Harris</td>
       <td class="mono ">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/b/e/0/7bebf69cc7b5a4f69ad5f95a9c546ba0.mp3?hdnea=exp=1789385570~acl=/api/1/1/7/b/e/0/7bebf69cc7b5a4f69ad5f95a9c546ba0.mp3*~data=user_id=0,application_id=42~hmac=3d37036cbe2726a1ed473ef0cb441a3ec422bc7fe28f70b6cb0183172c0158ac"></audio></td>
-      <td>On 2nite</td><td>Silva Bumpa</td>
+  <tr><td><button class="play" data-dz="4039496331" data-title="On 2nite"
+        data-artist="Silva Bumpa">▶</button></td>
+      <td>On 2nite</td><td style="color:var(--muted)">Silva Bumpa</td>
       <td class="mono ">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/3/5/0/0350d31fdd1b8c626c82f5250ab1afd4.mp3?hdnea=exp=1789385570~acl=/api/1/1/0/3/5/0/0350d31fdd1b8c626c82f5250ab1afd4.mp3*~data=user_id=0,application_id=42~hmac=ffe9b8468557e7a5d9eb36a7976169c01cb1b67f44e24ad8bb3205518544275b"></audio></td>
-      <td>Sandstorm</td><td>Darude</td>
+  <tr><td><button class="play" data-dz="11390027" data-title="Sandstorm"
+        data-artist="Darude">▶</button></td>
+      <td>Sandstorm</td><td style="color:var(--muted)">Darude</td>
       <td class="mono ">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/e/3/0/7e3fa54179108b453a9b360bf1976177.mp3?hdnea=exp=1789385570~acl=/api/1/1/7/e/3/0/7e3fa54179108b453a9b360bf1976177.mp3*~data=user_id=0,application_id=42~hmac=84fe69d03c169b6223cfcb74de27ec44851e5932984b260962195ba36829e566"></audio></td>
-      <td>Summer</td><td>Calvin Harris</td>
+  <tr><td><button class="play" data-dz="88936747" data-title="Summer"
+        data-artist="Calvin Harris">▶</button></td>
+      <td>Summer</td><td style="color:var(--muted)">Calvin Harris</td>
       <td class="mono ">dance</td></tr>
   </table>
 </div>
 
 <div class="card">
-  <h2>Cluster 1 <span class="mono">— majority: classical
-    (100% pure, 14 tracks)</span></h2>
-  <table><tr><th>Preview</th><th>Track</th><th>Artist</th><th>True genre</th></tr>
+  <h3>Cluster 1 <span class="mono">— majority classical
+    (100% pure · 14 tracks)</span></h3>
+  <table><tr><th style="width:44px"></th><th>Track</th><th>Artist</th><th>Chart it came from</th></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/a/2/0/4a2a8c9e2395c4b3b96188c0f8be85f3.mp3?hdnea=exp=1789385570~acl=/api/1/1/4/a/2/0/4a2a8c9e2395c4b3b96188c0f8be85f3.mp3*~data=user_id=0,application_id=42~hmac=d053603b6386a84b4a24a7ceb2231cfd96504813374c1b24edf108cb41544cab"></audio></td>
-      <td>Einaudi: Experience</td><td>Ludovico Einaudi</td>
+  <tr><td><button class="play" data-dz="72059729" data-title="Einaudi: Experience"
+        data-artist="Ludovico Einaudi">▶</button></td>
+      <td>Einaudi: Experience</td><td style="color:var(--muted)">Ludovico Einaudi</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/8/f/d/0/8fd7e4d124901d5eb8d24f4e09b80264.mp3?hdnea=exp=1789385570~acl=/api/1/1/8/f/d/0/8fd7e4d124901d5eb8d24f4e09b80264.mp3*~data=user_id=0,application_id=42~hmac=429f375a873f221e9d37c97ae9ce25eab3b08d0b5504cf62329934dc4336ebe4"></audio></td>
-      <td>I Giorni</td><td>Ludovico Einaudi</td>
+  <tr><td><button class="play" data-dz="69261827" data-title="I Giorni"
+        data-artist="Ludovico Einaudi">▶</button></td>
+      <td>I Giorni</td><td style="color:var(--muted)">Ludovico Einaudi</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/b/1/0/5b143f54342d94a1e2ce3a98cb0da365.mp3?hdnea=exp=1789385570~acl=/api/1/1/5/b/1/0/5b143f54342d94a1e2ce3a98cb0da365.mp3*~data=user_id=0,application_id=42~hmac=0995a36158379e73cf7f48ab5796a76b6805141633f5abcf69cc14488b9cbcd5"></audio></td>
-      <td>Saint-Saëns / Transcr. Vidal: Le carnaval des animaux: XIII. Le cygne</td><td>Gautier Capuçon</td>
+  <tr><td><button class="play" data-dz="1437563842" data-title="Saint-Saëns / Transcr. Vidal: Le carnaval des animaux: XIII. Le cygne"
+        data-artist="Gautier Capuçon">▶</button></td>
+      <td>Saint-Saëns / Transcr. Vidal: Le carnaval des animaux: XIII. Le cygne</td><td style="color:var(--muted)">Gautier Capuçon</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/9/2/0/0/92084a39cbbdb72cd8a177246cef1b65.mp3?hdnea=exp=1789385570~acl=/api/1/1/9/2/0/0/92084a39cbbdb72cd8a177246cef1b65.mp3*~data=user_id=0,application_id=42~hmac=1bde84ac822c0239d7fef4ba7efafb7dd2213e2ea2f49f02b1562e9171df3314"></audio></td>
-      <td>The Wanderer</td><td>Stephan Moccio</td>
+  <tr><td><button class="play" data-dz="2617772682" data-title="The Wanderer"
+        data-artist="Stephan Moccio">▶</button></td>
+      <td>The Wanderer</td><td style="color:var(--muted)">Stephan Moccio</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/e/5/0/5e5147c5ba1c07aaf013805ce0d02b21.mp3?hdnea=exp=1789385570~acl=/api/1/1/5/e/5/0/5e5147c5ba1c07aaf013805ce0d02b21.mp3*~data=user_id=0,application_id=42~hmac=321b8ad76f88d563175005708d6d7f40bb94a36b93b68c036c205fb960a091bf"></audio></td>
-      <td>The Young Weaver</td><td>Matteo Myderwyk</td>
+  <tr><td><button class="play" data-dz="1366737942" data-title="The Young Weaver"
+        data-artist="Matteo Myderwyk">▶</button></td>
+      <td>The Young Weaver</td><td style="color:var(--muted)">Matteo Myderwyk</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/6/b/0/36bc0e1887397eba33c02c93462689ca.mp3?hdnea=exp=1789385570~acl=/api/1/1/3/6/b/0/36bc0e1887397eba33c02c93462689ca.mp3*~data=user_id=0,application_id=42~hmac=d68d002c469ac00f2e3d7e4433e23486f42707327d9fde35e175fcdabcf78cba"></audio></td>
-      <td>Jay</td><td>Ludovico Einaudi</td>
+  <tr><td><button class="play" data-dz="3160482501" data-title="Jay"
+        data-artist="Ludovico Einaudi">▶</button></td>
+      <td>Jay</td><td style="color:var(--muted)">Ludovico Einaudi</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/7/b/0/47bb0b696ef60b606e1e0b37150a716a.mp3?hdnea=exp=1789385570~acl=/api/1/1/4/7/b/0/47bb0b696ef60b606e1e0b37150a716a.mp3*~data=user_id=0,application_id=42~hmac=ce2ad507d51e4495c52ae95088b93c9d5cab77a4ab59a019a7491e8b6d76b44e"></audio></td>
-      <td>Einaudi: Nuvole Bianche</td><td>Ludovico Einaudi</td>
+  <tr><td><button class="play" data-dz="69261835" data-title="Einaudi: Nuvole Bianche"
+        data-artist="Ludovico Einaudi">▶</button></td>
+      <td>Einaudi: Nuvole Bianche</td><td style="color:var(--muted)">Ludovico Einaudi</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/b/a/4/0/ba4ba54ed30ad9157ea73d5a91b6daa7.mp3?hdnea=exp=1789385570~acl=/api/1/1/b/a/4/0/ba4ba54ed30ad9157ea73d5a91b6daa7.mp3*~data=user_id=0,application_id=42~hmac=cb63a4bfde4e19c6a8fbb3565941e0c94ea929a766f3ab553c3bc85424022f59"></audio></td>
-      <td>Divenire</td><td>Ludovico Einaudi</td>
+  <tr><td><button class="play" data-dz="69261831" data-title="Divenire"
+        data-artist="Ludovico Einaudi">▶</button></td>
+      <td>Divenire</td><td style="color:var(--muted)">Ludovico Einaudi</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/9/d/f/0/9dfc1551ee090e8a313ccdd1236ec551.mp3?hdnea=exp=1789385570~acl=/api/1/1/9/d/f/0/9dfc1551ee090e8a313ccdd1236ec551.mp3*~data=user_id=0,application_id=42~hmac=b479315ea569a5cdf89ecc116c2e499b2955d3f4f7415a2be71da1a8e0b27937"></audio></td>
-      <td>andata</td><td>Ryuichi Sakamoto</td>
+  <tr><td><button class="play" data-dz="925294392" data-title="andata"
+        data-artist="Ryuichi Sakamoto">▶</button></td>
+      <td>andata</td><td style="color:var(--muted)">Ryuichi Sakamoto</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/8/6/0/18654b9a408e3e0ad7321e8d3c98f55b.mp3?hdnea=exp=1789385570~acl=/api/1/1/1/8/6/0/18654b9a408e3e0ad7321e8d3c98f55b.mp3*~data=user_id=0,application_id=42~hmac=25d37aaa1eb4f1d3218aedb035580bd0845d749541457e0d0b5fc7a219207720"></audio></td>
-      <td>Primavera</td><td>Ludovico Einaudi</td>
+  <tr><td><button class="play" data-dz="69261838" data-title="Primavera"
+        data-artist="Ludovico Einaudi">▶</button></td>
+      <td>Primavera</td><td style="color:var(--muted)">Ludovico Einaudi</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/1/e/0/01e21dc80a31685c9748dd37a4e211af.mp3?hdnea=exp=1789385570~acl=/api/1/1/0/1/e/0/01e21dc80a31685c9748dd37a4e211af.mp3*~data=user_id=0,application_id=42~hmac=c7944eb5c454fb86cb60d55b279ed2304000043f776fd021caf0ea13152372d1"></audio></td>
-      <td>Rameau, Ólafsson: The Arts and the Hours</td><td>Víkingur Ólafsson</td>
+  <tr><td><button class="play" data-dz="910157172" data-title="Rameau, Ólafsson: The Arts and the Hours"
+        data-artist="Víkingur Ólafsson">▶</button></td>
+      <td>Rameau, Ólafsson: The Arts and the Hours</td><td style="color:var(--muted)">Víkingur Ólafsson</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/f/5/0/af51d4c71b9a633e530bcaaf23f06d65.mp3?hdnea=exp=1789385570~acl=/api/1/1/a/f/5/0/af51d4c71b9a633e530bcaaf23f06d65.mp3*~data=user_id=0,application_id=42~hmac=a0fad5a33beb40d33012828eab858b6e6f9801df563f01e3ff1e65a1acf8a3db"></audio></td>
-      <td>Liszt: Piano Sonata in B Minor, S. 178</td><td>Krystian Zimerman</td>
+  <tr><td><button class="play" data-dz="65341065" data-title="Liszt: Piano Sonata in B Minor, S. 178"
+        data-artist="Krystian Zimerman">▶</button></td>
+      <td>Liszt: Piano Sonata in B Minor, S. 178</td><td style="color:var(--muted)">Krystian Zimerman</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/e/7/c/0/e7ca7e6f6d1fc17c1a817af349ce9027.mp3?hdnea=exp=1789385570~acl=/api/1/1/e/7/c/0/e7ca7e6f6d1fc17c1a817af349ce9027.mp3*~data=user_id=0,application_id=42~hmac=c25de7ae4de50997bf27851b09d0f380ebfc348354e7b2ee7da67656e0ac9a7c"></audio></td>
-      <td>Glassworks : Glass: Glassworks: Opening</td><td>Víkingur Ólafsson</td>
+  <tr><td><button class="play" data-dz="140852559" data-title="Glassworks : Glass: Glassworks: Opening"
+        data-artist="Víkingur Ólafsson">▶</button></td>
+      <td>Glassworks : Glass: Glassworks: Opening</td><td style="color:var(--muted)">Víkingur Ólafsson</td>
       <td class="mono ">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/b/6/e/0/b6e95d9da5a72875a9729eaa8dffab1d.mp3?hdnea=exp=1789385570~acl=/api/1/1/b/6/e/0/b6e95d9da5a72875a9729eaa8dffab1d.mp3*~data=user_id=0,application_id=42~hmac=7e46af7c7d28e4ea673a23cf2ee0e41a008534b028b8d59cc7c9f9030b8e7382"></audio></td>
-      <td>Richter: On the Nature of Daylight</td><td>Max Richter</td>
+  <tr><td><button class="play" data-dz="497150662" data-title="Richter: On the Nature of Daylight"
+        data-artist="Max Richter">▶</button></td>
+      <td>Richter: On the Nature of Daylight</td><td style="color:var(--muted)">Max Richter</td>
       <td class="mono ">classical</td></tr>
   </table>
 </div>
 
 <div class="card">
-  <h2>Cluster 2 <span class="mono">— majority: rap
-    (71% pure, 21 tracks)</span></h2>
-  <table><tr><th>Preview</th><th>Track</th><th>Artist</th><th>True genre</th></tr>
+  <h3>Cluster 2 <span class="mono">— majority rap
+    (71% pure · 21 tracks)</span></h3>
+  <table><tr><th style="width:44px"></th><th>Track</th><th>Artist</th><th>Chart it came from</th></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/3/2/0/7324c7d1edf2e198c43ec4f5c80670fc.mp3?hdnea=exp=1789385570~acl=/api/1/1/7/3/2/0/7324c7d1edf2e198c43ec4f5c80670fc.mp3*~data=user_id=0,application_id=42~hmac=25666f1fe85aefe46781a61b07f509b80f190383e493b7c4d3e62a13f276cb1f"></audio></td>
-      <td>Janice STFU</td><td>Drake</td>
+  <tr><td><button class="play" data-dz="4022917771" data-title="Janice STFU"
+        data-artist="Drake">▶</button></td>
+      <td>Janice STFU</td><td style="color:var(--muted)">Drake</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/6/e/0/36e9c5c8807733ef0c975986dcb4a106.mp3?hdnea=exp=1789385570~acl=/api/1/1/3/6/e/0/36e9c5c8807733ef0c975986dcb4a106.mp3*~data=user_id=0,application_id=42~hmac=014acf6486b36dbd31544b58abdbebb32c8948e90400d961205004c9d5f8b28b"></audio></td>
-      <td>Dai Dai</td><td>Shakira</td>
+  <tr><td><button class="play" data-dz="4015341011" data-title="Dai Dai"
+        data-artist="Shakira">▶</button></td>
+      <td>Dai Dai</td><td style="color:var(--muted)">Shakira</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/6/b/0/26b2e6342d760a15e4c87ee5adee1d17.mp3?hdnea=exp=1789385570~acl=/api/1/1/2/6/b/0/26b2e6342d760a15e4c87ee5adee1d17.mp3*~data=user_id=0,application_id=42~hmac=f0acea9ab7a911e9e946a5be9730d1aa4fa557532dfd31526fa7168d1c8eef02"></audio></td>
-      <td>luther</td><td>Kendrick Lamar</td>
+  <tr><td><button class="play" data-dz="3106586641" data-title="luther"
+        data-artist="Kendrick Lamar">▶</button></td>
+      <td>luther</td><td style="color:var(--muted)">Kendrick Lamar</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/3/a/0/33a1fcaf2218102dd3bbdbf5588837b8.mp3?hdnea=exp=1789385570~acl=/api/1/1/3/3/a/0/33a1fcaf2218102dd3bbdbf5588837b8.mp3*~data=user_id=0,application_id=42~hmac=061e5077ed67ba450aeefb7885477130ba2e685277ffed1e1a85459f0c4179d7"></audio></td>
-      <td>Dark Thoughts</td><td>Lil Tecca</td>
+  <tr><td><button class="play" data-dz="3277684691" data-title="Dark Thoughts"
+        data-artist="Lil Tecca">▶</button></td>
+      <td>Dark Thoughts</td><td style="color:var(--muted)">Lil Tecca</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/7/a/0/27a14827ff1e82c5e40e8b6a934a8637.mp3?hdnea=exp=1789385570~acl=/api/1/1/2/7/a/0/27a14827ff1e82c5e40e8b6a934a8637.mp3*~data=user_id=0,application_id=42~hmac=78c020ccb909e3bccf8db2795405405e4fd8ecc108a922cdc53cc619b7827329"></audio></td>
-      <td>Lose Yourself</td><td>Eminem</td>
+  <tr><td><button class="play" data-dz="1109731" data-title="Lose Yourself"
+        data-artist="Eminem">▶</button></td>
+      <td>Lose Yourself</td><td style="color:var(--muted)">Eminem</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/d/6/0/0d6a944e714937c06c92df75cb77bbb6.mp3?hdnea=exp=1789385570~acl=/api/1/1/0/d/6/0/0d6a944e714937c06c92df75cb77bbb6.mp3*~data=user_id=0,application_id=42~hmac=08da534459838daf2e893ca3bee673234f8f62a94ca2b58ac8b032833570ccc1"></audio></td>
-      <td>Raindance</td><td>Dave</td>
+  <tr><td><button class="play" data-dz="3616144112" data-title="Raindance"
+        data-artist="Dave">▶</button></td>
+      <td>Raindance</td><td style="color:var(--muted)">Dave</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/8/0/2/0/802f44e243d8d5027f18e8cec78c84b3.mp3?hdnea=exp=1789385570~acl=/api/1/1/8/0/2/0/802f44e243d8d5027f18e8cec78c84b3.mp3*~data=user_id=0,application_id=42~hmac=14b4d55a60573e605b333885f3505b42a22165ca0051d017af63048351182b07"></audio></td>
-      <td>Spend Dat</td><td>Yung Miami</td>
+  <tr><td><button class="play" data-dz="3966979401" data-title="Spend Dat"
+        data-artist="Yung Miami">▶</button></td>
+      <td>Spend Dat</td><td style="color:var(--muted)">Yung Miami</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/e/b/0/aeb58f2f63ee57fb9c47cbe8fb5ccdaa.mp3?hdnea=exp=1789385570~acl=/api/1/1/a/e/b/0/aeb58f2f63ee57fb9c47cbe8fb5ccdaa.mp3*~data=user_id=0,application_id=42~hmac=8e89f57c3ad3ae7b689ae74596f2fdaa3361ace7e96292739dde8be3c51981bb"></audio></td>
-      <td>Without Me</td><td>Eminem</td>
+  <tr><td><button class="play" data-dz="916424" data-title="Without Me"
+        data-artist="Eminem">▶</button></td>
+      <td>Without Me</td><td style="color:var(--muted)">Eminem</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/e/1/c/0/e1c88c546de3f6a11d02acfbf956daaf.mp3?hdnea=exp=1789385570~acl=/api/1/1/e/1/c/0/e1c88c546de3f6a11d02acfbf956daaf.mp3*~data=user_id=0,application_id=42~hmac=e00d56136c30ce41d4e2b88688b048eabd45cf54d6c93d805850f1599f8df570"></audio></td>
-      <td>Lovin On Me</td><td>Jack Harlow</td>
+  <tr><td><button class="play" data-dz="2536499851" data-title="Lovin On Me"
+        data-artist="Jack Harlow">▶</button></td>
+      <td>Lovin On Me</td><td style="color:var(--muted)">Jack Harlow</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/3/9/0/039b2c3871d36df880b29fc2b4ac2fc8.mp3?hdnea=exp=1789385570~acl=/api/1/1/0/3/9/0/039b2c3871d36df880b29fc2b4ac2fc8.mp3*~data=user_id=0,application_id=42~hmac=c70bf7e9c8e562024c0d1981d2b7eada01a745635b7125af2d3014153f080d95"></audio></td>
-      <td>Hey Ya!</td><td>OutKast</td>
+  <tr><td><button class="play" data-dz="628266" data-title="Hey Ya!"
+        data-artist="OutKast">▶</button></td>
+      <td>Hey Ya!</td><td style="color:var(--muted)">OutKast</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/c/8/9/0/c89ba14b5d142a98e3ad48036b05d10d.mp3?hdnea=exp=1789385570~acl=/api/1/1/c/8/9/0/c89ba14b5d142a98e3ad48036b05d10d.mp3*~data=user_id=0,application_id=42~hmac=5df650ee555d6520cc33e49bf36539e42f936744f2b27073f2e0923ef352151b"></audio></td>
-      <td>Love The Way You Lie</td><td>Eminem</td>
+  <tr><td><button class="play" data-dz="6461440" data-title="Love The Way You Lie"
+        data-artist="Eminem">▶</button></td>
+      <td>Love The Way You Lie</td><td style="color:var(--muted)">Eminem</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/e/7/d/0/e7dc0fbb4602f09e81d8afa81f13a400.mp3?hdnea=exp=1789385570~acl=/api/1/1/e/7/d/0/e7dc0fbb4602f09e81d8afa81f13a400.mp3*~data=user_id=0,application_id=42~hmac=fcdb93ede02625faf20bddf42d8622f01cbbfe2a8c0044ebe7e3881d97c13c93"></audio></td>
-      <td>In Da Club</td><td>50 Cent</td>
+  <tr><td><button class="play" data-dz="1141668" data-title="In Da Club"
+        data-artist="50 Cent">▶</button></td>
+      <td>In Da Club</td><td style="color:var(--muted)">50 Cent</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/c/c/1/0/cc1156e419778897464d9ece273ddf8c.mp3?hdnea=exp=1789385570~acl=/api/1/1/c/c/1/0/cc1156e419778897464d9ece273ddf8c.mp3*~data=user_id=0,application_id=42~hmac=4f2c39d3b26e2f0bdd1e3bd974a208afd95d627a93b92784f8e5536ed62718bc"></audio></td>
-      <td>E85</td><td>Don Toliver</td>
+  <tr><td><button class="play" data-dz="3812245442" data-title="E85"
+        data-artist="Don Toliver">▶</button></td>
+      <td>E85</td><td style="color:var(--muted)">Don Toliver</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/a/b/0/7ab0602a95834e7862f7ef2ee5389d88.mp3?hdnea=exp=1789385570~acl=/api/1/1/7/a/b/0/7ab0602a95834e7862f7ef2ee5389d88.mp3*~data=user_id=0,application_id=42~hmac=fdf19f2b0cbc64d9bf6c3f168198b6e88ce1f89f79372a63021035fe4ddad3fc"></audio></td>
-      <td>One Dance</td><td>Drake</td>
+  <tr><td><button class="play" data-dz="124603270" data-title="One Dance"
+        data-artist="Drake">▶</button></td>
+      <td>One Dance</td><td style="color:var(--muted)">Drake</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/f/1/0/3f19df3b484b0ab61f5e2de5820ceac2.mp3?hdnea=exp=1789385570~acl=/api/1/1/3/f/1/0/3f19df3b484b0ab61f5e2de5820ceac2.mp3*~data=user_id=0,application_id=42~hmac=1193dfa37deddf08a1948cbc3a5c647f7dd524b09af0ada39d752df235372598"></audio></td>
-      <td>Gangsta's Paradise</td><td>Coolio</td>
+  <tr><td><button class="play" data-dz="1584416372" data-title="Gangsta's Paradise"
+        data-artist="Coolio">▶</button></td>
+      <td>Gangsta's Paradise</td><td style="color:var(--muted)">Coolio</td>
       <td class="mono ">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/3/f/0/13f94d5330635fe776d96c0fbb953ed2.mp3?hdnea=exp=1789385570~acl=/api/1/1/1/3/f/0/13f94d5330635fe776d96c0fbb953ed2.mp3*~data=user_id=0,application_id=42~hmac=d2cbe8bb3fefea3ec392e81b31f6b87a54aeaa40e88c425a685fafb9997f94cc"></audio></td>
-      <td>Greenlight (feat. Flo Rida & LunchMoney Lewis)</td><td>Pitbull</td>
+  <tr><td><button class="play" data-dz="128951018" data-title="Greenlight (feat. Flo Rida & LunchMoney Lewis)"
+        data-artist="Pitbull">▶</button></td>
+      <td>Greenlight (feat. Flo Rida & LunchMoney Lewis)</td><td style="color:var(--muted)">Pitbull</td>
       <td class="mono bad">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/6/2/5/0/6254df268039f4200674df6d63701e33.mp3?hdnea=exp=1789385570~acl=/api/1/1/6/2/5/0/6254df268039f4200674df6d63701e33.mp3*~data=user_id=0,application_id=42~hmac=a085abcf83913c4e4f391a7d0478862fdfdcec442a9ce66241198f7eaba22bf5"></audio></td>
-      <td>Dracula (with JENNIE)</td><td>Tame Impala</td>
+  <tr><td><button class="play" data-dz="3818963601" data-title="Dracula (with JENNIE)"
+        data-artist="Tame Impala">▶</button></td>
+      <td>Dracula (with JENNIE)</td><td style="color:var(--muted)">Tame Impala</td>
       <td class="mono bad">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/6/e/0/36e9c5c8807733ef0c975986dcb4a106.mp3?hdnea=exp=1789385570~acl=/api/1/1/3/6/e/0/36e9c5c8807733ef0c975986dcb4a106.mp3*~data=user_id=0,application_id=42~hmac=014acf6486b36dbd31544b58abdbebb32c8948e90400d961205004c9d5f8b28b"></audio></td>
-      <td>Dai Dai</td><td>Shakira</td>
+  <tr><td><button class="play" data-dz="4015341011" data-title="Dai Dai"
+        data-artist="Shakira">▶</button></td>
+      <td>Dai Dai</td><td style="color:var(--muted)">Shakira</td>
       <td class="mono bad">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/e/c/5/0/ec54f80e282974bda6d26edb8ce50935.mp3?hdnea=exp=1789385570~acl=/api/1/1/e/c/5/0/ec54f80e282974bda6d26edb8ce50935.mp3*~data=user_id=0,application_id=42~hmac=ef85dcd6448575b12f383122a91ef831bda6b0f3455595db18d7c5d3f5423433"></audio></td>
-      <td>Borderline</td><td>Tove Lo</td>
+  <tr><td><button class="play" data-dz="2136506587" data-title="Borderline"
+        data-artist="Tove Lo">▶</button></td>
+      <td>Borderline</td><td style="color:var(--muted)">Tove Lo</td>
       <td class="mono bad">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/d/5/0/4d56dcec52f91ee284613a7df39ec3b0.mp3?hdnea=exp=1789385570~acl=/api/1/1/4/d/5/0/4d56dcec52f91ee284613a7df39ec3b0.mp3*~data=user_id=0,application_id=42~hmac=5a00010584b02ad77208a0df2f8ff26567ca66fedc48d3115e8842c6dea078f2"></audio></td>
-      <td>Timber</td><td>Pitbull</td>
+  <tr><td><button class="play" data-dz="73188243" data-title="Timber"
+        data-artist="Pitbull">▶</button></td>
+      <td>Timber</td><td style="color:var(--muted)">Pitbull</td>
       <td class="mono bad">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/2/d/0/72d9c71556ab7b935a6914bda5029ed2.mp3?hdnea=exp=1789385570~acl=/api/1/1/7/2/d/0/72d9c71556ab7b935a6914bda5029ed2.mp3*~data=user_id=0,application_id=42~hmac=25fa63202d49d93886af79fae20934d0dd144030f0950f02fd1acf77ecc854ae"></audio></td>
-      <td>Dracula</td><td>Tame Impala</td>
+  <tr><td><button class="play" data-dz="3567385391" data-title="Dracula"
+        data-artist="Tame Impala">▶</button></td>
+      <td>Dracula</td><td style="color:var(--muted)">Tame Impala</td>
       <td class="mono bad">dance</td></tr>
   </table>
 </div>
 
 <div class="card">
-  <h2>Cluster 3 <span class="mono">— majority: country
-    (59% pure, 32 tracks)</span></h2>
-  <table><tr><th>Preview</th><th>Track</th><th>Artist</th><th>True genre</th></tr>
+  <h3>Cluster 3 <span class="mono">— majority country
+    (59% pure · 32 tracks)</span></h3>
+  <table><tr><th style="width:44px"></th><th>Track</th><th>Artist</th><th>Chart it came from</th></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/8/6/0/a863e118760c4d2d286fd986daeb6a28.mp3?hdnea=exp=1789385570~acl=/api/1/1/a/8/6/0/a863e118760c4d2d286fd986daeb6a28.mp3*~data=user_id=0,application_id=42~hmac=f526865b71226fb6d0ca5d1dab329b75d9ac2ad529727a8f63bdb970c4e794b2"></audio></td>
-      <td>Anxiety</td><td>Doechii</td>
+  <tr><td><button class="play" data-dz="3262675101" data-title="Anxiety"
+        data-artist="Doechii">▶</button></td>
+      <td>Anxiety</td><td style="color:var(--muted)">Doechii</td>
       <td class="mono bad">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/e/e/5/0/ee536149cc1c9c36b2cb8179e29709c6.mp3?hdnea=exp=1789385570~acl=/api/1/1/e/e/5/0/ee536149cc1c9c36b2cb8179e29709c6.mp3*~data=user_id=0,application_id=42~hmac=63256fca73272e0a1f6c5ad4012b4d3ce2f365a0b7ba6f132e289b43418de39d"></audio></td>
-      <td>Cinderella (feat. Ty Dolla $ign)</td><td>Mac Miller</td>
+  <tr><td><button class="play" data-dz="131391760" data-title="Cinderella (feat. Ty Dolla $ign)"
+        data-artist="Mac Miller">▶</button></td>
+      <td>Cinderella (feat. Ty Dolla $ign)</td><td style="color:var(--muted)">Mac Miller</td>
       <td class="mono bad">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/8/4/c/0/84cfe2b7fb50d7dc1da04db3bf01c07d.mp3?hdnea=exp=1789385570~acl=/api/1/1/8/4/c/0/84cfe2b7fb50d7dc1da04db3bf01c07d.mp3*~data=user_id=0,application_id=42~hmac=b1c402791f6f943adcbec0b709adb4d8cb7b76e4d1cea56e3405f69c84a55881"></audio></td>
-      <td>Feel Good Inc.</td><td>Gorillaz</td>
+  <tr><td><button class="play" data-dz="3129407" data-title="Feel Good Inc."
+        data-artist="Gorillaz">▶</button></td>
+      <td>Feel Good Inc.</td><td style="color:var(--muted)">Gorillaz</td>
       <td class="mono bad">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/9/8/4/0/9849c9775670a9f7058f799a0d704df9.mp3?hdnea=exp=1789385570~acl=/api/1/1/9/8/4/0/9849c9775670a9f7058f799a0d704df9.mp3*~data=user_id=0,application_id=42~hmac=fdfab00d9aeacd408243fea2f75e519e0a5b9f750cbf80393a9f2058c1ca6a6f"></audio></td>
-      <td>Circles</td><td>Post Malone</td>
+  <tr><td><button class="play" data-dz="742744952" data-title="Circles"
+        data-artist="Post Malone">▶</button></td>
+      <td>Circles</td><td style="color:var(--muted)">Post Malone</td>
       <td class="mono bad">rap</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/4/f/0/04f42eca07bccbc34fbd9ebddc721c42.mp3?hdnea=exp=1789385570~acl=/api/1/1/0/4/f/0/04f42eca07bccbc34fbd9ebddc721c42.mp3*~data=user_id=0,application_id=42~hmac=9f72924d2cf13a032540020d428bf327db2f22cc3c07e8a246d26e4525490735"></audio></td>
-      <td>Time in a Bottle</td><td>Jim Croce</td>
+  <tr><td><button class="play" data-dz="3785935112" data-title="Time in a Bottle"
+        data-artist="Jim Croce">▶</button></td>
+      <td>Time in a Bottle</td><td style="color:var(--muted)">Jim Croce</td>
       <td class="mono bad">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/0/9/0/209edce054582242c376122e7442e561.mp3?hdnea=exp=1789385570~acl=/api/1/1/2/0/9/0/209edce054582242c376122e7442e561.mp3*~data=user_id=0,application_id=42~hmac=515943441ec2163d74f36e91172a5f2597106521ee4ed37cfba679e38dbfeee7"></audio></td>
-      <td>Lullaby of the New Moon (I): Somnias a Luna</td><td>HOYO-MiX</td>
+  <tr><td><button class="play" data-dz="3604908232" data-title="Lullaby of the New Moon (I): Somnias a Luna"
+        data-artist="HOYO-MiX">▶</button></td>
+      <td>Lullaby of the New Moon (I): Somnias a Luna</td><td style="color:var(--muted)">HOYO-MiX</td>
       <td class="mono bad">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/b/d/0/abd384ebf40701757e548555b9d76b1b.mp3?hdnea=exp=1789385570~acl=/api/1/1/a/b/d/0/abd384ebf40701757e548555b9d76b1b.mp3*~data=user_id=0,application_id=42~hmac=9d1eb01540789b1ff813964a20d750c2fb7382775b5aa3742052d142a0cb2380"></audio></td>
-      <td>That's Amore (Remastered 1996)</td><td>Dean Martin</td>
+  <tr><td><button class="play" data-dz="3435056" data-title="That's Amore (Remastered 1996)"
+        data-artist="Dean Martin">▶</button></td>
+      <td>That's Amore (Remastered 1996)</td><td style="color:var(--muted)">Dean Martin</td>
       <td class="mono bad">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/3/b/0/33be6ae82196c3004474e5d76e4179d5.mp3?hdnea=exp=1789385570~acl=/api/1/1/3/3/b/0/33be6ae82196c3004474e5d76e4179d5.mp3*~data=user_id=0,application_id=42~hmac=a64f63dbf7735e0a38e966425597fa1991bbef2e91a8b07f63d852d136f7cfef"></audio></td>
-      <td>Rockin' Around The Christmas Tree</td><td>Brenda Lee</td>
+  <tr><td><button class="play" data-dz="593706102" data-title="Rockin' Around The Christmas Tree"
+        data-artist="Brenda Lee">▶</button></td>
+      <td>Rockin' Around The Christmas Tree</td><td style="color:var(--muted)">Brenda Lee</td>
       <td class="mono bad">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/e/c/0/7ec2a1ee5ba7ced2d0eeffd12afbc4f3.mp3?hdnea=exp=1789385570~acl=/api/1/1/7/e/c/0/7ec2a1ee5ba7ced2d0eeffd12afbc4f3.mp3*~data=user_id=0,application_id=42~hmac=e9bff5e6e24a4314620d95f43e23f67e0882c02a56a4f7bcb5f9eddffcb06f24"></audio></td>
-      <td>Loser</td><td>Tame Impala</td>
+  <tr><td><button class="play" data-dz="3602329332" data-title="Loser"
+        data-artist="Tame Impala">▶</button></td>
+      <td>Loser</td><td style="color:var(--muted)">Tame Impala</td>
       <td class="mono bad">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/6/7/0/0/6704168518eedd6eff222b5fb55f86c0.mp3?hdnea=exp=1789385570~acl=/api/1/1/6/7/0/0/6704168518eedd6eff222b5fb55f86c0.mp3*~data=user_id=0,application_id=42~hmac=abda643986ccf65dfc049a8728023729d971c5147f43b991fb8253cb2727a4b0"></audio></td>
-      <td>Titanium (feat. Sia)</td><td>David Guetta</td>
+  <tr><td><button class="play" data-dz="62847142" data-title="Titanium (feat. Sia)"
+        data-artist="David Guetta">▶</button></td>
+      <td>Titanium (feat. Sia)</td><td style="color:var(--muted)">David Guetta</td>
       <td class="mono bad">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/9/3/a/0/93a023759118ca2f5bc17c7c0c07ba1b.mp3?hdnea=exp=1789385570~acl=/api/1/1/9/3/a/0/93a023759118ca2f5bc17c7c0c07ba1b.mp3*~data=user_id=0,application_id=42~hmac=e0c30ed967fee191dc9f46ec02e9dc57edf82090fb948fc68c4f300215a61d74"></audio></td>
-      <td>Wake Me Up</td><td>Avicii</td>
+  <tr><td><button class="play" data-dz="70266756" data-title="Wake Me Up"
+        data-artist="Avicii">▶</button></td>
+      <td>Wake Me Up</td><td style="color:var(--muted)">Avicii</td>
       <td class="mono bad">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/3/b/0/23be037b51d21629c5c224bdec0b30c7.mp3?hdnea=exp=1789385570~acl=/api/1/1/2/3/b/0/23be037b51d21629c5c224bdec0b30c7.mp3*~data=user_id=0,application_id=42~hmac=31b51991a3fce1f08b68dd04fbd760739ede65261ea81337728fa6847290d6c1"></audio></td>
-      <td>Something Just Like This</td><td>Coldplay</td>
+  <tr><td><button class="play" data-dz="142706538" data-title="Something Just Like This"
+        data-artist="Coldplay">▶</button></td>
+      <td>Something Just Like This</td><td style="color:var(--muted)">Coldplay</td>
       <td class="mono bad">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/e/7/8/0/e7825fd53e1a783ca69be09672af2f47.mp3?hdnea=exp=1789385570~acl=/api/1/1/e/7/8/0/e7825fd53e1a783ca69be09672af2f47.mp3*~data=user_id=0,application_id=42~hmac=bb29f2cc94749df210d93cd51ae2c582d5a81298bb7590acd5c6c579a3a7afb4"></audio></td>
-      <td>I Wanna Dance with Somebody (Who Loves Me)</td><td>Whitney Houston</td>
+  <tr><td><button class="play" data-dz="2069073587" data-title="I Wanna Dance with Somebody (Who Loves Me)"
+        data-artist="Whitney Houston">▶</button></td>
+      <td>I Wanna Dance with Somebody (Who Loves Me)</td><td style="color:var(--muted)">Whitney Houston</td>
       <td class="mono bad">dance</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/b/5/0/5b539e49bdb2bbf9dd4bc00361ed7ca9.mp3?hdnea=exp=1789385570~acl=/api/1/1/5/b/5/0/5b539e49bdb2bbf9dd4bc00361ed7ca9.mp3*~data=user_id=0,application_id=42~hmac=4590f95cb31aa452bf50b957289bf5a4cefd388751044cc52d9b5ce7426e7fe1"></audio></td>
-      <td>Choosin' Texas</td><td>Ella Langley</td>
+  <tr><td><button class="play" data-dz="3602074142" data-title="Choosin' Texas"
+        data-artist="Ella Langley">▶</button></td>
+      <td>Choosin' Texas</td><td style="color:var(--muted)">Ella Langley</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/d/f/0/adf281db3129088dd0e88c58e64a3ca3.mp3?hdnea=exp=1789385570~acl=/api/1/1/a/d/f/0/adf281db3129088dd0e88c58e64a3ca3.mp3*~data=user_id=0,application_id=42~hmac=043b1952447b851fd0cf49bdebc34d856946e15200ad9db72bc6ac09df8a385f"></audio></td>
-      <td>Boston</td><td>STELLA LEFTY</td>
+  <tr><td><button class="play" data-dz="3895241341" data-title="Boston"
+        data-artist="STELLA LEFTY">▶</button></td>
+      <td>Boston</td><td style="color:var(--muted)">STELLA LEFTY</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/7/6/0/576f31e504bbabd507257e5c6bd32235.mp3?hdnea=exp=1789385570~acl=/api/1/1/5/7/6/0/576f31e504bbabd507257e5c6bd32235.mp3*~data=user_id=0,application_id=42~hmac=ffb146c6ac15d01fd789a71b12c0ed6c21427ac0860405ed7e6211cf2b45d024"></audio></td>
-      <td>I Knew It, I Knew You (From "Toy Story 5")</td><td>Taylor Swift</td>
+  <tr><td><button class="play" data-dz="4058916481" data-title="I Knew It, I Knew You (From "Toy Story 5")"
+        data-artist="Taylor Swift">▶</button></td>
+      <td>I Knew It, I Knew You (From "Toy Story 5")</td><td style="color:var(--muted)">Taylor Swift</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/1/4/0/f142bace73d79e8ede60140353514afb.mp3?hdnea=exp=1789385570~acl=/api/1/1/f/1/4/0/f142bace73d79e8ede60140353514afb.mp3*~data=user_id=0,application_id=42~hmac=2f772753a4a1deb225c0a6a0101a2663be51bc624317bfb441c45ac7a258d88e"></audio></td>
-      <td>Be Her</td><td>Ella Langley</td>
+  <tr><td><button class="play" data-dz="3834003271" data-title="Be Her"
+        data-artist="Ella Langley">▶</button></td>
+      <td>Be Her</td><td style="color:var(--muted)">Ella Langley</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/e/5/c/0/e5c9f000eecf7738ff4e3a4e4e9f42b8.mp3?hdnea=exp=1789385570~acl=/api/1/1/e/5/c/0/e5c9f000eecf7738ff4e3a4e4e9f42b8.mp3*~data=user_id=0,application_id=42~hmac=a1e441d6b5c68ed833fd47cd0e8928401b3402ee3d596dce08bc9f2695e6aefb"></audio></td>
-      <td>A Bar Song (Tipsy)</td><td>Shaboozey</td>
+  <tr><td><button class="play" data-dz="2729273551" data-title="A Bar Song (Tipsy)"
+        data-artist="Shaboozey">▶</button></td>
+      <td>A Bar Song (Tipsy)</td><td style="color:var(--muted)">Shaboozey</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/9/c/0/19ceff797bb87b913bf5b8a92c213aa3.mp3?hdnea=exp=1789385570~acl=/api/1/1/1/9/c/0/19ceff797bb87b913bf5b8a92c213aa3.mp3*~data=user_id=0,application_id=42~hmac=eb1bfe0c12346015276157d063f89bcc5a7bd241fdbd4d0786c33c9a65ca2705"></audio></td>
-      <td>Mexico Honey</td><td>Kacey Musgraves</td>
+  <tr><td><button class="play" data-dz="3991431871" data-title="Mexico Honey"
+        data-artist="Kacey Musgraves">▶</button></td>
+      <td>Mexico Honey</td><td style="color:var(--muted)">Kacey Musgraves</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/a/8/0/fa8c93d7183bd0f05293ae985b3c56f7.mp3?hdnea=exp=1789385570~acl=/api/1/1/f/a/8/0/fa8c93d7183bd0f05293ae985b3c56f7.mp3*~data=user_id=0,application_id=42~hmac=80b2dd7bc2b923998876c8e97c098a34e1e1fdac240e887e83adf652eb2d8394"></audio></td>
-      <td>Good News</td><td>Shaboozey</td>
+  <tr><td><button class="play" data-dz="3056032231" data-title="Good News"
+        data-artist="Shaboozey">▶</button></td>
+      <td>Good News</td><td style="color:var(--muted)">Shaboozey</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/5/a/0/45ad068f03b8fcb7d858ea657f6cdaf8.mp3?hdnea=exp=1789385570~acl=/api/1/1/4/5/a/0/45ad068f03b8fcb7d858ea657f6cdaf8.mp3*~data=user_id=0,application_id=42~hmac=98045d3b74dd4679920b6957b4fa4183f54b0068aef8ff85b649ad07dae80b32"></audio></td>
-      <td>I Had Some Help</td><td>Post Malone</td>
+  <tr><td><button class="play" data-dz="2780753191" data-title="I Had Some Help"
+        data-artist="Post Malone">▶</button></td>
+      <td>I Had Some Help</td><td style="color:var(--muted)">Post Malone</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/b/5/4/0/b54b110780539b96c252eb55c7c04eb1.mp3?hdnea=exp=1789385570~acl=/api/1/1/b/5/4/0/b54b110780539b96c252eb55c7c04eb1.mp3*~data=user_id=0,application_id=42~hmac=d5b96ee18a450ea58ce3e54529d83095f35fe3fd85dfc7392608733522ab8af3"></audio></td>
-      <td>Been By Now</td><td>Morgan Wallen</td>
+  <tr><td><button class="play" data-dz="4167204822" data-title="Been By Now"
+        data-artist="Morgan Wallen">▶</button></td>
+      <td>Been By Now</td><td style="color:var(--muted)">Morgan Wallen</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/b/5/8/0/b58580a32733aba96b46ee637030ab0a.mp3?hdnea=exp=1789385570~acl=/api/1/1/b/5/8/0/b58580a32733aba96b46ee637030ab0a.mp3*~data=user_id=0,application_id=42~hmac=b6dd2e62c0bc6fd97cff349fedc55a3c48f8e279d91275cdcea086a59c690a5b"></audio></td>
-      <td>Be By You</td><td>Luke Combs</td>
+  <tr><td><button class="play" data-dz="3838327301" data-title="Be By You"
+        data-artist="Luke Combs">▶</button></td>
+      <td>Be By You</td><td style="color:var(--muted)">Luke Combs</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/c/d/8/0/cd8ce9d3b14f2be7471d02c3978ae93c.mp3?hdnea=exp=1789385570~acl=/api/1/1/c/d/8/0/cd8ce9d3b14f2be7471d02c3978ae93c.mp3*~data=user_id=0,application_id=42~hmac=fa0cddc6dd274fc51528e363aa842a252f07397229970e19eb2ba6e6cc40018c"></audio></td>
-      <td>Am I Okay?</td><td>Megan Moroney</td>
+  <tr><td><button class="play" data-dz="2881248402" data-title="Am I Okay?"
+        data-artist="Megan Moroney">▶</button></td>
+      <td>Am I Okay?</td><td style="color:var(--muted)">Megan Moroney</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/9/1/0/39196bba724775ae89ae4fdd5a528e84.mp3?hdnea=exp=1789385570~acl=/api/1/1/3/9/1/0/39196bba724775ae89ae4fdd5a528e84.mp3*~data=user_id=0,application_id=42~hmac=c5ee42a53be69f102c8fa32ce2a181eefb1a74ec2f9fa20673565d2d4b0e66f5"></audio></td>
-      <td>Jolene</td><td>Dolly Parton</td>
+  <tr><td><button class="play" data-dz="114422238" data-title="Jolene"
+        data-artist="Dolly Parton">▶</button></td>
+      <td>Jolene</td><td style="color:var(--muted)">Dolly Parton</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/f/f/0/1ff533492e49a50d293c818572ed13c2.mp3?hdnea=exp=1789385570~acl=/api/1/1/1/f/f/0/1ff533492e49a50d293c818572ed13c2.mp3*~data=user_id=0,application_id=42~hmac=3bad06e077fd771bcdd7224267f1b5be9ddb3c1ae6502ca423723419b0ddaa4e"></audio></td>
-      <td>Rethink Some Things</td><td>Luke Combs</td>
+  <tr><td><button class="play" data-dz="3899622791" data-title="Rethink Some Things"
+        data-artist="Luke Combs">▶</button></td>
+      <td>Rethink Some Things</td><td style="color:var(--muted)">Luke Combs</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/1/a/0/a1af8b6fb3b4119394a21712648f3135.mp3?hdnea=exp=1789385570~acl=/api/1/1/a/1/a/0/a1af8b6fb3b4119394a21712648f3135.mp3*~data=user_id=0,application_id=42~hmac=ebd272c00c6fc05b303bde69441143851974990a1dccbfdca676052513d933cb"></audio></td>
-      <td>Better Me For You (Brown Eyes)</td><td>Max McNown</td>
+  <tr><td><button class="play" data-dz="3092229871" data-title="Better Me For You (Brown Eyes)"
+        data-artist="Max McNown">▶</button></td>
+      <td>Better Me For You (Brown Eyes)</td><td style="color:var(--muted)">Max McNown</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/d/0/9/0/d09a0963a6273b9ed662cc47db4b6df0.mp3?hdnea=exp=1789385570~acl=/api/1/1/d/0/9/0/d09a0963a6273b9ed662cc47db4b6df0.mp3*~data=user_id=0,application_id=42~hmac=e1dcefc786e7895ae6dc921876f6eefcd14138af42f10e4f4caf69b256cc792a"></audio></td>
-      <td>Austin (Boots Stop Workin')</td><td>Dasha</td>
+  <tr><td><button class="play" data-dz="2716396982" data-title="Austin (Boots Stop Workin')"
+        data-artist="Dasha">▶</button></td>
+      <td>Austin (Boots Stop Workin')</td><td style="color:var(--muted)">Dasha</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/c/8/0/2c88acdc7517cf17c00715db6c9a22e5.mp3?hdnea=exp=1789385570~acl=/api/1/1/2/c/8/0/2c88acdc7517cf17c00715db6c9a22e5.mp3*~data=user_id=0,application_id=42~hmac=363fce6d658fb7647ab2cbedf29e876a097a995266127a37db9ad34fb20e3071"></audio></td>
-      <td>I Can't Love You Anymore</td><td>Ella Langley</td>
+  <tr><td><button class="play" data-dz="3978161521" data-title="I Can't Love You Anymore"
+        data-artist="Ella Langley">▶</button></td>
+      <td>I Can't Love You Anymore</td><td style="color:var(--muted)">Ella Langley</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/6/4/0/f6429ee343fe41fab2a95ab9d0d85e5b.mp3?hdnea=exp=1789385570~acl=/api/1/1/f/6/4/0/f6429ee343fe41fab2a95ab9d0d85e5b.mp3*~data=user_id=0,application_id=42~hmac=6dcd627eaf365d0356929e523a80a32e3de593cccc2932cfb8f851bd05456bea"></audio></td>
-      <td>9 to 5</td><td>Dolly Parton</td>
+  <tr><td><button class="play" data-dz="992937" data-title="9 to 5"
+        data-artist="Dolly Parton">▶</button></td>
+      <td>9 to 5</td><td style="color:var(--muted)">Dolly Parton</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/d/9/0/0/d90c5186b7977af4bf8cfd9b6979b678.mp3?hdnea=exp=1789385570~acl=/api/1/1/d/9/0/0/d90c5186b7977af4bf8cfd9b6979b678.mp3*~data=user_id=0,application_id=42~hmac=1ef052d31f2bd6cc199ad698b3cb779154ca9a19a9cd96c7dbb72e327fbf897c"></audio></td>
-      <td>Loving Life Again</td><td>Ella Langley</td>
+  <tr><td><button class="play" data-dz="3904211281" data-title="Loving Life Again"
+        data-artist="Ella Langley">▶</button></td>
+      <td>Loving Life Again</td><td style="color:var(--muted)">Ella Langley</td>
       <td class="mono ">country</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/6/2/0/5629e71f9d4f234476f5fae2c4f0a4af.mp3?hdnea=exp=1789385570~acl=/api/1/1/5/6/2/0/5629e71f9d4f234476f5fae2c4f0a4af.mp3*~data=user_id=0,application_id=42~hmac=af848af1b4f7a9d5609e36a079788753e544fb15604ab1fe31894dcf970e559d"></audio></td>
-      <td>Don't We</td><td>Morgan Wallen</td>
+  <tr><td><button class="play" data-dz="3366677031" data-title="Don't We"
+        data-artist="Morgan Wallen">▶</button></td>
+      <td>Don't We</td><td style="color:var(--muted)">Morgan Wallen</td>
       <td class="mono ">country</td></tr>
   </table>
 </div>
 
 <div class="card">
-  <h2>Cluster 4 <span class="mono">— majority: metal
-    (91% pure, 22 tracks)</span></h2>
-  <table><tr><th>Preview</th><th>Track</th><th>Artist</th><th>True genre</th></tr>
+  <h3>Cluster 4 <span class="mono">— majority metal
+    (91% pure · 22 tracks)</span></h3>
+  <table><tr><th style="width:44px"></th><th>Track</th><th>Artist</th><th>Chart it came from</th></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/1/a/0/21af9bde7aacee934f02c9df8c931bdf.mp3?hdnea=exp=1789385570~acl=/api/1/1/2/1/a/0/21af9bde7aacee934f02c9df8c931bdf.mp3*~data=user_id=0,application_id=42~hmac=6ea063f29e0733656ab55ce490805001ec04b93f0896b460baac19a1d4fbfd15"></audio></td>
-      <td>You Shook Me All Night Long</td><td>AC/DC</td>
+  <tr><td><button class="play" data-dz="92720048" data-title="You Shook Me All Night Long"
+        data-artist="AC/DC">▶</button></td>
+      <td>You Shook Me All Night Long</td><td style="color:var(--muted)">AC/DC</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/8/2/b/0/82be918b42c3d26093b20d01e97e4a03.mp3?hdnea=exp=1789385570~acl=/api/1/1/8/2/b/0/82be918b42c3d26093b20d01e97e4a03.mp3*~data=user_id=0,application_id=42~hmac=508f078a3d588ed973cd316b3828e23034307dd1704872a2503ea4cf16172989"></audio></td>
-      <td>Back In Black</td><td>AC/DC</td>
+  <tr><td><button class="play" data-dz="92720046" data-title="Back In Black"
+        data-artist="AC/DC">▶</button></td>
+      <td>Back In Black</td><td style="color:var(--muted)">AC/DC</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/d/7/1/0/d7183d3dd28d85289690100ef5d7c78e.mp3?hdnea=exp=1789385570~acl=/api/1/1/d/7/1/0/d7183d3dd28d85289690100ef5d7c78e.mp3*~data=user_id=0,application_id=42~hmac=33fd21e483b880c09037df4cc4498251d788e0211e63b18a9ec4820f8958e478"></audio></td>
-      <td>Highway to Hell</td><td>AC/DC</td>
+  <tr><td><button class="play" data-dz="92719900" data-title="Highway to Hell"
+        data-artist="AC/DC">▶</button></td>
+      <td>Highway to Hell</td><td style="color:var(--muted)">AC/DC</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/7/1/0/071903d9430ded2ec139793ad3e9c09d.mp3?hdnea=exp=1789385570~acl=/api/1/1/0/7/1/0/071903d9430ded2ec139793ad3e9c09d.mp3*~data=user_id=0,application_id=42~hmac=6fef818588564f004d7de4d1561ede57a7a194b8ee94c678fc28942e7be9316d"></audio></td>
-      <td>Duality</td><td>Slipknot</td>
+  <tr><td><button class="play" data-dz="3819908" data-title="Duality"
+        data-artist="Slipknot">▶</button></td>
+      <td>Duality</td><td style="color:var(--muted)">Slipknot</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/1/0/0/010c6f527fdcc5abe6b0764fd5e6eb31.mp3?hdnea=exp=1789385570~acl=/api/1/1/0/1/0/0/010c6f527fdcc5abe6b0764fd5e6eb31.mp3*~data=user_id=0,application_id=42~hmac=0f4dd544aba5f2869024f3b4fafbb9185045c1ef2b242f267aed65beff779fe7"></audio></td>
-      <td>Killing In The Name</td><td>Rage Against the Machine</td>
+  <tr><td><button class="play" data-dz="62082829" data-title="Killing In The Name"
+        data-artist="Rage Against the Machine">▶</button></td>
+      <td>Killing In The Name</td><td style="color:var(--muted)">Rage Against the Machine</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/4/8/0/048b6f79ce257b2f4aaefd150a2914ef.mp3?hdnea=exp=1789385570~acl=/api/1/1/0/4/8/0/048b6f79ce257b2f4aaefd150a2914ef.mp3*~data=user_id=0,application_id=42~hmac=e893bf5ecea7aa28ee72a89ae72ca3a2f04a7fb9440e992840745ad1dec2a793"></audio></td>
-      <td>Crazy Train</td><td>Ozzy Osbourne</td>
+  <tr><td><button class="play" data-dz="83919189" data-title="Crazy Train"
+        data-artist="Ozzy Osbourne">▶</button></td>
+      <td>Crazy Train</td><td style="color:var(--muted)">Ozzy Osbourne</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/6/8/2/0/682240371ed8bd7757aebc61fa11f274.mp3?hdnea=exp=1789385570~acl=/api/1/1/6/8/2/0/682240371ed8bd7757aebc61fa11f274.mp3*~data=user_id=0,application_id=42~hmac=485dfd2d9db7eeb178c245edbae149436e2d28d6c291970e6e041c3afe96d1f8"></audio></td>
-      <td>Toxicity</td><td>System of A Down</td>
+  <tr><td><button class="play" data-dz="15523793" data-title="Toxicity"
+        data-artist="System of A Down">▶</button></td>
+      <td>Toxicity</td><td style="color:var(--muted)">System of A Down</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/c/9/0/0c9ffeb2bd4eec7a262df56ec16be1eb.mp3?hdnea=exp=1789385570~acl=/api/1/1/0/c/9/0/0c9ffeb2bd4eec7a262df56ec16be1eb.mp3*~data=user_id=0,application_id=42~hmac=bea727de3a5d1112bbbf66be33c4c1374075823de59b6d5be388d18187c4dbb2"></audio></td>
-      <td>Psychosocial</td><td>Slipknot</td>
+  <tr><td><button class="play" data-dz="1195560" data-title="Psychosocial"
+        data-artist="Slipknot">▶</button></td>
+      <td>Psychosocial</td><td style="color:var(--muted)">Slipknot</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/5/c/0/a5c94dc4c16f610f74c3980ae11dcdac.mp3?hdnea=exp=1789385570~acl=/api/1/1/a/5/c/0/a5c94dc4c16f610f74c3980ae11dcdac.mp3*~data=user_id=0,application_id=42~hmac=ffea035a65b56cdd396f9fb819c74f3a54c9c7091c70df63f9335e949bf236a4"></audio></td>
-      <td>Master Of Puppets (Remastered)</td><td>Metallica</td>
+  <tr><td><button class="play" data-dz="424562692" data-title="Master Of Puppets (Remastered)"
+        data-artist="Metallica">▶</button></td>
+      <td>Master Of Puppets (Remastered)</td><td style="color:var(--muted)">Metallica</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/b/b/1/0/bb12ea111352e42a19823e951f5a961c.mp3?hdnea=exp=1789385570~acl=/api/1/1/b/b/1/0/bb12ea111352e42a19823e951f5a961c.mp3*~data=user_id=0,application_id=42~hmac=965762c649c3443c0af5804b976ded9c4727f50a3adaf033d95991ddf0d710ec"></audio></td>
-      <td>Aerials</td><td>System of A Down</td>
+  <tr><td><button class="play" data-dz="15523799" data-title="Aerials"
+        data-artist="System of A Down">▶</button></td>
+      <td>Aerials</td><td style="color:var(--muted)">System of A Down</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/d/5/0/ad52e988d880f13e6a5395ec77d4036f.mp3?hdnea=exp=1789385570~acl=/api/1/1/a/d/5/0/ad52e988d880f13e6a5395ec77d4036f.mp3*~data=user_id=0,application_id=42~hmac=f429ef0caddb6f9c0d1917d94918d129d4f3d216447bfae8d1a935689113d1a5"></audio></td>
-      <td>Arsenal</td><td>Slipknot</td>
+  <tr><td><button class="play" data-dz="4274080662" data-title="Arsenal"
+        data-artist="Slipknot">▶</button></td>
+      <td>Arsenal</td><td style="color:var(--muted)">Slipknot</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/b/2/5/0/b25f9b7820bbf473f89520aefbe4d56c.mp3?hdnea=exp=1789385570~acl=/api/1/1/b/2/5/0/b25f9b7820bbf473f89520aefbe4d56c.mp3*~data=user_id=0,application_id=42~hmac=3246a3fa79b6ecdf0317ea6d1d18a05ecb3728ea437c282e1c27c40306c43d41"></audio></td>
-      <td>Freak On a Leash</td><td>Korn</td>
+  <tr><td><button class="play" data-dz="134523750" data-title="Freak On a Leash"
+        data-artist="Korn">▶</button></td>
+      <td>Freak On a Leash</td><td style="color:var(--muted)">Korn</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/8/b/0/f8b4a04d91b5736c17265e681687fe52.mp3?hdnea=exp=1789385570~acl=/api/1/1/f/8/b/0/f8b4a04d91b5736c17265e681687fe52.mp3*~data=user_id=0,application_id=42~hmac=23c5ff9c6febfd2f52c821941eb30361aa94628a3b62aa915e2d33d06af479d6"></audio></td>
-      <td>Hells Bells</td><td>AC/DC</td>
+  <tr><td><button class="play" data-dz="92720036" data-title="Hells Bells"
+        data-artist="AC/DC">▶</button></td>
+      <td>Hells Bells</td><td style="color:var(--muted)">AC/DC</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/d/4/0/7d416d9e18429664bbbc702ec6fab8d7.mp3?hdnea=exp=1789385570~acl=/api/1/1/7/d/4/0/7d416d9e18429664bbbc702ec6fab8d7.mp3*~data=user_id=0,application_id=42~hmac=cf905048342e6ed7e2d1e1abfa282aef6da4600d8c5a04dde745a0ee57acb470"></audio></td>
-      <td>Sonne</td><td>Rammstein</td>
+  <tr><td><button class="play" data-dz="14381638" data-title="Sonne"
+        data-artist="Rammstein">▶</button></td>
+      <td>Sonne</td><td style="color:var(--muted)">Rammstein</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/1/f/0/f1f273789a64974474505f57394672cc.mp3?hdnea=exp=1789385570~acl=/api/1/1/f/1/f/0/f1f273789a64974474505f57394672cc.mp3*~data=user_id=0,application_id=42~hmac=ec8aede531e62a769e5deeb7dc95a06569fc2988f0904c7ffd81ec3b11e1837a"></audio></td>
-      <td>T.N.T.</td><td>AC/DC</td>
+  <tr><td><button class="play" data-dz="92720006" data-title="T.N.T."
+        data-artist="AC/DC">▶</button></td>
+      <td>T.N.T.</td><td style="color:var(--muted)">AC/DC</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/c/d/0/fcda6193906653a30f049954af475eb1.mp3?hdnea=exp=1789385570~acl=/api/1/1/f/c/d/0/fcda6193906653a30f049954af475eb1.mp3*~data=user_id=0,application_id=42~hmac=50fad2691daf4c6d62daa1680d8f19fbc95f52fb73250009b78b58c93dc5ec81"></audio></td>
-      <td>Shoot to Thrill</td><td>AC/DC</td>
+  <tr><td><button class="play" data-dz="92720038" data-title="Shoot to Thrill"
+        data-artist="AC/DC">▶</button></td>
+      <td>Shoot to Thrill</td><td style="color:var(--muted)">AC/DC</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/2/d/0/72d64f5a613d4e06fbb701f0e2851d3f.mp3?hdnea=exp=1789385570~acl=/api/1/1/7/2/d/0/72d64f5a613d4e06fbb701f0e2851d3f.mp3*~data=user_id=0,application_id=42~hmac=ff394e69f89ab5c611fafcd1723eb4e380d8669c3d43d003a75b2f411b88034d"></audio></td>
-      <td>Mary On A Cross</td><td>Ghost</td>
+  <tr><td><button class="play" data-dz="1881054427" data-title="Mary On A Cross"
+        data-artist="Ghost">▶</button></td>
+      <td>Mary On A Cross</td><td style="color:var(--muted)">Ghost</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/d/6/0/ad6ebb23a1e1a3a35263a6a6986685a5.mp3?hdnea=exp=1789385570~acl=/api/1/1/a/d/6/0/ad6ebb23a1e1a3a35263a6a6986685a5.mp3*~data=user_id=0,application_id=42~hmac=750c2f39e308630b8d6e5e08ddfd1faa3f0347de83abd5cbd378681cac248484"></audio></td>
-      <td>Before I Forget</td><td>Slipknot</td>
+  <tr><td><button class="play" data-dz="3819914" data-title="Before I Forget"
+        data-artist="Slipknot">▶</button></td>
+      <td>Before I Forget</td><td style="color:var(--muted)">Slipknot</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/b/c/9/0/bc9848c20aeee8c5e31eca4df45921d9.mp3?hdnea=exp=1789385570~acl=/api/1/1/b/c/9/0/bc9848c20aeee8c5e31eca4df45921d9.mp3*~data=user_id=0,application_id=42~hmac=bf8bef218c7c8c183d0e2567864ed16a112353899df89ca51c152ebbf0589723"></audio></td>
-      <td>Smoke On The Water (Remastered 2012)</td><td>Deep Purple</td>
+  <tr><td><button class="play" data-dz="60840057" data-title="Smoke On The Water (Remastered 2012)"
+        data-artist="Deep Purple">▶</button></td>
+      <td>Smoke On The Water (Remastered 2012)</td><td style="color:var(--muted)">Deep Purple</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/9/e/6/0/9e6bc6855a505c0890cd7bfb37fffba3.mp3?hdnea=exp=1789385570~acl=/api/1/1/9/e/6/0/9e6bc6855a505c0890cd7bfb37fffba3.mp3*~data=user_id=0,application_id=42~hmac=a86abb8e57e10891769dc20d8ee192ba9f74d54f3b51631cb7db0faac0067dfb"></audio></td>
-      <td>B.Y.O.B.</td><td>System of A Down</td>
+  <tr><td><button class="play" data-dz="559789" data-title="B.Y.O.B."
+        data-artist="System of A Down">▶</button></td>
+      <td>B.Y.O.B.</td><td style="color:var(--muted)">System of A Down</td>
       <td class="mono ">metal</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/e/3/1/0/e31aa2775e44196d8eff53f1eed59217.mp3?hdnea=exp=1789385570~acl=/api/1/1/e/3/1/0/e31aa2775e44196d8eff53f1eed59217.mp3*~data=user_id=0,application_id=42~hmac=8bd1bce1b4d41a13225df9d8e7afaaecc041443708e892a7c73d68ddfde37bb2"></audio></td>
-      <td>Extreme Ways</td><td>Moby</td>
+  <tr><td><button class="play" data-dz="1362338442" data-title="Extreme Ways"
+        data-artist="Moby">▶</button></td>
+      <td>Extreme Ways</td><td style="color:var(--muted)">Moby</td>
       <td class="mono bad">classical</td></tr>
   
-  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/e/7/0/2e79ec9f34e4a2ac742ff98fe9722064.mp3?hdnea=exp=1789385570~acl=/api/1/1/2/e/7/0/2e79ec9f34e4a2ac742ff98fe9722064.mp3*~data=user_id=0,application_id=42~hmac=305e429c3306acbc00a1633d39c6928dffc9b3e0b6627b69b6cf2ad7be0645d9"></audio></td>
-      <td>Sleepless in a Hotel Room</td><td>Luke Combs</td>
+  <tr><td><button class="play" data-dz="3726350952" data-title="Sleepless in a Hotel Room"
+        data-artist="Luke Combs">▶</button></td>
+      <td>Sleepless in a Hotel Room</td><td style="color:var(--muted)">Luke Combs</td>
       <td class="mono bad">country</td></tr>
   </table>
 </div>
 
+</div>
+<div id="bar"><div class="wrap">
+  <button class="play">▶</button>
+  <div class="meta"><div class="t"></div><div class="a"></div></div>
+  <div class="prog"><i></i></div>
+  <span class="src">30s PREVIEW · DEEZER</span>
+</div></div>
+<script src="player.js"></script>
 </body></html>
