@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How it works · A&R Trend Radar</title>
+<meta name="description" content="Sound-first trend detection: AI listens to ~1,500 new tracks daily, clusters them by how they sound, and flags sounds gaining ground before the charts notice.">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<nav><div class="wrap">
+  <a class="logo" href="index.html">RADA<b>R</b></a>
+  <a class="item " href="index.html">Radar</a>
+  <a class="item " href="record.html">Track record</a>
+  <a class="item on" href="about.html">How it works</a>
+  <span class="live"><span class="dot"></span>DAILY RUN · 2026-09-14</span>
+</div></nav>
+
+<div class="hero"><div class="wrap">
+  <h1>Charts tell you <i>what won.</i><br>Audio tells you what's <i>winning</i>.</h1>
+  <p class="sub">Chartmetric and Soundcharts track positions — top-down, after the fact. This
+  radar works bottom-up from the audio itself: if a production style is quietly accumulating
+  tracks across platforms, it shows up here as a growing cluster long before any chart moves.</p>
+</div></div>
+<div class="wrap">
+  <h2>The pipeline, plainly</h2>
+  <div class="how">
+    <div class="card"><b>1 · Ingest</b>~1,500 track appearances pulled daily from Deezer genre
+    charts and editorial new-music playlists, Apple's most-played feed, and Reddit music
+    communities. Every appearance (source, list, rank, day) is stored — that's the raw material
+    for measuring momentum.</div>
+    <div class="card"><b>2 · Listen</b>Each track's 30-second preview is embedded with
+    CLAP (laion/clap-htsat-unfused), a model that maps audio and language into the same space —
+    it hears production, instrumentation and mood. Three 10-second windows are averaged into
+    one whole-clip fingerprint. Tempo, key and energy are extracted alongside.</div>
+    <div class="card"><b>3 · Group</b>Each day's tracks are clustered on those fingerprints
+    (k swept by silhouette score). Clusters are matched to persistent <b>sound families</b> by
+    centroid similarity, so "this sound" keeps its identity from day to day.</div>
+    <div class="card"><b>4 · Name</b>Families are named by the audio itself: the cluster's
+    fingerprint is compared against hundreds of genre and mood descriptions through CLAP's
+    text tower. Zero LLM cost, and the names describe what the model <i>hears</i>.</div>
+    <div class="card"><b>5 · Measure</b>Each family's share of the daily intake is tracked
+    against its trailing 7-day baseline. Growth ≥40% with z ≥ 2 flags a trend call — counts
+    alone never do, because ingest volume varies day to day.</div>
+    <div class="card"><b>6 · Explain</b>Claude writes a three-sentence analyst note for the top
+    sounds — the sound, why it's moving, what it bridges — from a prompt that contains only the
+    measured statistics and track list, so it can't invent viral moments that didn't happen.</div>
+  </div>
+  <h2>Trust, verified by ear</h2>
+  <p class="sub" style="margin-top:-4px">Before anything was built on top of the embeddings, the
+  clustering was validated on 100 tracks from five deliberately distinct genres: 78% genre
+  purity, with metal separating 20/20. The full report is listenable —
+  <a href="validation-report.html" style="color:var(--flare)">judge it yourself</a>. Notably,
+  most "errors" are the model refusing to believe Deezer's classical chart, which contains
+  Pitbull and Dean Martin. The model is right.</p>
+  <h2>Engineering notes</h2>
+  <p class="sub" style="margin-top:-4px">Python · CLAP + librosa · scikit-learn · SQLite ·
+  Claude API · zero servers: a GitHub Actions cron runs the whole pipeline daily and publishes
+  this static site. Deezer preview URLs expire within hours, so playback fetches fresh URLs
+  client-side at click time. Sound families use EMA-updated centroids so names and history
+  survive day-to-day cluster reshuffles.</p>
+</div>
+<div class="wrap"><footer>
+  Built solo as a working product: Deezer/iTunes/Reddit ingestion → CLAP audio embeddings →
+  persistent sound families → velocity vs 7-day baseline → Claude analyst notes, regenerated
+  daily by an unattended pipeline. <a href="validation-report.html">Clustering validation
+  (listenable, 78% genre purity)</a>. Previews stream fresh from their source platforms at
+  click time and belong to their rights holders.
+</footer></div>
+<div id="bar"><div class="wrap">
+  <button class="play">▶</button>
+  <div class="meta"><div class="t"></div><div class="a"></div></div>
+  <div class="prog"><i></i></div>
+  <span class="src">30s PREVIEW · DEEZER/ITUNES</span>
+</div></div>
+<script src="player.js"></script>
+</body></html>
