@@ -1,3 +1,501 @@
-<!doctype html><meta charset="utf-8"><title>A&R Trend Radar</title>
-<body style="font-family:sans-serif;padding:40px;background:#f7f3ea;color:#221c14">
-<h1>A&amp;R Trend Radar</h1><p>First daily run pending — dashboard publishes here automatically.</p>
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A&R Trend Radar</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=IBM+Plex+Mono&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f3ea;--surface:#f4efe5;--paper:#ede6d8;--ink:#221c14;--muted:#6e6353;
+      --accent:#b14b2c;--line:#d2c7b2}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:14px/1.5 "Inter",-apple-system,sans-serif;
+     padding:28px;max-width:1100px;margin:0 auto}
+h1{font-family:"Cinzel",Georgia,serif;font-size:22px;letter-spacing:.04em;margin-bottom:4px}
+h2{font-family:"Cinzel",Georgia,serif;font-size:15px;margin:0 0 10px}
+.sub{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--muted);
+     margin-bottom:22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+      padding:16px;margin-bottom:16px;
+      box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 2px 6px -2px rgba(90,74,53,.16)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.chip{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:3px 10px;
+      font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px}
+.chip b{color:var(--accent)}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{text-align:left;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;
+   text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding:6px 8px;
+   border-bottom:1px solid var(--line)}
+td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+audio{height:28px;max-width:220px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;color:var(--muted)}
+</style></head><body>
+<h1>A&amp;R TREND RADAR</h1>
+<div class="sub">run 2026-09-14 · 1692 tracks · k=5 clusters ·
+silhouette 0.14 · sound-first trend detection (CLAP audio embeddings)</div>
+
+<div class="card">
+  <h2>Cluster 1 <span class="mono">— 20 tracks,
+      cohesion 0.82</span></h2>
+  <div class="chips">
+    <span class="chip">bpm <b>63–185</b></span>
+    <span class="chip">key bias <b>G min</b></span>
+    <span class="chip">energy <b>0.50</b></span>
+    <span class="chip">sources <b>DE·IT</b></span>
+  </div>
+  <table><tr><th>Preview</th><th>Track</th><th>Artist</th><th>Seen in</th><th>Sim</th></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/4/0/0/f40c4c83e4b6db4e154f9d54234e8919.mp3?hdnea=exp=1789386200~acl=/api/1/1/f/4/0/0/f40c4c83e4b6db4e154f9d54234e8919.mp3*~data=user_id=0,application_id=42~hmac=591ae9066215a4d2df8b2fd5c041e50b72ce46f872915ebb9131749d33e4e1b1"></audio></td>
+      <td>Godzilla</td><td>Eminem</td>
+      <td class="mono">chart:rap</td><td class="mono">0.91</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/d/1/d/0/d1d0f32d011c2139bcff3bf9b591cf67.mp3?hdnea=exp=1789386201~acl=/api/1/1/d/1/d/0/d1d0f32d011c2139bcff3bf9b591cf67.mp3*~data=user_id=0,application_id=42~hmac=77c301d35a6cc3697cef0a0ae7c9bf1d83aa31cdfe36c59440ee56ef3e66ad2b"></audio></td>
+      <td>Timeless</td><td>The Weeknd</td>
+      <td class="mono">chart:rnb</td><td class="mono">0.90</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/e/4/0/fe4ce0c7912e3a02f26be7ac4aab4f3d.mp3?hdnea=exp=1789386200~acl=/api/1/1/f/e/4/0/fe4ce0c7912e3a02f26be7ac4aab4f3d.mp3*~data=user_id=0,application_id=42~hmac=8210d51e7c49f8efddc274229fdf7c01ca503ef0e8e9f880124d53bee35a190d"></audio></td>
+      <td>Shabang</td><td>Drake</td>
+      <td class="mono">chart:rap</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/3/a/0/33a1fcaf2218102dd3bbdbf5588837b8.mp3?hdnea=exp=1789386200~acl=/api/1/1/3/3/a/0/33a1fcaf2218102dd3bbdbf5588837b8.mp3*~data=user_id=0,application_id=42~hmac=bd5d930c6c53c167e8549de032fd6998527072ab9e0e91f0b26a74aad540c6c7"></audio></td>
+      <td>Dark Thoughts</td><td>Lil Tecca</td>
+      <td class="mono">chart:rap</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/6/b/0/36b4a79e25837bb5f139acd943eca942.mp3?hdnea=exp=1789386203~acl=/api/1/1/3/6/b/0/36b4a79e25837bb5f139acd943eca942.mp3*~data=user_id=0,application_id=42~hmac=6c5d730abff1d5a0132a0a63d0aeb8429c23129065464e95a1c9075f5e782200"></audio></td>
+      <td>Backwards</td><td>Quavo</td>
+      <td class="mono">playlist:Brand New UK,playlist:Radar Weekly</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/5/c/0/15c3344c02fa406f09ece84fb66e171b.mp3?hdnea=exp=1789386200~acl=/api/1/1/1/5/c/0/15c3344c02fa406f09ece84fb66e171b.mp3*~data=user_id=0,application_id=42~hmac=4bfee5fd4ee0016b5c8c9a7e5dfc4672f2fb87a342028f05dea7d0fc2f62eb11"></audio></td>
+      <td>All Falls Down</td><td>Kanye West</td>
+      <td class="mono">chart:rap</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/9/b/0/f9bb7a7513752e176bd9686f4c7dc30e.mp3?hdnea=exp=1789389761~acl=/api/1/1/f/9/b/0/f9bb7a7513752e176bd9686f4c7dc30e.mp3*~data=user_id=0,application_id=42~hmac=ffd781d1fb603ca50c5cce75aefc1f3870bdec8521a1caef3c5ee87afc46bd03"></audio></td>
+      <td>ACTIN UP WITH SEXYY RED</td><td>Tommy Richman</td>
+      <td class="mono">chart:rap</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/e/2/0/0/e20ff1b84ea32883a21366e4d3116b9d.mp3?hdnea=exp=1789386200~acl=/api/1/1/e/2/0/0/e20ff1b84ea32883a21366e4d3116b9d.mp3*~data=user_id=0,application_id=42~hmac=b557867f4dcbef744c207f80c4655809ad3c75118d904cd85cd0fbf7f64244cb"></audio></td>
+      <td>Headlines (Explicit Version)</td><td>Drake</td>
+      <td class="mono">chart:rap</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/5/d/0/15d6b851b8286b1c169940d082785c8d.mp3?hdnea=exp=1789386201~acl=/api/1/1/1/5/d/0/15d6b851b8286b1c169940d082785c8d.mp3*~data=user_id=0,application_id=42~hmac=5a312ac8572aa4f4ede2c9b3fb513dbaacb490fb4bc4c2cf86b250a817001e88"></audio></td>
+      <td>RMB (Ring My Bell)</td><td>Aitch</td>
+      <td class="mono">chart:dance,playlist:Futurs Hits</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/2/d/0/f2dd01104dd5eddd844c242c04ff337d.mp3?hdnea=exp=1789386200~acl=/api/1/1/f/2/d/0/f2dd01104dd5eddd844c242c04ff337d.mp3*~data=user_id=0,application_id=42~hmac=8d369e58ca3b7bf7840a52412b45c3a2c2f8730fc198f6b4425c21965b07553a"></audio></td>
+      <td>Houdini</td><td>Eminem</td>
+      <td class="mono">chart:rap</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/f/d/0/2fd3ba3b1617860c6e8d856b96a44bb7.mp3?hdnea=exp=1789389761~acl=/api/1/1/2/f/d/0/2fd3ba3b1617860c6e8d856b96a44bb7.mp3*~data=user_id=0,application_id=42~hmac=9b7e992acca49cc962c2b09f0d1045417c052071db0d521c3ec3a53939a06cfe"></audio></td>
+      <td>Sugar On My Tongue</td><td>Tyler, The Creator</td>
+      <td class="mono">chart:rap</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/9/7/0/0979f5ec4da00681a82b8977c4603399.mp3?hdnea=exp=1789386200~acl=/api/1/1/0/9/7/0/0979f5ec4da00681a82b8977c4603399.mp3*~data=user_id=0,application_id=42~hmac=7467ce9080a6e8a66104f1392bb7f78ea1d78671148e1a531530fb0900f3e9cf"></audio></td>
+      <td>Hit 'Em Up (Single Version)</td><td>2Pac</td>
+      <td class="mono">chart:rap</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/1/8/0/5189b0fa9a0420e0bec62735d003e5a8.mp3?hdnea=exp=1789389761~acl=/api/1/1/5/1/8/0/5189b0fa9a0420e0bec62735d003e5a8.mp3*~data=user_id=0,application_id=42~hmac=73a1f4bf4d3962061bf55e4cc97b043e04246dcbdeb07d4bbee9f8c355b85102"></audio></td>
+      <td>Rider</td><td>Russ</td>
+      <td class="mono">chart:rap</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/4/a/0/f4a2cd616ccea4af3dbc44e6c3f90cd9.mp3?hdnea=exp=1789386200~acl=/api/1/1/f/4/a/0/f4a2cd616ccea4af3dbc44e6c3f90cd9.mp3*~data=user_id=0,application_id=42~hmac=07044207b40de2178142e0ae82ba5d23a6a1494f12496ba892c749e4e4649abd"></audio></td>
+      <td>Hypnotize (2007 Remaster)</td><td>The Notorious B.I.G.</td>
+      <td class="mono">chart:rap</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/4/4/0/a443c0b8d2c0d15c12053388746c2e60.mp3?hdnea=exp=1789386203~acl=/api/1/1/a/4/4/0/a443c0b8d2c0d15c12053388746c2e60.mp3*~data=user_id=0,application_id=42~hmac=68748ea0db0c93ca7793c6092734e8a77073c86b65fd9bdb11b6d60572bc0d27"></audio></td>
+      <td>Rips & fr33</td><td>D-Block Europe</td>
+      <td class="mono">playlist:Brand New UK</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/7/0/0/570bc08facf83ccee21cfbd364ba3e8d.mp3?hdnea=exp=1789386203~acl=/api/1/1/5/7/0/0/570bc08facf83ccee21cfbd364ba3e8d.mp3*~data=user_id=0,application_id=42~hmac=6dc2b43b3319eab0fa6e40b633662e83899041b16f2bd81160555d6546abab51"></audio></td>
+      <td>What's What</td><td>Implicit</td>
+      <td class="mono">playlist:Brand New UK</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/d/9/0/2d97c9cc7ffef5f6bc771319424354ab.mp3?hdnea=exp=1789386200~acl=/api/1/1/2/d/9/0/2d97c9cc7ffef5f6bc771319424354ab.mp3*~data=user_id=0,application_id=42~hmac=19e031f8f475a58a6d9ef458d5ee96fd44be3424314780f788e094b05c58a45e"></audio></td>
+      <td>Hell At Night (feat. Ella Langley)</td><td>BigXthaPlug</td>
+      <td class="mono">chart:rap</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/b/0/0/0/b00ef01bd593fc84d693f0d8eb665c92.mp3?hdnea=exp=1789386202~acl=/api/1/1/b/0/0/0/b00ef01bd593fc84d693f0d8eb665c92.mp3*~data=user_id=0,application_id=42~hmac=6c9343eea2f3dfac90d3f5e59ed7caf3d94e8a3f16415b33cce626f311e5fdb7"></audio></td>
+      <td>All My Exes</td><td>Lauren Alaina</td>
+      <td class="mono">chart:country</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/8/5/0/785e73b6069d7600a02ef6178dc8020b.mp3?hdnea=exp=1789386200~acl=/api/1/1/7/8/5/0/785e73b6069d7600a02ef6178dc8020b.mp3*~data=user_id=0,application_id=42~hmac=248bae60be091049b8d466d512e16330a06bf8fff449223520895eb589a94c1a"></audio></td>
+      <td>See You Again (feat. Charlie Puth)</td><td>Wiz Khalifa</td>
+      <td class="mono">chart:rap</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/d/2/3/0/d236757c1e73afbdf29640ff7195e862.mp3?hdnea=exp=1789386200~acl=/api/1/1/d/2/3/0/d236757c1e73afbdf29640ff7195e862.mp3*~data=user_id=0,application_id=42~hmac=5d7b9a6ba4ac9045d7aa8ab1b5f5b3ea5b827b17f7c1b78d9ef6586783b89297"></audio></td>
+      <td>Trap Queen</td><td>Fetty Wap</td>
+      <td class="mono">chart:rap</td><td class="mono">0.87</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Cluster 3 <span class="mono">— 20 tracks,
+      cohesion 0.82</span></h2>
+  <div class="chips">
+    <span class="chip">bpm <b>65–199</b></span>
+    <span class="chip">key bias <b>D maj</b></span>
+    <span class="chip">energy <b>0.60</b></span>
+    <span class="chip">sources <b>DE</b></span>
+  </div>
+  <table><tr><th>Preview</th><th>Track</th><th>Artist</th><th>Seen in</th><th>Sim</th></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/1/a/0/31ae4c0c8f8e8314250eda3ae4dd8efd.mp3?hdnea=exp=1789386202~acl=/api/1/1/3/1/a/0/31ae4c0c8f8e8314250eda3ae4dd8efd.mp3*~data=user_id=0,application_id=42~hmac=f8c79c938cd71cf275f1beaf621c50e841477fe205f224de7943fd4b19413dad"></audio></td>
+      <td>Beer Never Broke My Heart</td><td>Luke Combs</td>
+      <td class="mono">chart:country</td><td class="mono">0.90</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/6/2/c/0/62cc28a50d49b82faedacb7752ad8891.mp3?hdnea=exp=1789386202~acl=/api/1/1/6/2/c/0/62cc28a50d49b82faedacb7752ad8891.mp3*~data=user_id=0,application_id=42~hmac=c190cd52406cfabd33afd7f797db095b09a7ffe1ff4a88d5978a4add29e308e1"></audio></td>
+      <td>Sex on Fire</td><td>Kings Of Leon</td>
+      <td class="mono">chart:alternative</td><td class="mono">0.90</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/b/5/0/4b58ac310c331272df60891378cbbe49.mp3?hdnea=exp=1789386201~acl=/api/1/1/4/b/5/0/4b58ac310c331272df60891378cbbe49.mp3*~data=user_id=0,application_id=42~hmac=c2f7add01e8f914901f64ef1a8ec87f8edc8821d294a9bb605444bf0ea37f98b"></audio></td>
+      <td>Rockstar</td><td>Nickelback</td>
+      <td class="mono">chart:rock</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/6/6/0/f667e54de16c003d2862fd1d84978b0f.mp3?hdnea=exp=1789386201~acl=/api/1/1/f/6/6/0/f667e54de16c003d2862fd1d84978b0f.mp3*~data=user_id=0,application_id=42~hmac=2f3fbcffc433c4ce256969ae1f6961fc8e4aa78ee40424f4141612aa66c60063"></audio></td>
+      <td>It's My Life</td><td>Bon Jovi</td>
+      <td class="mono">chart:rock</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/9/f/c/0/9fc25d6ed5383281f9cef03f4091d6b0.mp3?hdnea=exp=1789386202~acl=/api/1/1/9/f/c/0/9fc25d6ed5383281f9cef03f4091d6b0.mp3*~data=user_id=0,application_id=42~hmac=633d43e7ffa504bf0c8c909ddcf2fa35f5c525aeddc6079f2b7e01b639ec93ca"></audio></td>
+      <td>Boulevard of Broken Dreams</td><td>Green Day</td>
+      <td class="mono">chart:alternative</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/d/e/0/ade088037b37214fc72fdc7a928e24a4.mp3?hdnea=exp=1789386202~acl=/api/1/1/a/d/e/0/ade088037b37214fc72fdc7a928e24a4.mp3*~data=user_id=0,application_id=42~hmac=7a46c82f46ec1f20a7f39938dc254fe3a805693f657b909c241d856beeb7e14b"></audio></td>
+      <td>Ain't No Love In Oklahoma (From Twisters: The Album)</td><td>Luke Combs</td>
+      <td class="mono">chart:country</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/d/9/6/0/d9684b4d9cc7082088f7bb6b2f8a9a7d.mp3?hdnea=exp=1789386202~acl=/api/1/1/d/9/6/0/d9684b4d9cc7082088f7bb6b2f8a9a7d.mp3*~data=user_id=0,application_id=42~hmac=bf504e8f64e7a16eb782a05a101bb27864b84e0e86d3edd5d4ee4e10ef7fa3f8"></audio></td>
+      <td>Think As You Drunk</td><td>Riley Green</td>
+      <td class="mono">chart:country</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/c/f/f/0/cff00ebab41d7c7283064c7780c62d56.mp3?hdnea=exp=1789389761~acl=/api/1/1/c/f/f/0/cff00ebab41d7c7283064c7780c62d56.mp3*~data=user_id=0,application_id=42~hmac=2e408ede5d67dd1678c15a9a2c702bbf4623695bcace52533ca968119aa3e602"></audio></td>
+      <td>Low Down Rolling Stone</td><td>Gary Clark Jr.</td>
+      <td class="mono">chart:rock</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/a/3/4/0/a34432d3c61d086fb842ed5202338e95.mp3?hdnea=exp=1789389761~acl=/api/1/1/a/3/4/0/a34432d3c61d086fb842ed5202338e95.mp3*~data=user_id=0,application_id=42~hmac=cce79bb13ef7360e4bcd18abc120d605a87ec66b27204d47adfb35b86b456619"></audio></td>
+      <td>Modern Love (2018 Remaster)</td><td>David Bowie</td>
+      <td class="mono">chart:rock</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/2/d/0/f2de4c960d31a1b98d37614f64bd1609.mp3?hdnea=exp=1789386202~acl=/api/1/1/f/2/d/0/f2de4c960d31a1b98d37614f64bd1609.mp3*~data=user_id=0,application_id=42~hmac=f08f54add0faa382f8313bdaef2b52f959bb28341270723a7241a76388237c3c"></audio></td>
+      <td>Better That Way</td><td>Charles Wesley Godwin</td>
+      <td class="mono">chart:country</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/6/7/0/f671cd1a0852ac1cd328124ecb922ede.mp3?hdnea=exp=1789386201~acl=/api/1/1/f/6/7/0/f671cd1a0852ac1cd328124ecb922ede.mp3*~data=user_id=0,application_id=42~hmac=e581e26ddd0ef4aec54ee8624c7506eac433891c432c14ebde5c3d43bd9997df"></audio></td>
+      <td>How You Remind Me</td><td>Nickelback</td>
+      <td class="mono">chart:rock</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/b/3/0/1b30f2b3d3de94094c62c6a24d22eae5.mp3?hdnea=exp=1789386202~acl=/api/1/1/1/b/3/0/1b30f2b3d3de94094c62c6a24d22eae5.mp3*~data=user_id=0,application_id=42~hmac=b6668aacf5833268a538b3b615df11af3919c2a509adafb12e97fae065827e94"></audio></td>
+      <td>When It Rains It Pours</td><td>Luke Combs</td>
+      <td class="mono">chart:country</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/9/5/6/0/956731ec41e3f56e47c73f3e2edae749.mp3?hdnea=exp=1789386202~acl=/api/1/1/9/5/6/0/956731ec41e3f56e47c73f3e2edae749.mp3*~data=user_id=0,application_id=42~hmac=10e087d795264c571a0f72d04a6ec0beadbfe879c5a8b75db5726d37512f15a8"></audio></td>
+      <td>Dirty Deeds Done Dirt Cheap</td><td>AC/DC</td>
+      <td class="mono">chart:metal</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/1/2/0/512ae1b47fbcf9be60eb7c32bfc68f06.mp3?hdnea=exp=1789386203~acl=/api/1/1/5/1/2/0/512ae1b47fbcf9be60eb7c32bfc68f06.mp3*~data=user_id=0,application_id=42~hmac=e45574f5a09c18fba7279f157fdfae40c23c896161798d23d7a3878094b920aa"></audio></td>
+      <td>The Kid With the Crown</td><td>This Is Lorelei</td>
+      <td class="mono">playlist:Brand New UK,playlist:Radar Weekly,playlist:New Cou</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/c/1/6/0/c163b96d6e8947c162a0cb3403c403ba.mp3?hdnea=exp=1789386204~acl=/api/1/1/c/1/6/0/c163b96d6e8947c162a0cb3403c403ba.mp3*~data=user_id=0,application_id=42~hmac=0242be9cbf7fcb24271cdc8cd89a835452dcd28a57e73a5b8c184996201fa1d0"></audio></td>
+      <td>Made In A Bottle</td><td>Dustin Lynch</td>
+      <td class="mono">playlist:New Country</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/c/1/0/7c1d95d2fe6ad479f66d912db049df50.mp3?hdnea=exp=1789386201~acl=/api/1/1/7/c/1/0/7c1d95d2fe6ad479f66d912db049df50.mp3*~data=user_id=0,application_id=42~hmac=a27cbbc09fee624bfd72c376ead803b6e36558ca4d6767f23a2d8f7db6d32880"></audio></td>
+      <td>Livin' On A Prayer</td><td>Bon Jovi</td>
+      <td class="mono">chart:rock</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/7/c/0/27c313fdbf4ae7aec1ac264c10e110e2.mp3?hdnea=exp=1789386201~acl=/api/1/1/2/7/c/0/27c313fdbf4ae7aec1ac264c10e110e2.mp3*~data=user_id=0,application_id=42~hmac=08ae018a9bc78eee2bf58000fa331a99edcf92c76f0599c298d81968aba5a9d2"></audio></td>
+      <td>Come As You Are</td><td>Nirvana</td>
+      <td class="mono">chart:rock</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/d/2/5/0/d2560d93019839f09b353158a531ff19.mp3?hdnea=exp=1789386201~acl=/api/1/1/d/2/5/0/d2560d93019839f09b353158a531ff19.mp3*~data=user_id=0,application_id=42~hmac=9380cc1f9d813410e0525b0adde6d211e86cd41cffedf8ebc1150d022e460704"></audio></td>
+      <td>Call Me</td><td>Blondie</td>
+      <td class="mono">chart:rock</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/4/f/0/24f2b12f92911a39379d2f85133c696a.mp3?hdnea=exp=1789386204~acl=/api/1/1/2/4/f/0/24f2b12f92911a39379d2f85133c696a.mp3*~data=user_id=0,application_id=42~hmac=c6e1e07401151e5ca403ad8497a4d71972eeec095e24da83096c2b44a3a2bae4"></audio></td>
+      <td>Missing You Night</td><td>Justin Moore</td>
+      <td class="mono">playlist:New Country</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/4/6/0/14697f3e5c68b81b311f3faed580f770.mp3?hdnea=exp=1789386202~acl=/api/1/1/1/4/6/0/14697f3e5c68b81b311f3faed580f770.mp3*~data=user_id=0,application_id=42~hmac=6a4729b1af52f8882fb8fdab9176564572ee77561763974405c9cb92c84910c2"></audio></td>
+      <td>Woman</td><td>Kane Brown</td>
+      <td class="mono">chart:country</td><td class="mono">0.88</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Cluster 0 <span class="mono">— 20 tracks,
+      cohesion 0.81</span></h2>
+  <div class="chips">
+    <span class="chip">bpm <b>50–199</b></span>
+    <span class="chip">key bias <b>F min</b></span>
+    <span class="chip">energy <b>0.54</b></span>
+    <span class="chip">sources <b>DE·IT</b></span>
+  </div>
+  <table><tr><th>Preview</th><th>Track</th><th>Artist</th><th>Seen in</th><th>Sim</th></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/9/5/c/0/95c99a4a5dc9b9df5eab62c4c1f3aee7.mp3?hdnea=exp=1789389760~acl=/api/1/1/9/5/c/0/95c99a4a5dc9b9df5eab62c4c1f3aee7.mp3*~data=user_id=0,application_id=42~hmac=b73ea9931bfb76d6c968ba26d84fdab6662b702a078924f945d291efbf9922d0"></audio></td>
+      <td>Call Me When You Break Up</td><td>Selena Gomez</td>
+      <td class="mono">chart:pop</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/e/c/5/0/ec54f80e282974bda6d26edb8ce50935.mp3?hdnea=exp=1789386201~acl=/api/1/1/e/c/5/0/ec54f80e282974bda6d26edb8ce50935.mp3*~data=user_id=0,application_id=42~hmac=982baee073378d01de80ef23f47d685709a59feb9d9c0e2091553dc0b5d4c845"></audio></td>
+      <td>Borderline</td><td>Tove Lo</td>
+      <td class="mono">chart:dance</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/b/d/0/4bdc5739500b33a485e3ad3c677ce2bd.mp3?hdnea=exp=1789386203~acl=/api/1/1/4/b/d/0/4bdc5739500b33a485e3ad3c677ce2bd.mp3*~data=user_id=0,application_id=42~hmac=2ed81ec4b53019f3082dc7381695fddab4a0a1947d66739571ec1b94826fad66"></audio></td>
+      <td>Take Me Away (French Version)</td><td>Mike Demero</td>
+      <td class="mono">playlist:Futurs Hits</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/e/9/0/1e9ac82bfa9c61a0c202462f1e2d413d.mp3?hdnea=exp=1789386202~acl=/api/1/1/1/e/9/0/1e9ac82bfa9c61a0c202462f1e2d413d.mp3*~data=user_id=0,application_id=42~hmac=f96df68f384612d45cbbb7cc4c4c8813d0e98a9f3570d3c23aab3f99d716243b"></audio></td>
+      <td>Evacuate The Dancefloor (Radio Edit)</td><td>Cascada</td>
+      <td class="mono">chart:electro</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/8/e/0/78e56ce103487a2c3395c0e6dff48a2f.mp3?hdnea=exp=1789389760~acl=/api/1/1/7/8/e/0/78e56ce103487a2c3395c0e6dff48a2f.mp3*~data=user_id=0,application_id=42~hmac=bea0f12e9e96079ccd92b2cfb33dad1abfcd88f5eb11ca0217523c0c08a5cf63"></audio></td>
+      <td>Sorry</td><td>Justin Bieber</td>
+      <td class="mono">chart:pop</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/c/1/0/3c19a82aeffd2f6f6adb63c4d8548e06.mp3?hdnea=exp=1789386201~acl=/api/1/1/3/c/1/0/3c19a82aeffd2f6f6adb63c4d8548e06.mp3*~data=user_id=0,application_id=42~hmac=928da7c02f30553bb6da8c265a1cb6bd50360af226a7ad65dc43b49111560214"></audio></td>
+      <td>Starboy</td><td>The Weeknd</td>
+      <td class="mono">chart:rnb</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/f/9/0/1f9f1a3fb5d416946fd37bed6a88f416.mp3?hdnea=exp=1789386203~acl=/api/1/1/1/f/9/0/1f9f1a3fb5d416946fd37bed6a88f416.mp3*~data=user_id=0,application_id=42~hmac=966e47cced1ffd04520a27fcbf27bedc04f25349496d715384f715fed3d4927a"></audio></td>
+      <td>Sur la piste</td><td>Eva</td>
+      <td class="mono">playlist:Futurs Hits</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/b/0/c/0/b0cf2efcde76fb2e63d594fa89e5dd49.mp3?hdnea=exp=1789386203~acl=/api/1/1/b/0/c/0/b0cf2efcde76fb2e63d594fa89e5dd49.mp3*~data=user_id=0,application_id=42~hmac=b173da1f5d7556169bca04457c8e82ba8e7e71cc005cadce254d3e153ab903f8"></audio></td>
+      <td>Question Of The Day</td><td>Chloe Qisha</td>
+      <td class="mono">playlist:Brand New UK,playlist:Radar Weekly</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/6/7/0/367e45ecbf07a341e248b400f51fc544.mp3?hdnea=exp=1789386200~acl=/api/1/1/3/6/7/0/367e45ecbf07a341e248b400f51fc544.mp3*~data=user_id=0,application_id=42~hmac=4db0ff013c3a0758a87e5b480ef65a166480dd1178c239227403ffcda0153707"></audio></td>
+      <td>Houdini</td><td>Dua Lipa</td>
+      <td class="mono">chart:pop</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/5/c/0/f5cb69ac2d8c031b7591e6a4b61af4e3.mp3?hdnea=exp=1789386201~acl=/api/1/1/f/5/c/0/f5cb69ac2d8c031b7591e6a4b61af4e3.mp3*~data=user_id=0,application_id=42~hmac=4b347139e48aac4a8c6e6ff40ffa5e76ed9b633f7ec36d1330e4d21c7ea8bc9a"></audio></td>
+      <td>Saturday Night</td><td>Ravyn Lenae</td>
+      <td class="mono">chart:rnb</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/1/4/0/f142bace73d79e8ede60140353514afb.mp3?hdnea=exp=1789386200~acl=/api/1/1/f/1/4/0/f142bace73d79e8ede60140353514afb.mp3*~data=user_id=0,application_id=42~hmac=ca8f41e93a980e73ecbf2809364c3c11ca07ccc22fa7ca3e07635e8cb65997ed"></audio></td>
+      <td>Be Her</td><td>Ella Langley</td>
+      <td class="mono">chart:pop,chart:country,rss:most-played</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/6/4/9/0/64964cf78e664f63594a3190e1e834eb.mp3?hdnea=exp=1789386201~acl=/api/1/1/6/4/9/0/64964cf78e664f63594a3190e1e834eb.mp3*~data=user_id=0,application_id=42~hmac=345d2e957ca807a40d8f8245164662657f10152437af2c36742661286ce1f269"></audio></td>
+      <td>I Feel It Coming</td><td>The Weeknd</td>
+      <td class="mono">chart:rnb</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/c/9/f/0/c9f714fc62111fc77c58e190a5a4bc5c.mp3?hdnea=exp=1789386201~acl=/api/1/1/c/9/f/0/c9f714fc62111fc77c58e190a5a4bc5c.mp3*~data=user_id=0,application_id=42~hmac=ff78309a285c394eb1d21a7b4ae75ed8800a67d9b49eeda86d21163b54702f44"></audio></td>
+      <td>Dancing In The Flames</td><td>The Weeknd</td>
+      <td class="mono">chart:rnb</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/c/2/7/0/c27d817565b9df8ab6393bb8202b58b9.mp3?hdnea=exp=1789386202~acl=/api/1/1/c/2/7/0/c27d817565b9df8ab6393bb8202b58b9.mp3*~data=user_id=0,application_id=42~hmac=e80731b116213cefb779fe4bdc4889e77e16a0c41c4c1d5d87513f736e6cf84a"></audio></td>
+      <td>STAY</td><td>The Kid LAROI</td>
+      <td class="mono">chart:alternative</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/b/3/5/0/b3559d924258febe6597259556c2d713.mp3?hdnea=exp=1789389760~acl=/api/1/1/b/3/5/0/b3559d924258febe6597259556c2d713.mp3*~data=user_id=0,application_id=42~hmac=7e579c57db502a2ffa10ae78b37a9d0960715bcdd9ae87fec8166400fbdadddc"></audio></td>
+      <td>hot shit</td><td>CIL</td>
+      <td class="mono">chart:pop</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/c/8/6/0/c869bc823c5c31777e8da65ff6cd735a.mp3?hdnea=exp=1789386200~acl=/api/1/1/c/8/6/0/c869bc823c5c31777e8da65ff6cd735a.mp3*~data=user_id=0,application_id=42~hmac=5f57e2b4d3a031cbd54405bfa8e843f65a5bad73434894676b1a1d8645b1fbb8"></audio></td>
+      <td>SWIM</td><td>BTS</td>
+      <td class="mono">chart:pop</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/6/2/5/0/6254df268039f4200674df6d63701e33.mp3?hdnea=exp=1789386201~acl=/api/1/1/6/2/5/0/6254df268039f4200674df6d63701e33.mp3*~data=user_id=0,application_id=42~hmac=4ce924bdbf931a1ab72a07ec2ef096e40f9bcd4ddeaabeb3423509b0f7916c0d"></audio></td>
+      <td>Dracula (with JENNIE)</td><td>Tame Impala</td>
+      <td class="mono">chart:dance,chart:alternative</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/7/3/0/373a1a136a155c5a2dec525e17d3ebd3.mp3?hdnea=exp=1789386203~acl=/api/1/1/3/7/3/0/373a1a136a155c5a2dec525e17d3ebd3.mp3*~data=user_id=0,application_id=42~hmac=d7c93eae982e661a4f6fb1677916bcd6f49946276abd0a7ad6e04a98d95db576"></audio></td>
+      <td>BRB (from Forgotten Island)</td><td>H.E.R.</td>
+      <td class="mono">playlist:Radar Weekly</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/d/6/0/0d63bac2a2dcdf064fc9987bf363cb76.mp3?hdnea=exp=1789386201~acl=/api/1/1/0/d/6/0/0d63bac2a2dcdf064fc9987bf363cb76.mp3*~data=user_id=0,application_id=42~hmac=3b2c27c5e97d66ef8fab47c2f79c3b53db6f2691eb6c0293edc5301180693e86"></audio></td>
+      <td>Closer</td><td>The Chainsmokers</td>
+      <td class="mono">chart:dance,chart:electro</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/9/0/0/7902a2830e2ca05198a8525c2260d351.mp3?hdnea=exp=1789386202~acl=/api/1/1/7/9/0/0/7902a2830e2ca05198a8525c2260d351.mp3*~data=user_id=0,application_id=42~hmac=4c6ad5166f2e2af80605cf6ca2abbf68314fec886a5a9e252494d4c31e164cd9"></audio></td>
+      <td>12 to 12</td><td>sombr</td>
+      <td class="mono">chart:alternative</td><td class="mono">0.87</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Cluster 4 <span class="mono">— 20 tracks,
+      cohesion 0.80</span></h2>
+  <div class="chips">
+    <span class="chip">bpm <b>55–199</b></span>
+    <span class="chip">key bias <b>C maj</b></span>
+    <span class="chip">energy <b>0.50</b></span>
+    <span class="chip">sources <b>DE·IT</b></span>
+  </div>
+  <table><tr><th>Preview</th><th>Track</th><th>Artist</th><th>Seen in</th><th>Sim</th></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/1/c/0/f1ca36dec9e1f4107b304a95b1e3ebda.mp3?hdnea=exp=1789386202~acl=/api/1/1/f/1/c/0/f1ca36dec9e1f4107b304a95b1e3ebda.mp3*~data=user_id=0,application_id=42~hmac=1aeafbbfd25dabdb42e480ed8dfc2d868f02049028a290d81df2686a32a32fc2"></audio></td>
+      <td>Beautiful Things</td><td>Megan Moroney</td>
+      <td class="mono">chart:country</td><td class="mono">0.89</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/7/c/0/07c0dd5ffc6f37b1d203bff9c6fe7361.mp3?hdnea=exp=1789386204~acl=/api/1/1/0/7/c/0/07c0dd5ffc6f37b1d203bff9c6fe7361.mp3*~data=user_id=0,application_id=42~hmac=fef58296d0a9ceef5eca949167e6d246a4a676471a1d1d60b0311989e129266a"></audio></td>
+      <td>Photograph of a Cyclone</td><td>Searows</td>
+      <td class="mono">playlist:New Folk</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/b/c/0/fbcf07aa3f4d55e9fb6a420f34c7d3d5.mp3?hdnea=exp=1789386204~acl=/api/1/1/f/b/c/0/fbcf07aa3f4d55e9fb6a420f34c7d3d5.mp3*~data=user_id=0,application_id=42~hmac=39488fe67c258eb6bc67232e57e461f6ab96138148cd0bbd3f11f53ba712f0c5"></audio></td>
+      <td>What Does Forever Look Like?</td><td>Tommy WÁ</td>
+      <td class="mono">playlist:New Folk</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/0/3/0/303556c4e250188621384fe05f2c8f2b.mp3?hdnea=exp=1789386204~acl=/api/1/1/3/0/3/0/303556c4e250188621384fe05f2c8f2b.mp3*~data=user_id=0,application_id=42~hmac=30939a67421308822c753a57e0bced0f0b66824623ba8c377309be5740a453ad"></audio></td>
+      <td>Beautiful Mind</td><td>Alex Lambert</td>
+      <td class="mono">playlist:New Country</td><td class="mono">0.88</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/6/5/1/0/651401665dd62177b79c37eb6a283da5.mp3?hdnea=exp=1789389762~acl=/api/1/1/6/5/1/0/651401665dd62177b79c37eb6a283da5.mp3*~data=user_id=0,application_id=42~hmac=a34fe674d385fb7eda967ce1856fd6573a77ee54cfd1f991f4f8b4dfe7d5ceef"></audio></td>
+      <td>Don't Wait For Love (Album Version)</td><td>Will Downing</td>
+      <td class="mono">chart:rnb</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/9/5/4/0/95425870b85440958d988cffdf455a05.mp3?hdnea=exp=1789386202~acl=/api/1/1/9/5/4/0/95425870b85440958d988cffdf455a05.mp3*~data=user_id=0,application_id=42~hmac=1fb2ca23e51e2c680c15a13fcee1d16648570362da3572f239e41bc2c1ebfe72"></audio></td>
+      <td>Phone, Keys, Wallet</td><td>Lainey Wilson</td>
+      <td class="mono">chart:country,playlist:New Country</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/4/e/0/34eae5908c114f3eb94ba01079276173.mp3?hdnea=exp=1789386204~acl=/api/1/1/3/4/e/0/34eae5908c114f3eb94ba01079276173.mp3*~data=user_id=0,application_id=42~hmac=e36974006f68c0460e501fcff7c444f627385eddb87e77ac02686ae927606fec"></audio></td>
+      <td>If I Were The Devil</td><td>Austin Snell</td>
+      <td class="mono">playlist:New Country</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/9/8/0/5988fdf9d73902cf4827a175f31031e9.mp3?hdnea=exp=1789389762~acl=/api/1/1/5/9/8/0/5988fdf9d73902cf4827a175f31031e9.mp3*~data=user_id=0,application_id=42~hmac=12c7809cbab34ecd8669c129ca80b65d37e6d2500467658b5f571baca1ffe679"></audio></td>
+      <td>Wake up Everybody (feat. Common & Melanie Fiona)</td><td>John Legend</td>
+      <td class="mono">chart:rnb</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/b/8/0/4b8ecdca3c0f424edcf2e8159129caf9.mp3?hdnea=exp=1789386204~acl=/api/1/1/4/b/8/0/4b8ecdca3c0f424edcf2e8159129caf9.mp3*~data=user_id=0,application_id=42~hmac=7f9262f67e2a64e4907206c70ef5d72002a14007083a7b965cc20344e4bbab3e"></audio></td>
+      <td>Choppin' Wood (feat. Brent Cobb)</td><td>Zach John King</td>
+      <td class="mono">playlist:New Country</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/c/3/0/3c3c47d36160ff0e28c5a7db1e32729c.mp3?hdnea=exp=1789386204~acl=/api/1/1/3/c/3/0/3c3c47d36160ff0e28c5a7db1e32729c.mp3*~data=user_id=0,application_id=42~hmac=1fdf67c2db779978d8c3a471a63aa5649da942c6cc17bc35c227da1d2e66a689"></audio></td>
+      <td>The Way That It Wasn’t</td><td>Thelma & James</td>
+      <td class="mono">playlist:New Country</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/c/0/9/0/c09921aa75ffc026fe9f934698c9d456.mp3?hdnea=exp=1789386204~acl=/api/1/1/c/0/9/0/c09921aa75ffc026fe9f934698c9d456.mp3*~data=user_id=0,application_id=42~hmac=5efb34f2c943a56dcb1947acc9cabb0d5d2403a3a49743d15e71cf580801b51a"></audio></td>
+      <td>Endless Texas Summer</td><td>Chaparelle</td>
+      <td class="mono">playlist:New Country</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/d/a/c/0/dac37d67eed0aa3b93f76d618ee02ae6.mp3?hdnea=exp=1789386202~acl=/api/1/1/d/a/c/0/dac37d67eed0aa3b93f76d618ee02ae6.mp3*~data=user_id=0,application_id=42~hmac=f6496e775d6001bd81fc4de25f7ab2051d67a0c05026a999044bb091d919379f"></audio></td>
+      <td>Last Night</td><td>Morgan Wallen</td>
+      <td class="mono">chart:country,rss:most-played</td><td class="mono">0.87</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/9/7/0/597a83bc1aad2dc52435b507c1e81ca4.mp3?hdnea=exp=1789386200~acl=/api/1/1/5/9/7/0/597a83bc1aad2dc52435b507c1e81ca4.mp3*~data=user_id=0,application_id=42~hmac=671904b88d978d3d2cfe0f50ffcbb562812bb45c2cd747503b5c6f110780d164"></audio></td>
+      <td>Ordinary</td><td>Alex Warren</td>
+      <td class="mono">chart:pop</td><td class="mono">0.86</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/e/1/0/4e15fe3a202891192dc65de92f5e56c8.mp3?hdnea=exp=1789386204~acl=/api/1/1/4/e/1/0/4e15fe3a202891192dc65de92f5e56c8.mp3*~data=user_id=0,application_id=42~hmac=186310f329a8d185d1153999591b49166406b9b20086b7b20314164d6592d42c"></audio></td>
+      <td>Same Circus</td><td>Carly Pearce</td>
+      <td class="mono">playlist:New Country</td><td class="mono">0.86</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/f/2/0/0f22e56b57b5086831e81297bea2d45b.mp3?hdnea=exp=1789386204~acl=/api/1/1/0/f/2/0/0f22e56b57b5086831e81297bea2d45b.mp3*~data=user_id=0,application_id=42~hmac=bf8adc8d513a74dd7888ad9afb355eb36185a6c0002d26128bf6761c4b0659c8"></audio></td>
+      <td>Always On My Mind (feat. Carter Faith)</td><td>Ty Myers</td>
+      <td class="mono">playlist:New Country</td><td class="mono">0.86</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/6/a/0/0/6a0a888220aacb02575d47594510eb8f.mp3?hdnea=exp=1789386204~acl=/api/1/1/6/a/0/0/6a0a888220aacb02575d47594510eb8f.mp3*~data=user_id=0,application_id=42~hmac=58389d2e00eb9034f1dafdba656798ae3e6cddd69cea21a4fc67a96bd659d8b4"></audio></td>
+      <td>True Feeling</td><td>Hans Williams</td>
+      <td class="mono">playlist:New Folk</td><td class="mono">0.86</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/9/4/1/0/9416a3e23d01e17539db2f7b610da238.mp3?hdnea=exp=1789386204~acl=/api/1/1/9/4/1/0/9416a3e23d01e17539db2f7b610da238.mp3*~data=user_id=0,application_id=42~hmac=72cd97c2e53a9bd29d97b8818bfa9f6f02baf4e685e9ae308b9b41abfd4530af"></audio></td>
+      <td>Girl Who Could Sing</td><td>Wynonna</td>
+      <td class="mono">playlist:New Country</td><td class="mono">0.86</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/c/4/0/3c435169f1bdad6a1aa7e52a61360bf8.mp3?hdnea=exp=1789386204~acl=/api/1/1/3/c/4/0/3c435169f1bdad6a1aa7e52a61360bf8.mp3*~data=user_id=0,application_id=42~hmac=429dc8d644e4103d41ec4b5fb6b9167e94aba0bfef6228966a5190898360fd44"></audio></td>
+      <td>Maybe When I'm Ready</td><td>Miya Folick</td>
+      <td class="mono">playlist:New Folk</td><td class="mono">0.86</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/9/1/0/191a2d6fc45f4f03027f76e860d60ce6.mp3?hdnea=exp=1789386201~acl=/api/1/1/1/9/1/0/191a2d6fc45f4f03027f76e860d60ce6.mp3*~data=user_id=0,application_id=42~hmac=757989f722213a5afe1b08c611aaa296ff103631a967a670b22216e6bd1e417f"></audio></td>
+      <td>Half The World Away</td><td>Oasis</td>
+      <td class="mono">chart:rock,chart:alternative</td><td class="mono">0.86</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/5/7/0/45779cf15187cb56c8dfc3691afca1f2.mp3?hdnea=exp=1789386204~acl=/api/1/1/4/5/7/0/45779cf15187cb56c8dfc3691afca1f2.mp3*~data=user_id=0,application_id=42~hmac=ad383df40954835148098156b1f3540476c3fb059d3a163e8053339cd675ed21"></audio></td>
+      <td>Tourist</td><td>Reba McEntire</td>
+      <td class="mono">playlist:New Country</td><td class="mono">0.86</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Cluster 2 <span class="mono">— 20 tracks,
+      cohesion 0.77</span></h2>
+  <div class="chips">
+    <span class="chip">bpm <b>54–258</b></span>
+    <span class="chip">key bias <b>D maj</b></span>
+    <span class="chip">energy <b>0.44</b></span>
+    <span class="chip">sources <b>DE·IT</b></span>
+  </div>
+  <table><tr><th>Preview</th><th>Track</th><th>Artist</th><th>Seen in</th><th>Sim</th></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/d/2/0/5d2c6cbd01f0ebc95c4917058e97708e.mp3?hdnea=exp=1789386203~acl=/api/1/1/5/d/2/0/5d2c6cbd01f0ebc95c4917058e97708e.mp3*~data=user_id=0,application_id=42~hmac=7b2cd8572966c7feb1fd8acc050cc2deae08a622f2eb1069420b0f86e8490e87"></audio></td>
+      <td>Twenty (feat. Michael Broening)</td><td>Dee Lucas</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.86</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/0/9/0/4093e4c7791da3ab2cd144537c2e2111.mp3?hdnea=exp=1789386203~acl=/api/1/1/4/0/9/0/4093e4c7791da3ab2cd144537c2e2111.mp3*~data=user_id=0,application_id=42~hmac=f68ade160405ddfac20fd442d742dc1a161e7ac2a1b7a9727a1fd15730531506"></audio></td>
+      <td>Let's Hold Hands</td><td>Euge Groove</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.85</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/c/4/0/2c41e4042be242950ee64ef1ae5ee3dc.mp3?hdnea=exp=1789386203~acl=/api/1/1/2/c/4/0/2c41e4042be242950ee64ef1ae5ee3dc.mp3*~data=user_id=0,application_id=42~hmac=dfa7c048740aacfc4bf528a691063ed54857530e6445970d8a8b143851f0c3d6"></audio></td>
+      <td>Ear Candy</td><td>Pieces of a Dream</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.85</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/1/d/9/0/1d9ed5b6eb65a39cf64e85e4fa5afd44.mp3?hdnea=exp=1789386203~acl=/api/1/1/1/d/9/0/1d9ed5b6eb65a39cf64e85e4fa5afd44.mp3*~data=user_id=0,application_id=42~hmac=916c5065371e79896b648a069b8d87c53806137783663eab0c2bae8571d6cd20"></audio></td>
+      <td>Cascade</td><td>Ron King</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.84</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/b/4/a/0/b4a2839ba4c264a2dd40fea3ebef697b.mp3?hdnea=exp=1789386203~acl=/api/1/1/b/4/a/0/b4a2839ba4c264a2dd40fea3ebef697b.mp3*~data=user_id=0,application_id=42~hmac=dcef69f8ba1d1b0a6dbe51dad4733be45e09a2984487f92376ced261a570c6e5"></audio></td>
+      <td>Live n' Learn (Radio Version)</td><td>Cal Harris Jr.</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.83</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/b/c/0/5bc4eeedb016c79e791d0074e81940bb.mp3?hdnea=exp=1789386203~acl=/api/1/1/5/b/c/0/5bc4eeedb016c79e791d0074e81940bb.mp3*~data=user_id=0,application_id=42~hmac=1bb98031874ea4311f8d18b3edb31400e2e561b1a33fa88ddf43ddf92fccd53d"></audio></td>
+      <td>Funk Foot</td><td>Walter Beasley</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.83</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/b/a/0/4bae93cd0674d6a938b8bb14f1392b56.mp3?hdnea=exp=1789386203~acl=/api/1/1/4/b/a/0/4bae93cd0674d6a938b8bb14f1392b56.mp3*~data=user_id=0,application_id=42~hmac=11bd2e9e8eddb96b7de8279bacabf986280e7214c58c5439084c69b9136b17d8"></audio></td>
+      <td>Cafe Amore</td><td>Spyro Gyra</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.83</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/6/a/0/46ae401312ce70d53972cd3b84bbcdf8.mp3?hdnea=exp=1789386203~acl=/api/1/1/4/6/a/0/46ae401312ce70d53972cd3b84bbcdf8.mp3*~data=user_id=0,application_id=42~hmac=f3ecda6dd5f18c517851387f05931a087686316b4aba24d3686060ab3f9db3cb"></audio></td>
+      <td>Betcha Don't Know</td><td>Najee</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.83</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/f/5/7/0/f579a6f813b605068b336a8c6e90012c.mp3?hdnea=exp=1789386203~acl=/api/1/1/f/5/7/0/f579a6f813b605068b336a8c6e90012c.mp3*~data=user_id=0,application_id=42~hmac=fc0aece279a43a178d620f90f0b9df06807459578f56852a0b176af33b22c790"></audio></td>
+      <td>Inside Your Heart</td><td>The Braxton Brothers</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.83</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/6/a/7/0/6a73259d36cce96aa38bc840cbee87c1.mp3?hdnea=exp=1789386203~acl=/api/1/1/6/a/7/0/6a73259d36cce96aa38bc840cbee87c1.mp3*~data=user_id=0,application_id=42~hmac=ad1f358e71b230770bdeb077eb7b5f9baa15926e5689a9fa45d44f6a88bd97cc"></audio></td>
+      <td>Love Is On The Way</td><td>Dave Koz</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.82</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/3/7/e/0/37e5ae08a537405063293b7733f8281a.mp3?hdnea=exp=1789386203~acl=/api/1/1/3/7/e/0/37e5ae08a537405063293b7733f8281a.mp3*~data=user_id=0,application_id=42~hmac=5e1ac9cd5204ed582aab80bf749bd552c088c99a7941a36e5542616e533cf8f2"></audio></td>
+      <td>Who's That Lady</td><td>Peter White</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.82</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/2/9/0/229b6ba1cee048d84b0e27da2b2f52f5.mp3?hdnea=exp=1789386203~acl=/api/1/1/2/2/9/0/229b6ba1cee048d84b0e27da2b2f52f5.mp3*~data=user_id=0,application_id=42~hmac=8823865d55e477ade1d8b8a3a73030908bd64bb87e2706b925d9d21d37aef46e"></audio></td>
+      <td>Lucy's</td><td>Mindi Abair</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.82</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/5/3/c/0/53c4fad7a2558de61fd70146dbee649d.mp3?hdnea=exp=1789386203~acl=/api/1/1/5/3/c/0/53c4fad7a2558de61fd70146dbee649d.mp3*~data=user_id=0,application_id=42~hmac=981f872b0c0ada2e89cdf56fa9d5cf73b21556534165cb5c6cdcc8f53e338778"></audio></td>
+      <td>Ocean Blue</td><td>Earl Klugh</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.82</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/4/c/3/0/4c3b57ed49facec4e63961b2820ea70a.mp3?hdnea=exp=1789386203~acl=/api/1/1/4/c/3/0/4c3b57ed49facec4e63961b2820ea70a.mp3*~data=user_id=0,application_id=42~hmac=1ead5a0132b4db4a3a62ebce9687466f4b288b0de186e419eed42372612a9ab7"></audio></td>
+      <td>Summertime In NYC</td><td>Dave Koz</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.82</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/6/1/5/0/6155602a8256e51f884cd1b6c7710dad.mp3?hdnea=exp=1789386203~acl=/api/1/1/6/1/5/0/6155602a8256e51f884cd1b6c7710dad.mp3*~data=user_id=0,application_id=42~hmac=ce39b4b49234473776e236fe59443477e77345046db1d6c56643a1a0cc7b203e"></audio></td>
+      <td>Kisses in the Rain</td><td>Rick Braun</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.82</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/7/f/0/07fc1a115628887ade7d31ccaa50299d.mp3?hdnea=exp=1789386203~acl=/api/1/1/0/7/f/0/07fc1a115628887ade7d31ccaa50299d.mp3*~data=user_id=0,application_id=42~hmac=8ee0b419b257416b9fec79d097fcf7abd6e8ee107c9a258e3570d79ede67b3da"></audio></td>
+      <td>Soul Connection</td><td>Brian Simpson</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.82</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/2/4/c/0/24c5b3d18af695faf6b64402a06b7122.mp3?hdnea=exp=1789386203~acl=/api/1/1/2/4/c/0/24c5b3d18af695faf6b64402a06b7122.mp3*~data=user_id=0,application_id=42~hmac=85c698aef1dbef9428140a749b9763ba529dbdbf993829612a3da9062c40bed2"></audio></td>
+      <td>Looking Ahead</td><td>Anthony James Baker</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.82</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/7/d/5/0/7d55cf5a3e4a92257e22cb2ca98fc7a1.mp3?hdnea=exp=1789386203~acl=/api/1/1/7/d/5/0/7d55cf5a3e4a92257e22cb2ca98fc7a1.mp3*~data=user_id=0,application_id=42~hmac=4c1602dbbf9efd6975effacb71feb8d3a7483f10f545caeb03e8013114f74ec5"></audio></td>
+      <td>Fluid</td><td>Lin Rountree</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.82</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/0/7/3/0/073f6f5e171a6d8d0b03cbc513b821df.mp3?hdnea=exp=1789386203~acl=/api/1/1/0/7/3/0/073f6f5e171a6d8d0b03cbc513b821df.mp3*~data=user_id=0,application_id=42~hmac=a26c45d8582135915ab419521ebd3709d1ca7dea5ca58db4fa3df91f8924dec8"></audio></td>
+      <td>The Sunday After</td><td>Bill Evans</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.82</td></tr>
+  
+  <tr><td><audio controls preload="none" src="https://cdnt-preview.dzcdn.net/api/1/1/d/4/d/0/d4d18759894a72a0bcb5d48c021ecb5d.mp3?hdnea=exp=1789386203~acl=/api/1/1/d/4/d/0/d4d18759894a72a0bcb5d48c021ecb5d.mp3*~data=user_id=0,application_id=42~hmac=4e592953bda06f331124c10d619b915a63aff43f6973a54c8a629f195c307d7a"></audio></td>
+      <td>Broadway</td><td>Sonix</td>
+      <td class="mono">chart:jazz</td><td class="mono">0.82</td></tr>
+  </table>
+</div>
+
+<div class="sub">Previews are 30-second clips served by their source platforms and may expire.
+Velocity detection + LLM trend explanations land in the next milestone.</div>
+</body></html>
