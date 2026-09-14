@@ -1,56 +1,50 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Track record · A&R Trend Radar</title>
-<meta name="description" content="Sound-first trend detection: AI listens to ~1,500 new tracks daily, clusters them by how they sound, and flags sounds gaining ground before the charts notice.">
+<title>Track record · Radar</title>
+<meta name="description" content="Radar hears 1,500 new tracks a day, groups the ones that sound alike, and ranks each sound by how fast it is growing.">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head><body>
 <nav><div class="wrap">
-  <a class="logo" href="index.html">RADA<b>R</b></a>
-  <a class="item " href="index.html">Radar</a>
+  <a class="logo" href="index.html"><span class="eq"><i></i><i></i><i></i></span>RADA<b>R</b></a>
+  <a class="item " href="index.html">Sounds</a>
+  <a class="item " href="artists.html">Artists</a>
   <a class="item on" href="record.html">Track record</a>
-  <a class="item " href="about.html">How it works</a>
-  <span class="live"><span class="dot"></span>DAILY RUN · 2026-09-14</span>
+  <a class="item " href="about.html">Method</a>
+  <span class="live">RUN 2026-09-14</span>
 </div></nav>
 
 <div class="hero"><div class="wrap">
-  <h1>Every call, <i>on the record</i>.</h1>
-  <p class="sub">When a sound grows at least 40% above its 7-day baseline with statistical
-  significance (z ≥ 2), the radar flags it — timestamped, immutable. From then on, every daily
-  run checks whether tracks from that sound later reach a chart top-20. No cherry-picking:
-  misses stay on the board next to hits.</p>
+  <h1>Calls stay on <i>the board</i>.</h1>
+  <p class="sub">A sound is flagged when it grows ≥40% over its 7-day baseline with z ≥ 2.
+  Flags are timestamped, then scored against later chart top-20 hits. Misses included.</p>
 </div></div>
 <div class="wrap">
   
-  <h2>No calls yet — by design</h2>
-  <div class="note"><div class="who">Why the board is empty</div>
-  The radar went live on 2026-09-14 and refuses to flag anything until a sound has at
-  least 3 days of measured baseline. The first calls become possible on 2026-09-17.
-  A trend detector that makes calls without a baseline is a random-number generator with
-  good marketing — the empty board is the feature.</div>
+  <h2>Empty, on purpose</h2>
+  <div class="note"><div class="who">Why</div>
+  Radar went live 2026-09-14 and will not flag anything without 3 days of measured
+  baseline. First possible call: <b>2026-09-17</b>. A detector that calls trends
+  without a baseline is a coin flip with a UI.</div>
   
-  <h2>How calls are scored</h2>
+  <h2>How a call is scored</h2>
   <div class="how">
-    <div class="card"><b>Flag</b>A sound's share of the daily intake exceeds its 7-day baseline
-    by ≥40% with z ≥ 2. The call is committed to the database with its date and stats.</div>
-    <div class="card"><b>Watch</b>Every subsequent daily run checks the flagged sound's member
-    tracks against all chart top-20 positions observed that day.</div>
-    <div class="card"><b>Score</b>Each later chart appearance is recorded as evidence with its
-    date — building a verifiable "flagged N days before it charted" record.</div>
+    <div><b>Flag</b>Growth ≥40% over the 7-day baseline, z ≥ 2. Committed with date and stats.</div>
+    <div><b>Watch</b>Every later run checks the sound's tracks against that day's chart top-20s.</div>
+    <div><b>Score</b>Each hit is recorded as dated evidence: "flagged N days before it charted."</div>
   </div>
 </div>
 <div class="wrap"><footer>
-  Built solo as a working product: Deezer/iTunes/Reddit ingestion → CLAP audio embeddings →
-  persistent sound families → velocity vs 7-day baseline → Claude analyst notes, regenerated
-  daily by an unattended pipeline. <a href="validation-report.html">Clustering validation
-  (listenable, 78% genre purity)</a>. Previews stream fresh from their source platforms at
-  click time and belong to their rights holders.
+  A solo-built, self-running product: multi-source ingestion, CLAP audio embeddings, persistent
+  sound families, baseline-relative velocity, Claude analyst notes. Rebuilt daily by an
+  unattended pipeline. <a href="validation-report.html">Clustering validated by ear: 78% genre
+  purity</a>. Previews stream from their source platforms and belong to their rights holders.
 </footer></div>
 <div id="bar"><div class="wrap">
-  <button class="play">▶</button>
+  <img alt=""><button class="play">▶</button>
   <div class="meta"><div class="t"></div><div class="a"></div></div>
   <div class="prog"><i></i></div>
-  <span class="src">30s PREVIEW · DEEZER/ITUNES</span>
+  <span class="src">30s PREVIEW</span>
 </div></div>
 <script src="player.js"></script>
 </body></html>
