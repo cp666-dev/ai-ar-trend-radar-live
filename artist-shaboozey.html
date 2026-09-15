@@ -67,11 +67,97 @@
 
   <h2>Live</h2>
   
-  <div class="h2sub">No structured tour feed for this artist yet. Check their live pages:</div>
-  <div>
-    
-    <span class="pending">No public tour listings found.</span>
+  <div class="h2sub"><button class="linkbtn" id="nearme">📍 Sort by distance from me</button>
+  <span class="mono" id="geostatus"></span></div>
+  <div id="gigs">
+  
+  <div class="gig" data-lat="40.7599136" data-lon="-73.9803981">
+    <span class="mono">2026-10-03</span><b>Radio City Music Hall</b>
+    <span style="color:var(--muted)">New York, US</span>
+    <span class="near"></span>
+    <a href="https://www.ticketmaster.com/shaboozey-outlaws-never-die-tour-new-york-new-york-10-03-2026/event/3C006499B56B1630" target="_blank" rel="noopener">tickets ↗</a>
   </div>
+  
+  <div class="gig" data-lat="45.53118896" data-lon="-122.66645813">
+    <span class="mono">2026-10-20</span><b>Moda Center</b>
+    <span style="color:var(--muted)">Portland, US</span>
+    <span class="near"></span>
+    <a href="https://www.ticketmaster.com/shaboozey-outlaws-never-die-tour-portland-oregon-10-20-2026/event/0F00649591EF5D9A" target="_blank" rel="noopener">tickets ↗</a>
+  </div>
+  
+  <div class="gig" data-lat="38.880099" data-lon="-77.026165">
+    <span class="mono">2026-09-30</span><b>The Anthem</b>
+    <span style="color:var(--muted)">Washington, US</span>
+    <span class="near"></span>
+    <a href="https://www.ticketmaster.com/shaboozey-outlaws-never-die-tour-washington-district-of-columbia-09-30-2026/event/15006496C0D89F97" target="_blank" rel="noopener">tickets ↗</a>
+  </div>
+  
+  <div class="gig" data-lat="42.346806" data-lon="-71.097272">
+    <span class="mono">2026-09-28</span><b>MGM Music Hall at Fenway</b>
+    <span style="color:var(--muted)">Boston, US</span>
+    <span class="near"></span>
+    <a href="https://www.ticketmaster.com/shaboozey-outlaws-never-die-tour-boston-massachusetts-09-28-2026/event/010064940A8F4A20" target="_blank" rel="noopener">tickets ↗</a>
+  </div>
+  
+  <div class="gig" data-lat="47.6135664" data-lon="-122.3319103">
+    <span class="mono">2026-10-18</span><b>Paramount Theatre</b>
+    <span style="color:var(--muted)">Seattle, US</span>
+    <span class="near"></span>
+    <a href="https://www.ticketmaster.com/shaboozey-outlaws-never-die-tour-seattle-washington-10-18-2026/event/0F006497D7351865" target="_blank" rel="noopener">tickets ↗</a>
+  </div>
+  
+  <div class="gig" data-lat="41.96941873" data-lon="-87.65797212">
+    <span class="mono">2026-10-09</span><b>Aragon Ballroom</b>
+    <span style="color:var(--muted)">Chicago, US</span>
+    <span class="near"></span>
+    <a href="https://www.ticketmaster.com/shaboozey-outlaws-never-die-tour-chicago-illinois-10-09-2026/event/040064951F6D7F90" target="_blank" rel="noopener">tickets ↗</a>
+  </div>
+  
+  <div class="gig" data-lat="44.975183" data-lon="-93.263512">
+    <span class="mono">2026-10-10</span><b>Armory</b>
+    <span style="color:var(--muted)">Minneapolis, US</span>
+    <span class="near"></span>
+    <a href="https://www.ticketmaster.com/shaboozey-outlaws-never-die-tour-minneapolis-minnesota-10-10-2026/event/06006496CCF042E9" target="_blank" rel="noopener">tickets ↗</a>
+  </div>
+  
+  <div class="gig" data-lat="38.67209" data-lon="-90.59321">
+    <span class="mono">2026-09-16</span><b>The Factory</b>
+    <span style="color:var(--muted)">Saint Louis, US</span>
+    <span class="near"></span>
+    <a href="https://www.ticketmaster.com/shaboozey-outlaws-never-die-tour-saint-louis-missouri-09-16-2026/event/21006497D18B5B92" target="_blank" rel="noopener">tickets ↗</a>
+  </div>
+  
+  <div class="gig" data-lat="35.7734839" data-lon="-78.6428618">
+    <span class="mono">2026-09-22</span><b>Red Hat Amphitheater</b>
+    <span style="color:var(--muted)">Raleigh, US</span>
+    <span class="near"></span>
+    <a href="https://www.ticketmaster.com/shaboozey-outlaws-never-die-tour-raleigh-north-carolina-09-22-2026/event/2D006496F6F4D473" target="_blank" rel="noopener">tickets ↗</a>
+  </div>
+  
+  <div class="gig" data-lat="37.791419" data-lon="-122.413293">
+    <span class="mono">2026-10-23</span><b>The Masonic</b>
+    <span style="color:var(--muted)">San Francisco, US</span>
+    <span class="near"></span>
+    <a href="https://www.ticketmaster.com/shaboozey-outlaws-never-die-tour-san-francisco-california-10-23-2026/event/1C006495D0D5A69A" target="_blank" rel="noopener">tickets ↗</a>
+  </div>
+  
+  </div>
+  <script>
+  document.getElementById('nearme').addEventListener('click',()=>{
+    const st=document.getElementById('geostatus');st.textContent='locating...';
+    navigator.geolocation.getCurrentPosition(pos=>{
+      const{latitude:la,longitude:lo}=pos.coords,R=6371,
+      d=(a,b,c,e)=>{const p=Math.PI/180,x=Math.sin((c-a)*p/2)**2+Math.cos(a*p)*Math.cos(c*p)*Math.sin((e-b)*p/2)**2;return 2*R*Math.asin(Math.sqrt(x));};
+      const g=[...document.querySelectorAll('.gig')];
+      g.forEach(el=>{const gl=parseFloat(el.dataset.lat),gn=parseFloat(el.dataset.lon);
+        if(!isNaN(gl)){el._km=d(la,lo,gl,gn);
+          el.querySelector('.near').textContent=el._km<150?`NEAR YOU · ${el._km.toFixed(0)} km`:`${el._km.toFixed(0)} km`;}
+        else el._km=1e9;});
+      g.sort((a,b)=>a._km-b._km).forEach(el=>el.parentNode.appendChild(el));
+      st.textContent='';
+    },()=>{st.textContent='location unavailable';});
+  });
+  </script>
   
 
   <h2>Channels</h2>
