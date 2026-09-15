@@ -110,7 +110,21 @@ tr:hover td{background:var(--surface)}
 
 .artists{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
 .artist{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
-        padding:18px;display:flex;gap:14px;align-items:center}
+        padding:18px;display:flex;gap:14px;align-items:center;transition:background .15s}
+a.artist:hover{background:var(--hover)}
+.avatar{width:118px;height:118px;min-width:118px;border-radius:50%;object-fit:cover;
+        border:3px solid var(--flare)}
+span.avatar{background:var(--raised);display:flex;align-items:center;justify-content:center;
+            font-weight:800;font-size:40px;color:var(--faint)}
+.linkbtn{display:inline-block;background:var(--raised);border:1px solid var(--line);
+         border-radius:99px;padding:6px 14px;font-size:12.5px;font-weight:700;margin:0 8px 8px 0}
+.linkbtn:hover{background:var(--flare);color:#1c0d06}
+.gig{display:flex;gap:14px;align-items:baseline;padding:9px 2px;
+     border-bottom:1px solid var(--line);font-size:14px}
+.gig .near{color:var(--ok);font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:700}
+.gig a{color:var(--flare-soft);font-size:12.5px}
+.chip-signed{background:var(--ok);color:#0c2417;font-weight:800}
+.chip-self{background:var(--lav);color:#1c1236;font-weight:800}
 .artist img,.artist span.face{width:64px;height:64px;min-width:64px;border-radius:50%;object-fit:cover}
 span.face{background:var(--raised);display:flex;align-items:center;justify-content:center;
           font-weight:800;font-size:22px;color:var(--faint)}
