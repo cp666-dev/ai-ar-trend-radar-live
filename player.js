@@ -35,3 +35,7 @@ document.querySelectorAll('.play[data-dz],.play[data-url]').forEach(btn=>{
     }else if(url){start(btn,url);}
   });
 });
+document.querySelectorAll('tr[data-href]').forEach(r=>{
+  r.classList.add('link');
+  r.addEventListener('click',()=>{location.href=r.dataset.href;});
+});

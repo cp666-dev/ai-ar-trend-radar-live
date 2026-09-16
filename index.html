@@ -1,410 +1,393 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Today's sounds · Radar</title>
-<meta name="description" content="Radar hears 1,500 new tracks a day, groups the ones that sound alike, and ranks each sound by how fast it is growing.">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<title>Today's sounds · RADAR</title>
+<meta name="description" content="Radar fingerprints ~1,500 fresh track appearances every morning, groups what sounds alike, and flags the sounds and production elements outrunning their own baseline. Charts react later.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head><body>
 <nav><div class="wrap">
-  <a class="logo" href="index.html"><span class="eq"><i></i><i></i><i></i></span>RADA<b>R</b></a>
+  <a class="logo" href="index.html">RADA<i>+</i>R</a>
   <a class="item on" href="index.html">Sounds</a>
   <a class="item " href="elements.html">Elements</a>
   <a class="item " href="artists.html">Artists</a>
   <a class="item " href="record.html">Track record</a>
   <a class="item " href="about.html">Method</a>
-  <span class="live">RUN 2026-09-16</span>
+  <span class="status"><span class="dot"></span>PIPELINE OK<span class="sep">|</span>RUN 2026-09-16 · 16:25 UTC</span>
 </div></nav>
 
+
 <div class="hero"><div class="wrap">
-  <h1>Hear what's going <i>into</i><br>the next wave.</h1>
-  <p class="sub">Trends start as ingredients: an instrument timbre, a drum pattern, a vocal
-  treatment crossing genres. Radar listens to ~1,500 fresh tracks a day, detects the
-  <a href="elements.html" style="color:var(--flare)">production elements</a> and
-  <a href="index.html#sounds" style="color:var(--flare)">sounds</a> gaining ground, and surfaces
-  the <a href="artists.html" style="color:var(--flare)">artists riding them</a>. Charts react later.</p>
-  <div class="stats">
-    <div class="stat"><b>327</b><span class="label">fresh tracks on radar</span></div>
-    <div class="stat"><b>8</b><span class="label">sounds tracked</span></div>
-    <div class="stat"><b>2663</b><span class="label">library</span></div>
-    <div class="stat"><b>0</b><span class="label">calls on record</span></div>
+  <div class="plusrow"><span>+</span><span>+</span><span>+</span><b>+</b><span>+</span></div>
+  <div class="cols">
+    <div>
+      <div class="kicker">Detection run &middot; 2026-09-16</div>
+      <h1>Eight sounds are<br><i>outrunning</i> their baseline.</h1>
+    </div>
+    <div>
+      <p class="lede">Radar fingerprints ~1,500 fresh track appearances every morning and measures
+      each sound family's share of the day against its own 7-day baseline. Everything below grew
+      faster than its own history says it should have.</p>
+      <div class="kv">
+        <div class="row"><span class="k">Flag condition</span><span class="v">growth &ge; 40% &middot; z &ge; 2</span></div>
+        <div class="row"><span class="k">Baseline window</span><span class="v">trailing 7 days, per family</span></div>
+      </div>
+    </div>
   </div>
-  <div class="mono">⏳ baseline building (day 3/3): growth badges appear once each sound has 3 days of history</div>
 </div></div>
 <div class="wrap">
-  <div class="how" style="margin-top:26px">
-    <div><b>New here? This is Radar</b>An A&R scouting tool built on one idea: the next wave
-    announces itself in what goes INTO tracks, before charts move. Everything here is generated
-    automatically, daily, from the audio itself.</div>
-    <div><b>1 · It listens</b>Every day: ~1,500 tracks from charts, editorial playlists and
-    Reddit. Only music released in the last 60 days makes the radar.</div>
-    <div><b>2 · It groups by sound</b>An audio AI clusters tracks that sound alike:
-    production, instrumentation, mood. Each sound gets a name from the audio.</div>
-    <div><b>3 · It calls trends</b>A sound growing unusually fast vs its own baseline gets
-    flagged, on the record, and scored against what later charts. The
-    <a href="artists.html" style="color:var(--flare)">artists riding those sounds</a> come
-    with scouting profiles.</div>
+  <div class="stats">
+    <div class="stat"><span class="label">Track appearances</span><b>1,838</b>
+      <span class="sub">-15.1% vs 7-day mean</span></div>
+    <div class="stat"><span class="label">Sound families</span><b>8</b>
+      <span class="sub o">0 above baseline</span></div>
+    <div class="stat"><span class="label">Artists seen</span><b>1,681</b>
+      <span class="sub">17 placing twice</span></div>
+    <div class="stat"><span class="label">Flags raised</span><b>0</b>
+      <span class="sub">first call 2026-09-17</span></div>
+    <div class="stat"><span class="label">Genre purity</span><b>78%</b>
+      <span class="sub o"><a href="validation-report.html">validated by ear</a></span></div>
   </div>
-  <h2 id="sounds">Today's sounds</h2>
-  <div class="h2sub">Ranked by momentum. Tap play to hear one; open a card for the full picture.</div>
-  <div class="grid">
+
   
-    <a class="card" href="sound-4.html">
-      <div class="covers">
-        <img src="https://cdn-images.dzcdn.net/images/cover/bbe6af9a89f7effd83f3f2fde7d4496b/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/25b0ca62e85dc0786bc5ebc31c441016/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/6714c7ba7094a36ab4e3643cc42a2c4a/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/04e9b4edc5c20eac15d3f1edb0b6c18c/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        
-        <span class="bigrank"><i>#</i>1</span>
+  <section>
+    <div class="shead"><h2>Strongest mover</h2><span class="sub">the largest baseline-relative jump in today's intake</span>
+      <span class="note">sorted by velocity, not volume</span></div>
+    <div class="mover">
+      <div class="art">
+        <img src="https://cdn-images.dzcdn.net/images/cover/bbe6af9a89f7effd83f3f2fde7d4496b/250x250-000000-80-0-0.jpg" alt="">
+        <span class="tagpos">01 <b>of 8</b> tracked</span>
       </div>
-      <div class="body">
-        <h3>jersey club · cinematic & epic</h3>
-        
-          <span class="badge base">baseline day 3/3</span>
-        
-        <div class="tags">
-          <span class="tag"><b>70</b> tracks</span>
-          <span class="tag"><b>89-152</b> bpm</span>
-          <span class="tag">sound <b>85% alike</b></span>
-          
+      <div class="mid">
+        <div class="flag">BUILDING &middot; day 3 of 3 baseline</div>
+        <h3><a href="sound-4.html" style="color:inherit">jersey club · cinematic & epic</a></h3>
+        <div class="mkv">
+          <div><span class="label">Tracks</span><b>70</b></div>
+          <div><span class="label">Tempo</span><b>89-152</b></div>
+          <div><span class="label">Key</span><b>G maj</b></div>
+          <div><span class="label">Energy</span><b>0.58</b></div>
         </div>
         
-        <div class="row">
-          <button class="play" data-dz="4251602691" data-url=""
-                  data-title="The Joker" data-artist="Hudson Westbrook" data-art="https://cdn-images.dzcdn.net/images/cover/bbe6af9a89f7effd83f3f2fde7d4496b/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">The Joker</span><span class="a">Hudson Westbrook</span>
-        </div>
+        <div class="anote"><div class="who">Analyst note &middot; Claude &middot; 2026-09-16</div>
+        <p>This cluster is a loose, mid-energy blend rather than a tight single sound. The audio tags lean toward jersey club at the top of the list, but with strong pulls into dance pop, singer-songwriter ballad, and latin pop, which tells you the production ranges from bouncy rhythmic tracks to more stripped, vocal-forward material. Mean energy sits at 0.57, so this is moderate rather than aggressive, and the tempo range is wide, from about 83 to 161 BPM, which again signals a family that spans slower ballads and faster club-tempo cuts. Common keys skew bright, with F# major, D major, and C major recurring. As evidence of the range, listen to "Same Circus" by Carly Pearce and "Too Much Of A Good Thing" by Ashley Kutcher on the more songwriter and pop side, alongside "The Joker" by Hudson Westbrook, which anchors the closest audio matches.</p><p>I cannot call this a trend yet. The velocity status is baseline with only 3 days of history, and both growth_pct and z are null, so there is no measured momentum to point to. Release dates are recent, ranging from early August to mid September 2026, and there are 15 tracks today, but recency alone does not prove movement. To call this moving, I would need several more days of history so growth and a z score can actually be computed, and I would want to see the track count and audio cohesion hold or rise across those days rather than scatter. Until then, treat this as a cluster worth watching, not a confirmed climb.</p></div>
         
-        <div class="row">
-          <button class="play" data-dz="4093716981" data-url=""
-                  data-title="Same Circus" data-artist="Carly Pearce" data-art="https://cdn-images.dzcdn.net/images/cover/25b0ca62e85dc0786bc5ebc31c441016/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Same Circus</span><span class="a">Carly Pearce</span>
+        <div class="msb">
+          <div class="toprow"><span class="label">Share of today's intake</span>
+          <span class="val">21.4%
+          <span style="color:var(--dim)">baseline 26.4%</span></span></div>
+          <div class="sb"><div class="bar"><span class="fill" style="width:56.7%"></span><span class="tick" style="left:70.0%"></span></div><div class="cap">21.4% · base 26.4%</div></div>
         </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4209383222" data-url=""
-                  data-title="Too Much Of A Good Thing" data-artist="Ashley Kutcher" data-art="https://cdn-images.dzcdn.net/images/cover/6714c7ba7094a36ab4e3643cc42a2c4a/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Too Much Of A Good Thing</span><span class="a">Ashley Kutcher</span>
-        </div>
-        
-        <span class="open-link">Open →</span>
       </div>
-    </a>
+      <div class="side">
+        <span class="label">Tracks in this sound today</span>
+        
+        <div class="mrow"><button class="play" data-dz="4251602691" data-url="" data-title="The Joker" data-artist="Hudson Westbrook" data-art="https://cdn-images.dzcdn.net/images/cover/bbe6af9a89f7effd83f3f2fde7d4496b/250x250-000000-80-0-0.jpg">▶</button>
+          <div class="m"><div class="t">The Joker</div><div class="a">Hudson Westbrook</div></div>
+          <span class="fit "><b>core</b> 91</span>
+        </div>
+        
+        <div class="mrow"><button class="play" data-dz="4093716981" data-url="" data-title="Same Circus" data-artist="Carly Pearce" data-art="https://cdn-images.dzcdn.net/images/cover/25b0ca62e85dc0786bc5ebc31c441016/250x250-000000-80-0-0.jpg">▶</button>
+          <div class="m"><div class="t">Same Circus</div><div class="a">Carly Pearce</div></div>
+          <span class="fit "><b>core</b> 90</span>
+        </div>
+        
+        <div class="mrow"><button class="play" data-dz="4209383222" data-url="" data-title="Too Much Of A Good Thing" data-artist="Ashley Kutcher" data-art="https://cdn-images.dzcdn.net/images/cover/6714c7ba7094a36ab4e3643cc42a2c4a/250x250-000000-80-0-0.jpg">▶</button>
+          <div class="m"><div class="t">Too Much Of A Good Thing</div><div class="a">Ashley Kutcher</div></div>
+          <span class="fit "><b>core</b> 90</span>
+        </div>
+        
+        <div class="mrow"><button class="play" data-dz="4203392972" data-url="" data-title="Jaded" data-artist="Koe Wetzel" data-art="https://cdn-images.dzcdn.net/images/cover/04e9b4edc5c20eac15d3f1edb0b6c18c/250x250-000000-80-0-0.jpg">▶</button>
+          <div class="m"><div class="t">Jaded</div><div class="a">Koe Wetzel</div></div>
+          <span class="fit "><b>core</b> 89</span>
+        </div>
+        
+        <div class="mrow"><button class="play" data-dz="4192719242" data-url="" data-title="Sunset Marquis" data-artist="Miranda Lambert" data-art="https://cdn-images.dzcdn.net/images/cover/2df33f46c39d45d822fad9959fc9a3b8/250x250-000000-80-0-0.jpg">▶</button>
+          <div class="m"><div class="t">Sunset Marquis</div><div class="a">Miranda Lambert</div></div>
+          <span class="fit "><b>core</b> 89</span>
+        </div>
+        
+        <div class="mrow"><button class="play" data-dz="4236796502" data-url="" data-title="The Illusion Of Love" data-artist="Laci Kaye Booth" data-art="https://cdn-images.dzcdn.net/images/cover/4925a78209a2a79eb00d280b196ed748/250x250-000000-80-0-0.jpg">▶</button>
+          <div class="m"><div class="t">The Illusion Of Love</div><div class="a">Laci Kaye Booth</div></div>
+          <span class="fit "><b>core</b> 88</span>
+        </div>
+        
+      </div>
+    </div>
+  </section>
   
-    <a class="card" href="sound-5.html">
-      <div class="covers">
-        <img src="https://cdn-images.dzcdn.net/images/cover/fd2f26848a925a5bda42d489c1954ba2/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/7689c02880d099ccfc044ba75b659998/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/559d2cc13d1aa1a85c86cf68b0ca389a/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/8d9715ba7c7fef8f3edfc4173ece5714/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
+
+  <section>
+    <div class="shead"><h2>Today's board</h2><span class="sub">every tracked sound family, ranked by baseline-relative velocity</span>
+    <span class="note">scale 0-38% of daily intake</span></div>
+    <table><tr><th style="width:28px">#</th><th>Sound family</th><th class="r">Tracks</th><th class="r">Tempo</th>
+    <th class="r">Energy</th><th>Share vs baseline</th><th class="r">Velocity</th></tr>
+    
+    <tr data-href="sound-5.html">
+      <td class="rank">02</td>
+      <td><div style="display:flex;align-items:center;gap:12px"><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/fd2f26848a925a5bda42d489c1954ba2/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div><div class="tname">classic rock · hard-hitting & bass heavy</div></div>
+      </div></td>
+      <td class="r mono-cell">69</td><td class="r mono-cell">81-162</td><td class="r mono-cell">0.56</td>
+      <td><div class="sb"><div class="bar"><span class="fill" style="width:76.9%"></span><span class="tick" style="left:61.9%"></span></div><div class="cap">29.1% · base 23.4%</div></div></td>
+      <td class="r"><span class="vel na">day 3/3</span></td>
+    </tr>
+    
+    <tr data-href="sound-5.html">
+      <td class="rank">03</td>
+      <td><div style="display:flex;align-items:center;gap:12px"><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/89dc1f91034fc5c0169bda5fab6cee1b/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div><div class="tname">classic rock · hard-hitting & bass heavy</div><div class="tsub">synth brass stabs &middot; steel drums</div></div>
+      </div></td>
+      <td class="r mono-cell">26</td><td class="r mono-cell">92-172</td><td class="r mono-cell">0.62</td>
+      <td><div class="sb"><div class="bar"><span class="fill" style="width:76.9%"></span><span class="tick" style="left:61.9%"></span></div><div class="cap">29.1% · base 23.4%</div></div></td>
+      <td class="r"><span class="vel na">day 3/3</span></td>
+    </tr>
+    
+    <tr data-href="sound-6.html">
+      <td class="rank">04</td>
+      <td><div style="display:flex;align-items:center;gap:12px"><img class="thumb" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/c6/9a/53c69a6a-d1c4-0983-a20c-a67dceae554f/26UMGIM82372.rgb.jpg/300x300bb.jpg" loading="lazy" alt="">
+        <div><div class="tname">latin pop · euphoric & uplifting</div><div class="tsub">gang vocal chants &middot; vocoder robot vocals</div></div>
+      </div></td>
+      <td class="r mono-cell">13</td><td class="r mono-cell">86-162</td><td class="r mono-cell">0.46</td>
+      <td><div class="sb"><div class="bar"><span class="fill" style="width:10.5%"></span><span class="tick" style="left:10.8%"></span></div><div class="cap">4.0% · base 4.1%</div></div></td>
+      <td class="r"><span class="vel na">day 3/3</span></td>
+    </tr>
+    
+    <tr data-href="sound-2.html">
+      <td class="rank">05</td>
+      <td><div style="display:flex;align-items:center;gap:12px"><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/42b8d3114cf098cff6cf6c81b21e8f64/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div><div class="tname">dance pop · hard-hitting & bass heavy</div><div class="tsub">west african polyrhythmic percussion &middot; trap hi-hat rolls</div></div>
+      </div></td>
+      <td class="r mono-cell">54</td><td class="r mono-cell">89-152</td><td class="r mono-cell">0.52</td>
+      <td><div class="sb"><div class="bar"><span class="fill" style="width:68.0%"></span><span class="tick" style="left:63.2%"></span></div><div class="cap">25.7% · base 23.9%</div></div></td>
+      <td class="r"><span class="vel na">day 3/3</span></td>
+    </tr>
+    
+    <tr data-href="sound-3.html">
+      <td class="rank">06</td>
+      <td><div style="display:flex;align-items:center;gap:12px"><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/75cd637c7c2a82ab8d34e1c4ffd58eb9/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div><div class="tname">classic rock · euphoric & uplifting</div><div class="tsub">programmed midi-sounding acoustic guitar &middot; afrobeats palm-wine guitar line</div></div>
+      </div></td>
+      <td class="r mono-cell">57</td><td class="r mono-cell">76-152</td><td class="r mono-cell">0.48</td>
+      <td><div class="sb"><div class="bar"><span class="fill" style="width:46.2%"></span><span class="tick" style="left:51.2%"></span></div><div class="cap">17.4% · base 19.3%</div></div></td>
+      <td class="r"><span class="vel na">day 3/3</span></td>
+    </tr>
+    
+    <tr data-href="sound-2.html">
+      <td class="rank">07</td>
+      <td><div style="display:flex;align-items:center;gap:12px"><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/823511f87ad37f0f6bba1b9398b7a53f/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div><div class="tname">dance pop · hard-hitting & bass heavy</div><div class="tsub">bitcrushed digital distortion &middot; plucked synth arpeggio</div></div>
+      </div></td>
+      <td class="r mono-cell">30</td><td class="r mono-cell">86-152</td><td class="r mono-cell">0.58</td>
+      <td><div class="sb"><div class="bar"><span class="fill" style="width:68.0%"></span><span class="tick" style="left:63.2%"></span></div><div class="cap">25.7% · base 23.9%</div></div></td>
+      <td class="r"><span class="vel na">day 3/3</span></td>
+    </tr>
+    
+    <tr data-href="sound-1.html">
+      <td class="rank">08</td>
+      <td><div style="display:flex;align-items:center;gap:12px"><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/0a28a3e80953a9eb99ab258f4969f8cd/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div><div class="tname">jazz · playful & bouncy</div><div class="tsub">saxophone solo &middot; amapiano log drums</div></div>
+      </div></td>
+      <td class="r mono-cell">8</td><td class="r mono-cell">103-162</td><td class="r mono-cell">0.50</td>
+      <td><div class="sb"><div class="bar"><span class="fill" style="width:6.5%"></span><span class="tick" style="left:7.7%"></span></div><div class="cap">2.4% · base 2.9%</div></div></td>
+      <td class="r"><span class="vel na">day 3/3</span></td>
+    </tr>
+    
+    </table>
+  </section>
+
+  <section>
+    <div class="shead"><h2>Inside the sounds</h2><span class="sub">the production ingredients driving the movement, and who keeps appearing</span>
+    <span class="note">lift measured against 7-day ingredient share</span></div>
+    <div class="split">
+      <div>
         
-        <span class="bigrank"><i>#</i>2</span>
+        <div class="el">
+          <span class="n">01</span>
+          <div class="m"><div class="t">808 sub bass with pitch glide</div><div class="a">Modeselektor &middot; Lucy Dacus &middot; Kassian</div></div>
+          <span class="cnt">13 tracks</span>
+          <span class="bar"><i style="width:100%"></i></span>
+          <span class="vel">+704%</span>
+        </div>
+        
+        <div class="el">
+          <span class="n">02</span>
+          <div class="m"><div class="t">west african polyrhythmic percussion</div><div class="a">Keith Mason &middot; Latin Mafia &middot; Helena Gao</div></div>
+          <span class="cnt">17 tracks</span>
+          <span class="bar"><i style="width:100%"></i></span>
+          <span class="vel">+465%</span>
+        </div>
+        
+        <div class="el">
+          <span class="n">03</span>
+          <div class="m"><div class="t">four-on-the-floor house kick</div><div class="a">R3HAB &middot; TWENTY SIX &middot; CamelPhat</div></div>
+          <span class="cnt">13 tracks</span>
+          <span class="bar"><i style="width:100%"></i></span>
+          <span class="vel">+302%</span>
+        </div>
+        
+        <div class="el">
+          <span class="n">04</span>
+          <div class="m"><div class="t">supersaw trance synth lead</div><div class="a">David Guetta &middot; Modeselektor &middot; R3HAB</div></div>
+          <span class="cnt">16 tracks</span>
+          <span class="bar"><i style="width:100%"></i></span>
+          <span class="vel">+238%</span>
+        </div>
+        
+        <div class="el">
+          <span class="n">05</span>
+          <div class="m"><div class="t">vocoder robot vocals</div><div class="a">KAROL G, Judeline & rusowsky &middot; Jhené Aiko & Ab-Soul &middot; Jhené Aiko</div></div>
+          <span class="cnt">15 tracks</span>
+          <span class="bar"><i style="width:100%"></i></span>
+          <span class="vel">+199%</span>
+        </div>
+        
+        <div class="el">
+          <span class="n">06</span>
+          <div class="m"><div class="t">belted powerhouse diva vocals</div><div class="a">Jhené Aiko &middot; CHINCHILLA &middot; ADÉLA</div></div>
+          <span class="cnt">13 tracks</span>
+          <span class="bar"><i style="width:100%"></i></span>
+          <span class="vel">+174%</span>
+        </div>
+        
+        <div class="el">
+          <span class="n">07</span>
+          <div class="m"><div class="t">plucked synth arpeggio</div><div class="a">Five Finger Death Punch &middot; Bonobo &middot; Armin van Buuren</div></div>
+          <span class="cnt">4 tracks</span>
+          <span class="bar"><i style="width:100%"></i></span>
+          <span class="vel">+166%</span>
+        </div>
+        
       </div>
-      <div class="body">
-        <h3>classic rock · hard-hitting & bass heavy</h3>
+      <div>
+        <span class="label" style="display:block;margin-bottom:8px">Repeat presence today</span>
+        <p style="color:var(--mut);font-size:13px;line-height:1.6;margin-bottom:6px">An artist landing more
+        than once inside a tracked sound is the earliest scouting signal Radar produces.</p>
         
-          <span class="badge base">baseline day 3/3</span>
-        
-        <div class="tags">
-          <span class="tag"><b>69</b> tracks</span>
-          <span class="tag"><b>81-162</b> bpm</span>
-          <span class="tag">sound <b>85% alike</b></span>
-          
+        <div class="rp"><img class="face" src="https://cdn-images.dzcdn.net/images/cover/e8fde3eefe721baff7288625b94a2efc/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+          <div class="m"><div class="t">Jhené Aiko</div><div class="a">latin pop &middot; dance pop</div></div>
+          <span class="c hot">8</span>
         </div>
         
-        <div class="row">
-          <button class="play" data-dz="4263021631" data-url=""
-                  data-title="On The Road" data-artist="Eric Church" data-art="https://cdn-images.dzcdn.net/images/cover/fd2f26848a925a5bda42d489c1954ba2/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">On The Road</span><span class="a">Eric Church</span>
+        <div class="rp"><img class="face" src="https://cdn-images.dzcdn.net/images/cover/01971eab99b872cd6afb0110a5b8931d/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+          <div class="m"><div class="t">Phoebe Bridgers</div><div class="a">jersey club &middot; classic rock</div></div>
+          <span class="c ">2</span>
         </div>
         
-        <div class="row">
-          <button class="play" data-dz="4260116851" data-url=""
-                  data-title="I Liked Loving You" data-artist="Luke Bryan" data-art="https://cdn-images.dzcdn.net/images/cover/7689c02880d099ccfc044ba75b659998/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">I Liked Loving You</span><span class="a">Luke Bryan</span>
+        <div class="rp"><img class="face" src="https://cdn-images.dzcdn.net/images/cover/fcc1cad1dc4aebe80b2263b8c370d050/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+          <div class="m"><div class="t">Rachel Chinouriri</div><div class="a">jersey club &middot; dance pop</div></div>
+          <span class="c ">2</span>
         </div>
         
-        <div class="row">
-          <button class="play" data-dz="4222888222" data-url=""
-                  data-title="Once in a Mile" data-artist="John Morgan" data-art="https://cdn-images.dzcdn.net/images/cover/559d2cc13d1aa1a85c86cf68b0ca389a/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Once in a Mile</span><span class="a">John Morgan</span>
+        <div class="rp"><img class="face" src="https://cdn-images.dzcdn.net/images/cover/b3ad8183c5f342afd9646e1776f22863/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+          <div class="m"><div class="t">Zach John King</div><div class="a">jersey club &middot; classic rock</div></div>
+          <span class="c ">2</span>
         </div>
         
-        <span class="open-link">Open →</span>
+        <div class="rp"><img class="face" src="https://cdn-images.dzcdn.net/images/cover/badb14b68c38b1676c72a0124788496d/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+          <div class="m"><div class="t">Aaron Watson</div><div class="a">classic rock</div></div>
+          <span class="c ">2</span>
+        </div>
+        
+        <div class="rp"><img class="face" src="https://cdn-images.dzcdn.net/images/cover/7689c02880d099ccfc044ba75b659998/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+          <div class="m"><div class="t">Luke Bryan</div><div class="a">classic rock</div></div>
+          <span class="c ">2</span>
+        </div>
+        
+        <div class="rp"><img class="face" src="https://cdn-images.dzcdn.net/images/cover/ad5f5e1c738482951639150d53fbdc6d/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+          <div class="m"><div class="t">Ásgeir</div><div class="a">classic rock &middot; classic rock</div></div>
+          <span class="c ">2</span>
+        </div>
+        
+        <div class="rp"><img class="face" src="https://cdn-images.dzcdn.net/images/cover/6220a325d802e061e086ee2b2081b00e/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+          <div class="m"><div class="t">Brothers Osborne</div><div class="a">classic rock &middot; jazz</div></div>
+          <span class="c ">2</span>
+        </div>
+        
       </div>
-    </a>
-  
-    <a class="card" href="sound-5.html">
-      <div class="covers">
-        <img src="https://cdn-images.dzcdn.net/images/cover/89dc1f91034fc5c0169bda5fab6cee1b/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/5c654a0694c371fb1449aaa47b0d9d7c/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/1b088c866ffce317ca8f37c2c3760012/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/e5f08c88c55f53045d742f05ad6fe25d/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        
-        <span class="bigrank"><i>#</i>3</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead"><h2>Calls stay on the board</h2><span class="sub">flags are timestamped, then scored against later chart top-20 hits, misses included</span>
+    <span class="note">nothing is removed after the fact</span></div>
+    
+    <div class="notegrid">
+      <div class="anote"><div class="who">Live record &middot; empty on purpose</div>
+      <p>Radar went live on 2026-09-14 and will not flag anything without three days of measured
+      baseline. A detector that calls trends without a baseline is a coin flip with a user interface.</p></div>
+      <div class="sidekv">
+        <div class="segs"><i class="on"></i><i class="on"></i><i class="on"></i></div>
+        <div class="segcap"><span>3 of 3 measured</span><span>first call 2026-09-17</span></div>
       </div>
-      <div class="body">
-        <h3>classic rock · hard-hitting & bass heavy</h3>
-        
-          <span class="badge base">baseline day 3/3</span>
-        
-        <div class="tags">
-          <span class="tag"><b>26</b> tracks</span>
-          <span class="tag"><b>92-172</b> bpm</span>
-          <span class="tag">sound <b>84% alike</b></span>
-          <span class="tag">ingredient <b>synth brass stabs</b></span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="3992156861" data-url=""
-                  data-title="THE ADDICTION" data-artist="Brantley Gilbert" data-art="https://cdn-images.dzcdn.net/images/cover/89dc1f91034fc5c0169bda5fab6cee1b/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">THE ADDICTION</span><span class="a">Brantley Gilbert</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4244976171" data-url=""
-                  data-title="Forever Young" data-artist="The Rasmus" data-art="https://cdn-images.dzcdn.net/images/cover/5c654a0694c371fb1449aaa47b0d9d7c/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Forever Young</span><span class="a">The Rasmus</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4271249222" data-url=""
-                  data-title="Dead & Buried" data-artist="Alfie Castley" data-art="https://cdn-images.dzcdn.net/images/cover/1b088c866ffce317ca8f37c2c3760012/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Dead & Buried</span><span class="a">Alfie Castley</span>
-        </div>
-        
-        <span class="open-link">Open →</span>
-      </div>
-    </a>
-  
-    <a class="card" href="sound-6.html">
-      <div class="covers">
-        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/c6/9a/53c69a6a-d1c4-0983-a20c-a67dceae554f/26UMGIM82372.rgb.jpg/300x300bb.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/69c0cdc947fd08d24ff2b81f3b94930e/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/cbf8a8c639989a3c579465be63ed63bb/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/d9a9c6ab7aff77f2337ab783244778fb/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        
-        <span class="bigrank"><i>#</i>4</span>
-      </div>
-      <div class="body">
-        <h3>latin pop · euphoric & uplifting</h3>
-        
-          <span class="badge base">baseline day 3/3</span>
-        
-        <div class="tags">
-          <span class="tag"><b>13</b> tracks</span>
-          <span class="tag"><b>86-162</b> bpm</span>
-          <span class="tag">sound <b>83% alike</b></span>
-          <span class="tag">ingredient <b>gang vocal chants</b></span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="" data-url="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/08/da/f308da3d-00cc-7682-7be9-87cb882f4ea5/mzaf_129115212197250565.plus.aac.p.m4a"
-                  data-title="BbY WOW" data-artist="KAROL G, Judeline & rusowsky" data-art="">▶</button>
-          <span class="t">BbY WOW</span><span class="a">KAROL G, Judeline & rusowsky</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="" data-url="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/98/a0/9798a0e1-8ccc-3e9f-79e2-7d391073e962/mzaf_14048460408984484085.plus.aac.p.m4a"
-                  data-title="Like, Whatever (feat. Tyga)" data-artist="Jhené Aiko" data-art="">▶</button>
-          <span class="t">Like, Whatever (feat. Tyga)</span><span class="a">Jhené Aiko</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="" data-url="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/71/9c/29719cb5-c53f-d650-28df-3fa70a0c0c0b/mzaf_15414720635410666795.plus.aac.p.m4a"
-                  data-title="You" data-artist="Jhené Aiko" data-art="">▶</button>
-          <span class="t">You</span><span class="a">Jhené Aiko</span>
-        </div>
-        
-        <span class="open-link">Open →</span>
-      </div>
-    </a>
-  
-    <a class="card" href="sound-2.html">
-      <div class="covers">
-        <img src="https://cdn-images.dzcdn.net/images/cover/42b8d3114cf098cff6cf6c81b21e8f64/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/611dc11b341d2b918ee924082fccde61/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/5546e577ae40a062be1c306c906749c1/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/e88500985074bf9117ef03e62e437b22/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        
-        <span class="bigrank"><i>#</i>5</span>
-      </div>
-      <div class="body">
-        <h3>dance pop · hard-hitting & bass heavy</h3>
-        
-          <span class="badge base">baseline day 3/3</span>
-        
-        <div class="tags">
-          <span class="tag"><b>54</b> tracks</span>
-          <span class="tag"><b>89-152</b> bpm</span>
-          <span class="tag">sound <b>82% alike</b></span>
-          <span class="tag">ingredient <b>west african polyrhythmic percussion</b></span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4198445322" data-url=""
-                  data-title="AH HA" data-artist="Cardi B" data-art="https://cdn-images.dzcdn.net/images/cover/42b8d3114cf098cff6cf6c81b21e8f64/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">AH HA</span><span class="a">Cardi B</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4173583152" data-url=""
-                  data-title="Crazy To Yourself" data-artist="Tucker Wetmore" data-art="https://cdn-images.dzcdn.net/images/cover/611dc11b341d2b918ee924082fccde61/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Crazy To Yourself</span><span class="a">Tucker Wetmore</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4244567991" data-url=""
-                  data-title="Alhaja" data-artist="Yemi Alade" data-art="https://cdn-images.dzcdn.net/images/cover/5546e577ae40a062be1c306c906749c1/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Alhaja</span><span class="a">Yemi Alade</span>
-        </div>
-        
-        <span class="open-link">Open →</span>
-      </div>
-    </a>
-  
-    <a class="card" href="sound-3.html">
-      <div class="covers">
-        <img src="https://cdn-images.dzcdn.net/images/cover/75cd637c7c2a82ab8d34e1c4ffd58eb9/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/bc4415a429a05b016ed0da62071bc240/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/a17c0444d0db52e35e5f632d3bf08455/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/33ba228f72e2271c89b4f74952312eab/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        
-        <span class="bigrank"><i>#</i>6</span>
-      </div>
-      <div class="body">
-        <h3>classic rock · euphoric & uplifting</h3>
-        
-          <span class="badge base">baseline day 3/3</span>
-        
-        <div class="tags">
-          <span class="tag"><b>57</b> tracks</span>
-          <span class="tag"><b>76-152</b> bpm</span>
-          <span class="tag">sound <b>82% alike</b></span>
-          <span class="tag">ingredient <b>programmed midi-sounding acoustic guitar</b></span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4222859352" data-url=""
-                  data-title="Tourist" data-artist="Reba McEntire" data-art="https://cdn-images.dzcdn.net/images/cover/75cd637c7c2a82ab8d34e1c4ffd58eb9/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Tourist</span><span class="a">Reba McEntire</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4022367831" data-url=""
-                  data-title="The Easy Kind (feat. Wynonna)" data-artist="Elizabeth Cook" data-art="https://cdn-images.dzcdn.net/images/cover/bc4415a429a05b016ed0da62071bc240/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">The Easy Kind (feat. Wynonna)</span><span class="a">Elizabeth Cook</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4032481431" data-url=""
-                  data-title="Girl Who Could Sing" data-artist="Wynonna" data-art="https://cdn-images.dzcdn.net/images/cover/a17c0444d0db52e35e5f632d3bf08455/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Girl Who Could Sing</span><span class="a">Wynonna</span>
-        </div>
-        
-        <span class="open-link">Open →</span>
-      </div>
-    </a>
-  
-    <a class="card" href="sound-2.html">
-      <div class="covers">
-        <img src="https://cdn-images.dzcdn.net/images/cover/823511f87ad37f0f6bba1b9398b7a53f/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/2a924efb0dec6435cf2de40d0f7b0db4/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/22f59d6357be8278a760168a2b9544b0/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/06d09c0b6e76a4cb1817ee209d784806/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        
-        <span class="bigrank"><i>#</i>7</span>
-      </div>
-      <div class="body">
-        <h3>dance pop · hard-hitting & bass heavy</h3>
-        
-          <span class="badge base">baseline day 3/3</span>
-        
-        <div class="tags">
-          <span class="tag"><b>30</b> tracks</span>
-          <span class="tag"><b>86-152</b> bpm</span>
-          <span class="tag">sound <b>80% alike</b></span>
-          <span class="tag">ingredient <b>bitcrushed digital distortion</b></span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4018196111" data-url=""
-                  data-title="Actress" data-artist="Sofie Royer" data-art="https://cdn-images.dzcdn.net/images/cover/823511f87ad37f0f6bba1b9398b7a53f/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Actress</span><span class="a">Sofie Royer</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4222770392" data-url=""
-                  data-title="Broken Love" data-artist="Julian Fijma" data-art="https://cdn-images.dzcdn.net/images/cover/2a924efb0dec6435cf2de40d0f7b0db4/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Broken Love</span><span class="a">Julian Fijma</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4257762851" data-url=""
-                  data-title="Close My Eyes" data-artist="Marshmello" data-art="https://cdn-images.dzcdn.net/images/cover/22f59d6357be8278a760168a2b9544b0/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Close My Eyes</span><span class="a">Marshmello</span>
-        </div>
-        
-        <span class="open-link">Open →</span>
-      </div>
-    </a>
-  
-    <a class="card" href="sound-1.html">
-      <div class="covers">
-        <img src="https://cdn-images.dzcdn.net/images/cover/0a28a3e80953a9eb99ab258f4969f8cd/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/24b21510aecc2cb1d988a21bc21d78e8/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/6d4a17cf3da18518ab63b2276a25e466/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        <img src="https://cdn-images.dzcdn.net/images/cover/7a611d4aeaa0f3bda086810140bdf333/250x250-000000-80-0-0.jpg" alt="" loading="lazy">
-        
-        <span class="bigrank"><i>#</i>8</span>
-      </div>
-      <div class="body">
-        <h3>jazz · playful & bouncy</h3>
-        
-          <span class="badge base">baseline day 3/3</span>
-        
-        <div class="tags">
-          <span class="tag"><b>8</b> tracks</span>
-          <span class="tag"><b>103-162</b> bpm</span>
-          <span class="tag">sound <b>78% alike</b></span>
-          <span class="tag">ingredient <b>saxophone solo</b></span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4220780612" data-url=""
-                  data-title="You're Gonna Need Me" data-artist="Fred Robertson" data-art="https://cdn-images.dzcdn.net/images/cover/0a28a3e80953a9eb99ab258f4969f8cd/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">You're Gonna Need Me</span><span class="a">Fred Robertson</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="3890633831" data-url=""
-                  data-title="Vibes (radio single)" data-artist="Michael Cates" data-art="https://cdn-images.dzcdn.net/images/cover/24b21510aecc2cb1d988a21bc21d78e8/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Vibes (radio single)</span><span class="a">Michael Cates</span>
-        </div>
-        
-        <div class="row">
-          <button class="play" data-dz="4171259492" data-url=""
-                  data-title="Lichen Trip" data-artist="Bibio" data-art="https://cdn-images.dzcdn.net/images/cover/6d4a17cf3da18518ab63b2276a25e466/250x250-000000-80-0-0.jpg">▶</button>
-          <span class="t">Lichen Trip</span><span class="a">Bibio</span>
-        </div>
-        
-        <span class="open-link">Open →</span>
-      </div>
-    </a>
-  
-  </div>
+    </div>
+    
+  </section>
+
+  <section>
+    <div class="shead"><h2>How a call is made</h2><span class="sub">charts say what won; audio says what is winning, six steps run daily, unattended</span>
+    <span class="note">python &middot; clap &middot; scikit-learn &middot; sqlite &middot; zero servers</span></div>
+    <div class="steps">
+      <div class="step"><div class="hd"><b>01</b>ingest</div><p>~1,500 track appearances from Deezer
+      charts, editorial playlists, Apple's most-played feed and Reddit. Only releases from the last
+      60 days go on the radar.</p></div>
+      <div class="step"><div class="hd"><b>02</b>listen</div><p>Each 30-second preview becomes an
+      audio fingerprint via CLAP, a model that hears production, instrumentation and mood. Tempo,
+      key and energy come along for free.</p></div>
+      <div class="step"><div class="hd"><b>03</b>group</div><p>Fingerprints are clustered, then
+      matched to persistent sound families so a sound keeps its identity from one day to the next.</p></div>
+      <div class="step"><div class="hd"><b>04</b>name</div><p>Families are named by comparing their
+      fingerprint against hundreds of genre and mood phrases. Names describe what the model hears,
+      not what a label claims.</p></div>
+      <div class="step"><div class="hd"><b>05</b>measure</div><p>Each family's share of the day's
+      intake is tracked against its 7-day baseline. Growth &ge; 40% at z &ge; 2
+      is a flag. Raw counts alone never are.</p></div>
+      <div class="step"><div class="hd"><b>06</b>explain</div><p>Claude writes an analyst note for
+      the top sounds from the measured statistics only, so it cannot invent a viral moment that
+      did not happen.</p></div>
+    </div>
+    <div class="proof">
+      <div class="card hot"><div class="top"></div><span class="label">Verified by ear</span>
+        <h3>78% genre purity, metal 20/20</h3>
+        <p>Before anything was built on the embeddings, clustering was tested by hand on 100 tracks
+        across five distinct genres. Most remaining "errors" are the model refusing to believe
+        Deezer's classical chart, which contains Pitbull. The model is right.</p></div>
+      <div class="card"><div class="top"></div><span class="label">Under the hood</span>
+        <h3>One cron, no servers</h3>
+        <p>A GitHub Actions job runs ingestion, embedding, clustering and publishing every morning
+        and ships this static site. Playback fetches fresh preview URLs at click time because
+        stored ones expire within hours.</p></div>
+    </div>
+  </section>
 </div>
-<div class="wrap"><footer>
-  A solo-built, self-running product: multi-source ingestion, CLAP audio embeddings, persistent
-  sound families, baseline-relative velocity, Claude analyst notes. Rebuilt daily by an
-  unattended pipeline. <a href="validation-report.html">Clustering validated by ear: 78% genre
-  purity</a>. Previews stream from their source platforms and belong to their rights holders.
-</footer></div>
+<footer><div class="wrap">
+  <div class="grid">
+    <div class="brand">
+      <span class="logo">RADA<i>+</i>R</span>
+      <p>A solo-built, self-running product: multi-source ingestion, CLAP audio embeddings,
+      persistent sound families, baseline-relative velocity and Claude analyst notes, rebuilt
+      daily by an unattended pipeline.</p>
+    </div>
+    <div class="col"><span class="label">Pages</span>
+      <a href="index.html">Sounds</a><a href="elements.html">Elements</a>
+      <a href="artists.html">Artists</a><a href="record.html">Track record</a>
+      <a href="about.html">Method</a></div>
+    <div class="col"><span class="label">Sources</span>
+      <span>Deezer charts</span><span>Editorial playlists</span>
+      <span>Apple most-played</span><span>Reddit</span></div>
+    <div class="col"><span class="label">Run</span>
+      <span>Daily 04:00 UTC</span><span>GitHub Actions</span>
+      <span>Static publish</span><span>Previews expire hourly</span></div>
+  </div>
+  <div class="base">
+    <span>Previews stream from their source platforms and belong to their rights holders</span>
+    <span class="o"><a href="validation-report.html">Clustering validated by ear · 78% genre purity</a></span>
+  </div>
+</div></footer>
 <div id="bar"><div class="wrap">
   <img alt=""><button class="play">▶</button>
   <div class="meta"><div class="t"></div><div class="a"></div></div>
   <div class="prog"><i></i></div>
-  <span class="src">30s PREVIEW</span>
+  <span class="src">30S PREVIEW · FETCHED FRESH</span>
 </div></div>
 <script src="player.js"></script>
 </body></html>

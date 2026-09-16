@@ -1,419 +1,548 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>jersey club · cinematic & epic · Radar</title>
-<meta name="description" content="Radar hears 1,500 new tracks a day, groups the ones that sound alike, and ranks each sound by how fast it is growing.">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<title>jersey club · cinematic & epic · RADAR</title>
+<meta name="description" content="Radar fingerprints ~1,500 fresh track appearances every morning, groups what sounds alike, and flags the sounds and production elements outrunning their own baseline. Charts react later.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head><body>
 <nav><div class="wrap">
-  <a class="logo" href="index.html"><span class="eq"><i></i><i></i><i></i></span>RADA<b>R</b></a>
+  <a class="logo" href="index.html">RADA<i>+</i>R</a>
   <a class="item on" href="index.html">Sounds</a>
   <a class="item " href="elements.html">Elements</a>
   <a class="item " href="artists.html">Artists</a>
   <a class="item " href="record.html">Track record</a>
   <a class="item " href="about.html">Method</a>
-  <span class="live">RUN 2026-09-16</span>
+  <span class="status"><span class="dot"></span>PIPELINE OK<span class="sep">|</span>RUN 2026-09-16 · 16:25 UTC</span>
 </div></nav>
 
-<div class="hero"><div class="wrap">
-  <span class="label">Sound family · tracked since 2026-09-14</span>
-  <h1>jersey club · cinematic & epic</h1>
-  <div style="margin-top:12px">
-  
-    <span class="badge base">baseline day 3/3 · growth measurable from day 3</span>
-  
+
+<div class="hero" style="padding-top:44px"><div class="wrap">
+  <div class="kicker">Rank 1 today &middot; day 3 of 3 baseline</div>
+  <h1 style="font-size:clamp(30px,4vw,46px)">jersey club · cinematic & epic</h1>
+  <div class="chips">
+    <span class="chip">70 tracks today</span>
+    <span class="chip">89-152 bpm</span>
+    <span class="chip">key G maj</span>
+    <span class="chip">energy 0.58</span>
+    <span class="chip alert">83% of tracks released &lt; 45 days ago</span>
   </div>
-  <div class="tags" style="margin-top:12px">
-    <span class="tag"><b>70</b> tracks today</span>
-    <span class="tag"><b>89-152</b> bpm</span>
-    <span class="tag">key <b>G maj</b></span>
-    <span class="tag">energy <b>0.58</b>/1</span>
-    <span class="tag">tracks sound <b>85% alike</b></span>
+  <div class="ingr">
+    <div class="i"><span class="label">Defining ingredients</span></div>
     
   </div>
 </div></div>
 <div class="wrap">
-  
-  <div class="note"><div class="who">Analyst note · Claude · 2026-09-16</div>The sound: this cluster centers on a moderate energy profile (mean 0.57) with a wide tempo span from about 83 to 162 BPM, and the audio tags lean loosely toward jersey club (0.53) and dance pop (0.50) but also singer-songwriter ballad and latin pop, which suggests a rhythm-forward yet melodic, emotionally weighted pop sound rather than one clean genre.
+  <div class="notegrid">
+    
+    <div class="anote"><div class="who">Analyst note &middot; Claude &middot; 2026-09-16</div>
+    <p>This cluster is a loose, mid-energy blend rather than a tight single sound. The audio tags lean toward jersey club at the top of the list, but with strong pulls into dance pop, singer-songwriter ballad, and latin pop, which tells you the production ranges from bouncy rhythmic tracks to more stripped, vocal-forward material. Mean energy sits at 0.57, so this is moderate rather than aggressive, and the tempo range is wide, from about 83 to 161 BPM, which again signals a family that spans slower ballads and faster club-tempo cuts. Common keys skew bright, with F# major, D major, and C major recurring. As evidence of the range, listen to "Same Circus" by Carly Pearce and "Too Much Of A Good Thing" by Ashley Kutcher on the more songwriter and pop side, alongside "The Joker" by Hudson Westbrook, which anchors the closest audio matches.</p><p>I cannot call this a trend yet. The velocity status is baseline with only 3 days of history, and both growth_pct and z are null, so there is no measured momentum to point to. Release dates are recent, ranging from early August to mid September 2026, and there are 15 tracks today, but recency alone does not prove movement. To call this moving, I would need several more days of history so growth and a z score can actually be computed, and I would want to see the track count and audio cohesion hold or rise across those days rather than scatter. Until then, treat this as a cluster worth watching, not a confirmed climb.</p></div>
+    
+    <div class="sidekv">
+      <span class="title">What this call is worth</span>
+      <div class="kv">
+        <div class="row"><span class="k">Sample size</span><span class="v">70 tracks</span></div>
+        <div class="row"><span class="k">Baseline days</span><span class="v ">3 of 3</span></div>
+        <div class="row"><span class="k">Flag eligible</span><span class="v ">not yet</span></div>
+        
+        <div class="row"><span class="k">Confidence</span><span class="v o">tentative</span></div>
+      </div>
+    </div>
+  </div>
 
-Why it's moving: with only 3 days of history and a baseline velocity status (no growth percentage or z-score available), I cannot claim real momentum yet, so the honest read is that this is an early-forming grouping worth watching rather than a proven trend.
+  <section class="chart">
+    <div class="shead"><h2>Daily share</h2><span class="sub">how much of each day's intake sounded like this, measured against its own 7-day baseline</span>
+    <span class="note">plot scale 0-32% &middot; 3 days</span></div>
+    <div class="legend">
+      <span><i style="background:var(--acc)"></i>above baseline</span>
+      <span><i style="background:rgba(255,255,255,.22)"></i>within baseline</span>
+      <span><i style="background:none;border-top:1px dashed var(--lav)"></i>7-day baseline &middot; 26.4%</span>
+    </div>
+    <svg viewBox="0 0 900 190" preserveAspectRatio="none"><rect x="75.4" y="25.6" width="202.5" height="142.4" rx="1.5" fill="var(--acc)"/><text x="176.7" y="184" font-size="9" fill="var(--dim)" text-anchor="middle" font-family="IBM Plex Mono, monospace">14</text><rect x="364.7" y="36.8" width="202.5" height="131.2" rx="1.5" fill="rgba(255,255,255,.14)"/><text x="466.0" y="184" font-size="9" fill="var(--dim)" text-anchor="middle" font-family="IBM Plex Mono, monospace">15</text><rect x="654.1" y="57.2" width="202.5" height="110.8" rx="1.5" fill="rgba(255,255,255,.14)"/><text x="755.3" y="184" font-size="9" fill="var(--dim)" text-anchor="middle" font-family="IBM Plex Mono, monospace">16</text><line x1="32" y1="31.2" x2="900" y2="31.2" stroke="var(--lav)" stroke-width="1" stroke-dasharray="4 3"/><text x="0" y="3.0" font-size="9" fill="var(--dim)" font-family="IBM Plex Mono, monospace">32%</text><text x="0" y="87.0" font-size="9" fill="var(--dim)" font-family="IBM Plex Mono, monospace">16%</text><text x="0" y="171.0" font-size="9" fill="var(--dim)" font-family="IBM Plex Mono, monospace">0%</text></svg>
+    <div class="foot"><span>SEPTEMBER 2026</span>
+    <span class="o">today 21.4% &middot; -19% vs baseline</span></div>
+  </section>
 
-It bridges: the representative tracks skew toward country and Nashville-adjacent artists like Carly Pearce, Miranda Lambert, Koe Wetzel, and Ashley Cooke sitting alongside pop voices like Ashley Kutcher and a French-language entry from Joseph Kamel, so the audio similarity here appears to connect contemporary country audiences with mainstream and international pop listeners.</div>
-  
+  <section>
+    <div class="shead"><h2>Tracks in this sound today</h2>
+    <span class="sub">fit is how close a track sits to the sonic center of the family, core &ge; 85%, close &ge; 75%</span>
+    <span class="note">50 tracks &middot; sorted by fit</span></div>
+    <table><tr><th style="width:40px"></th><th>Track</th><th>Artist</th><th>Heard in</th><th class="r">Fit</th></tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4251602691" data-url="" data-title="The Joker" data-artist="Hudson Westbrook" data-art="https://cdn-images.dzcdn.net/images/cover/bbe6af9a89f7effd83f3f2fde7d4496b/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">The Joker</td><td style="color:var(--mut)">Hudson Westbrook</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:91%"></i></div><span class="fitword"><b>core</b>91%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4093716981" data-url="" data-title="Same Circus" data-artist="Carly Pearce" data-art="https://cdn-images.dzcdn.net/images/cover/25b0ca62e85dc0786bc5ebc31c441016/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Same Circus</td><td style="color:var(--mut)">Carly Pearce</td>
+      <td class="mono-cell">chart:country,playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:90%"></i></div><span class="fitword"><b>core</b>90%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4209383222" data-url="" data-title="Too Much Of A Good Thing" data-artist="Ashley Kutcher" data-art="https://cdn-images.dzcdn.net/images/cover/6714c7ba7094a36ab4e3643cc42a2c4a/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Too Much Of A Good Thing</td><td style="color:var(--mut)">Ashley Kutcher</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:90%"></i></div><span class="fitword"><b>core</b>90%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4203392972" data-url="" data-title="Jaded" data-artist="Koe Wetzel" data-art="https://cdn-images.dzcdn.net/images/cover/04e9b4edc5c20eac15d3f1edb0b6c18c/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Jaded</td><td style="color:var(--mut)">Koe Wetzel</td>
+      <td class="mono-cell">chart:country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:89%"></i></div><span class="fitword"><b>core</b>89%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4192719242" data-url="" data-title="Sunset Marquis" data-artist="Miranda Lambert" data-art="https://cdn-images.dzcdn.net/images/cover/2df33f46c39d45d822fad9959fc9a3b8/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Sunset Marquis</td><td style="color:var(--mut)">Miranda Lambert</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:89%"></i></div><span class="fitword"><b>core</b>89%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4236796502" data-url="" data-title="The Illusion Of Love" data-artist="Laci Kaye Booth" data-art="https://cdn-images.dzcdn.net/images/cover/4925a78209a2a79eb00d280b196ed748/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">The Illusion Of Love</td><td style="color:var(--mut)">Laci Kaye Booth</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:88%"></i></div><span class="fitword"><b>core</b>88%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4234094462" data-url="" data-title="Cowgirl Up" data-artist="Belles" data-art="https://cdn-images.dzcdn.net/images/cover/c8379865d77941150c39c5217c3a3fba/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Cowgirl Up</td><td style="color:var(--mut)">Belles</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:88%"></i></div><span class="fitword"><b>core</b>88%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4208262182" data-url="" data-title="Tennessee" data-artist="Chanel West Coast" data-art="https://cdn-images.dzcdn.net/images/cover/02f8a35c6e57128a02c865dc828a0615/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Tennessee</td><td style="color:var(--mut)">Chanel West Coast</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:88%"></i></div><span class="fitword"><b>core</b>88%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4217278752" data-url="" data-title="Jamais" data-artist="Joseph Kamel" data-art="https://cdn-images.dzcdn.net/images/cover/617aa1845322af06fd9214010d2f3ff1/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Jamais</td><td style="color:var(--mut)">Joseph Kamel</td>
+      <td class="mono-cell">playlist:Futurs Hits</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:88%"></i></div><span class="fitword"><b>core</b>88%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4208826162" data-url="" data-title="dance around it" data-artist="Ashley Cooke" data-art="https://cdn-images.dzcdn.net/images/cover/1ebc96369d59c6c5d2d7d16b202cf100/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">dance around it</td><td style="color:var(--mut)">Ashley Cooke</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:88%"></i></div><span class="fitword"><b>core</b>88%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4214712622" data-url="" data-title="Lost Boys" data-artist="Phoebe Bridgers" data-art="https://cdn-images.dzcdn.net/images/cover/01971eab99b872cd6afb0110a5b8931d/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Lost Boys</td><td style="color:var(--mut)">Phoebe Bridgers</td>
+      <td class="mono-cell">chart:alternative</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:88%"></i></div><span class="fitword"><b>core</b>88%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4173638732" data-url="" data-title="902180" data-artist="Tyler Hubbard" data-art="https://cdn-images.dzcdn.net/images/cover/be15be5e85e49e8d49ac141d39ec3039/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">902180</td><td style="color:var(--mut)">Tyler Hubbard</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:88%"></i></div><span class="fitword"><b>core</b>88%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4204406872" data-url="" data-title="Say It Sober" data-artist="Lanie Gardner" data-art="https://cdn-images.dzcdn.net/images/cover/667f820ed5758d4b3e7126dedd983ed1/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Say It Sober</td><td style="color:var(--mut)">Lanie Gardner</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:88%"></i></div><span class="fitword"><b>core</b>88%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4237029512" data-url="" data-title="Everyday Life" data-artist="Corey Kent" data-art="https://cdn-images.dzcdn.net/images/cover/871e4f96325ed9b6ca50818cb0a08602/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Everyday Life</td><td style="color:var(--mut)">Corey Kent</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:88%"></i></div><span class="fitword"><b>core</b>88%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4202541942" data-url="" data-title="Want For Nothing" data-artist="Cameron Whitcomb" data-art="https://cdn-images.dzcdn.net/images/cover/d6390f0a800e20ee4f3ba89af5f3ead5/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Want For Nothing</td><td style="color:var(--mut)">Cameron Whitcomb</td>
+      <td class="mono-cell">chart:alternative</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:88%"></i></div><span class="fitword"><b>core</b>88%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4192719072" data-url="" data-title="Kinda Want Your Man" data-artist="Mackenzie Carpenter" data-art="https://cdn-images.dzcdn.net/images/cover/dab881f9600d790bcbbca1823a15953a/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Kinda Want Your Man</td><td style="color:var(--mut)">Mackenzie Carpenter</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:87%"></i></div><span class="fitword"><b>core</b>87%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4230970542" data-url="" data-title="ONE STORY HOUSE" data-artist="Alli Walker" data-art="https://cdn-images.dzcdn.net/images/cover/ad296cbd3cc25351682bb2c9887a4080/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">ONE STORY HOUSE</td><td style="color:var(--mut)">Alli Walker</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:87%"></i></div><span class="fitword"><b>core</b>87%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4192789922" data-url="" data-title="Bad Girls Never Die" data-artist="Nessa Barrett" data-art="https://cdn-images.dzcdn.net/images/cover/5aee596faf9fa8dcb6aacc28a5f93e77/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Bad Girls Never Die</td><td style="color:var(--mut)">Nessa Barrett</td>
+      <td class="mono-cell">chart:pop</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:87%"></i></div><span class="fitword"><b>core</b>87%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="3972749391" data-url="" data-title="Her" data-artist="Leanna Crawford" data-art="https://cdn-images.dzcdn.net/images/cover/597cbc5dc45b27cf1976c9e296bca830/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Her</td><td style="color:var(--mut)">Leanna Crawford</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:87%"></i></div><span class="fitword"><b>core</b>87%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4248167221" data-url="" data-title="Every Minute Of It" data-artist="Gabby Barrett" data-art="https://cdn-images.dzcdn.net/images/cover/b55408c65596e95acd64e39b10261b8b/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Every Minute Of It</td><td style="color:var(--mut)">Gabby Barrett</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:87%"></i></div><span class="fitword"><b>core</b>87%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4126146831" data-url="" data-title="Hit The Sky" data-artist="Wolf Alice" data-art="https://cdn-images.dzcdn.net/images/cover/237e4bd78cbbaab2c8b47e34d54b2412/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Hit The Sky</td><td style="color:var(--mut)">Wolf Alice</td>
+      <td class="mono-cell">playlist:New Folk</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:87%"></i></div><span class="fitword"><b>core</b>87%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4131385341" data-url="" data-title="After The Love" data-artist="Matilda Mann" data-art="https://cdn-images.dzcdn.net/images/cover/dd38f9422cebc96bffa807a9519bd1f8/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">After The Love</td><td style="color:var(--mut)">Matilda Mann</td>
+      <td class="mono-cell">playlist:Alt Pop</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:87%"></i></div><span class="fitword"><b>core</b>87%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4171676062" data-url="" data-title="Why Does the Moon" data-artist="Jess Moskaluke" data-art="https://cdn-images.dzcdn.net/images/cover/31d3b609f2b61bc26c00995f493ee336/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Why Does the Moon</td><td style="color:var(--mut)">Jess Moskaluke</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:87%"></i></div><span class="fitword"><b>core</b>87%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4208691962" data-url="" data-title="Mess" data-artist="Jordan Davis" data-art="https://cdn-images.dzcdn.net/images/cover/8b944c7bb147ded8be1ae7a92a266d1e/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Mess</td><td style="color:var(--mut)">Jordan Davis</td>
+      <td class="mono-cell">chart:country,playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:87%"></i></div><span class="fitword"><b>core</b>87%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4236617102" data-url="" data-title="The Ringer" data-artist="Lauren Alaina" data-art="https://cdn-images.dzcdn.net/images/cover/423dad3ae08c6f21a1bb3461f0932963/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">The Ringer</td><td style="color:var(--mut)">Lauren Alaina</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:87%"></i></div><span class="fitword"><b>core</b>87%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4209033352" data-url="" data-title="Way To Go (feat. Brooks & Dunn)" data-artist="Zach John King" data-art="https://cdn-images.dzcdn.net/images/cover/b3ad8183c5f342afd9646e1776f22863/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Way To Go (feat. Brooks & Dunn)</td><td style="color:var(--mut)">Zach John King</td>
+      <td class="mono-cell">chart:country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4208701732" data-url="" data-title="Kicked Out Of Bars" data-artist="Josh Ross" data-art="https://cdn-images.dzcdn.net/images/cover/cec40e79d83643ee70031f47dbf5b9ae/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Kicked Out Of Bars</td><td style="color:var(--mut)">Josh Ross</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4167204822" data-url="" data-title="Been By Now" data-artist="Morgan Wallen" data-art="https://cdn-images.dzcdn.net/images/cover/38e835566214fba0d9f0c71d58e16145/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Been By Now</td><td style="color:var(--mut)">Morgan Wallen</td>
+      <td class="mono-cell">chart:country,playlist:New Country,rss:most-played</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4017945431" data-url="" data-title="Believer" data-artist="Angela Autumn" data-art="https://cdn-images.dzcdn.net/images/cover/a11b105802176c098709f5bc1918c5e7/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Believer</td><td style="color:var(--mut)">Angela Autumn</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4180554062" data-url="" data-title="Premonition" data-artist="Juno James" data-art="https://cdn-images.dzcdn.net/images/cover/7128f25f70611cd0f072880542ef59e0/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Premonition</td><td style="color:var(--mut)">Juno James</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4250841131" data-url="" data-title="One Boot Out The Door" data-artist="Cody Lohden" data-art="https://cdn-images.dzcdn.net/images/cover/5a51e6855e6c9df8e5d615717b17f819/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">One Boot Out The Door</td><td style="color:var(--mut)">Cody Lohden</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4242951532" data-url="" data-title="Young Dumb and Reckless" data-artist="Logan Michael" data-art="https://cdn-images.dzcdn.net/images/cover/2b3cd2447c44391ba29e11cd17df7d03/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Young Dumb and Reckless</td><td style="color:var(--mut)">Logan Michael</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4250841151" data-url="" data-title="Beautiful Mind" data-artist="Alex Lambert" data-art="https://cdn-images.dzcdn.net/images/cover/7c3b90817437528ea27cb7a3b8ef317a/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Beautiful Mind</td><td style="color:var(--mut)">Alex Lambert</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4194935092" data-url="" data-title="Hey Babe! We're Getting Married!" data-artist="Hannah Jane Lewis" data-art="https://cdn-images.dzcdn.net/images/cover/109598241572b7f49f438afd1fdd82dd/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Hey Babe! We're Getting Married!</td><td style="color:var(--mut)">Hannah Jane Lewis</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4250840531" data-url="" data-title="The Way That It Wasn’t" data-artist="Thelma & James" data-art="https://cdn-images.dzcdn.net/images/cover/bd4ef3438026af60f657fddaf17f2291/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">The Way That It Wasn’t</td><td style="color:var(--mut)">Thelma & James</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4117880761" data-url="" data-title="Pre-Raphaelite" data-artist="Paris Paloma" data-art="https://cdn-images.dzcdn.net/images/cover/90429c2b0d69d60500e8719bb10ea965/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Pre-Raphaelite</td><td style="color:var(--mut)">Paris Paloma</td>
+      <td class="mono-cell">playlist:Alt Pop</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4236073882" data-url="" data-title="Hanging Out In My Head" data-artist="The Strumbellas" data-art="https://cdn-images.dzcdn.net/images/cover/a2bb12e3ff8ebe4670899d409fcce260/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Hanging Out In My Head</td><td style="color:var(--mut)">The Strumbellas</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:86%"></i></div><span class="fitword"><b>core</b>86%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4238474392" data-url="" data-title="Mariposa (Rascal's Version)" data-artist="Peach Tree Rascals" data-art="https://cdn-images.dzcdn.net/images/cover/f5aba784439c8a2a538e8a6006a604df/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Mariposa (Rascal's Version)</td><td style="color:var(--mut)">Peach Tree Rascals</td>
+      <td class="mono-cell">playlist:Radar Weekly</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:85%"></i></div><span class="fitword"><b>core</b>85%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4127321191" data-url="" data-title="Sleeping" data-artist="Fenne Lily" data-art="https://cdn-images.dzcdn.net/images/cover/880c12b28dece4dad8c583262a7e8908/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Sleeping</td><td style="color:var(--mut)">Fenne Lily</td>
+      <td class="mono-cell">playlist:New Folk</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:85%"></i></div><span class="fitword"><b>core</b>85%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4246128521" data-url="" data-title="Just A Kid" data-artist="Sara Bareilles" data-art="https://cdn-images.dzcdn.net/images/cover/60926b20e26e367cc9e83957933851f2/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Just A Kid</td><td style="color:var(--mut)">Sara Bareilles</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:85%"></i></div><span class="fitword"><b>core</b>85%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4161107312" data-url="" data-title="She Doesn't Love Me" data-artist="Claud" data-art="https://cdn-images.dzcdn.net/images/cover/b4ec36ec8b621c34e98f161a90a4ac37/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">She Doesn't Love Me</td><td style="color:var(--mut)">Claud</td>
+      <td class="mono-cell">playlist:Alt Pop</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:85%"></i></div><span class="fitword"><b>core</b>85%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4250840511" data-url="" data-title="small talk" data-artist="Charlie Jeer" data-art="https://cdn-images.dzcdn.net/images/cover/2fbc6a6799e3b5e3152bb1b6358d7e9f/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">small talk</td><td style="color:var(--mut)">Charlie Jeer</td>
+      <td class="mono-cell">playlist:Radar Weekly</td>
+      <td class="r"><div class="fitcell"><div class="fitbar"><i style="width:85%"></i></div><span class="fitword"><b>core</b>85%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4228933022" data-url="" data-title="A Different Kind of Happiness" data-artist="Nothing But Thieves" data-art="https://cdn-images.dzcdn.net/images/cover/900fbc69a574033327e08a2683582694/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">A Different Kind of Happiness</td><td style="color:var(--mut)">Nothing But Thieves</td>
+      <td class="mono-cell">playlist:Radar Weekly</td>
+      <td class="r"><div class="fitcell"><div class="fitbar low"><i style="width:85%"></i></div><span class="fitword low"><b>close</b>85%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4250156131" data-url="" data-title="Hers" data-artist="Nell Mescal" data-art="https://cdn-images.dzcdn.net/images/cover/3bc310483e214c2d5a1d5249685446f7/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Hers</td><td style="color:var(--mut)">Nell Mescal</td>
+      <td class="mono-cell">playlist:Radar Weekly,playlist:New Folk,playlist:A</td>
+      <td class="r"><div class="fitcell"><div class="fitbar low"><i style="width:85%"></i></div><span class="fitword low"><b>close</b>85%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="3917467561" data-url="" data-title="Wild Heart" data-artist="IAN SWEET" data-art="https://cdn-images.dzcdn.net/images/cover/666c5e004757991198f3f6cf02a79d2b/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Wild Heart</td><td style="color:var(--mut)">IAN SWEET</td>
+      <td class="mono-cell">playlist:Alt Pop</td>
+      <td class="r"><div class="fitcell"><div class="fitbar low"><i style="width:84%"></i></div><span class="fitword low"><b>close</b>84%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4096325251" data-url="" data-title="Dancing With Her" data-artist="Babygirl" data-art="https://cdn-images.dzcdn.net/images/cover/de5644a98e0b50bd6f00c8fa503a5674/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Dancing With Her</td><td style="color:var(--mut)">Babygirl</td>
+      <td class="mono-cell">playlist:Alt Pop</td>
+      <td class="r"><div class="fitcell"><div class="fitbar low"><i style="width:84%"></i></div><span class="fitword low"><b>close</b>84%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4233954542" data-url="" data-title="Up There Down Here" data-artist="Tyce Delk" data-art="https://cdn-images.dzcdn.net/images/cover/82be9a2974e893a94f1919b9c8101c38/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Up There Down Here</td><td style="color:var(--mut)">Tyce Delk</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar low"><i style="width:84%"></i></div><span class="fitword low"><b>close</b>84%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4234071772" data-url="" data-title="BRB (from Forgotten Island)" data-artist="H.E.R." data-art="https://cdn-images.dzcdn.net/images/cover/4040827c9ad14c61ed91aaf28ce4bec4/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">BRB (from Forgotten Island)</td><td style="color:var(--mut)">H.E.R.</td>
+      <td class="mono-cell">playlist:Radar Weekly</td>
+      <td class="r"><div class="fitcell"><div class="fitbar low"><i style="width:84%"></i></div><span class="fitword low"><b>close</b>84%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4158596032" data-url="" data-title="One song away from crying" data-artist="Rachel Chinouriri" data-art="https://cdn-images.dzcdn.net/images/cover/fcc1cad1dc4aebe80b2263b8c370d050/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">One song away from crying</td><td style="color:var(--mut)">Rachel Chinouriri</td>
+      <td class="mono-cell">playlist:Alt Pop</td>
+      <td class="r"><div class="fitcell"><div class="fitbar low"><i style="width:84%"></i></div><span class="fitword low"><b>close</b>84%</span></div></td>
+    </tr>
+    
+    <tr>
+      <td><button class="play" data-dz="4167679422" data-url="" data-title="Stranger Things" data-artist="Shania Twain" data-art="https://cdn-images.dzcdn.net/images/cover/0ce1e4e4615fbd3c3473b284af739535/250x250-000000-80-0-0.jpg">▶</button></td>
+      <td class="tname">Stranger Things</td><td style="color:var(--mut)">Shania Twain</td>
+      <td class="mono-cell">playlist:New Country</td>
+      <td class="r"><div class="fitcell"><div class="fitbar low"><i style="width:83%"></i></div><span class="fitword low"><b>close</b>83%</span></div></td>
+    </tr>
+    </table>
+  </section>
 
-  <h2>Daily share</h2>
-  <div class="h2sub">How much of each day's intake sounded like this. Growth against its own
-  7-day baseline is the trend signal.</div>
-  <svg class="spark" viewBox="0 0 720 88" preserveAspectRatio="none"><polyline points="8.0,17.4 360.0,22.3 712.0,31.3" fill="none" stroke="#ff6437" stroke-width="2"/><circle cx="8.0" cy="17.4" r="3.5" fill="#ff6437"/><circle cx="360.0" cy="22.3" r="3.5" fill="#ff6437"/><circle cx="712.0" cy="31.3" r="3.5" fill="#ff6437"/><text x="8" y="87" font-size="8" fill="#6e6380" text-anchor="middle" font-family="monospace">09-14</text><text x="360" y="87" font-size="8" fill="#6e6380" text-anchor="middle" font-family="monospace">09-15</text><text x="712" y="87" font-size="8" fill="#6e6380" text-anchor="middle" font-family="monospace">09-16</text></svg>
-
-  <h2>Tracks in this sound today</h2>
-  <div class="h2sub">Fit = how close a track sits to this sound's sonic center:
-  core ≥ 85%, close ≥ 75%, edge below.</div>
-  <table><tr><th style="width:44px"></th><th style="width:46px"></th><th>Track</th><th>Artist</th>
-  <th>Heard in</th><th style="width:96px">Fit</th></tr>
-  
-  <tr><td><button class="play" data-dz="4251602691" data-url=""
-        data-title="The Joker" data-artist="Hudson Westbrook" data-art="https://cdn-images.dzcdn.net/images/cover/bbe6af9a89f7effd83f3f2fde7d4496b/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/bbe6af9a89f7effd83f3f2fde7d4496b/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">The Joker</td><td style="color:var(--muted)">Hudson Westbrook</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 91%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4093716981" data-url=""
-        data-title="Same Circus" data-artist="Carly Pearce" data-art="https://cdn-images.dzcdn.net/images/cover/25b0ca62e85dc0786bc5ebc31c441016/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/25b0ca62e85dc0786bc5ebc31c441016/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Same Circus</td><td style="color:var(--muted)">Carly Pearce</td>
-      <td class="mono">chart:country,playlist:New Country</td>
-      <td class="fit"><b>core</b> 90%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4209383222" data-url=""
-        data-title="Too Much Of A Good Thing" data-artist="Ashley Kutcher" data-art="https://cdn-images.dzcdn.net/images/cover/6714c7ba7094a36ab4e3643cc42a2c4a/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/6714c7ba7094a36ab4e3643cc42a2c4a/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Too Much Of A Good Thing</td><td style="color:var(--muted)">Ashley Kutcher</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 90%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4203392972" data-url=""
-        data-title="Jaded" data-artist="Koe Wetzel" data-art="https://cdn-images.dzcdn.net/images/cover/04e9b4edc5c20eac15d3f1edb0b6c18c/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/04e9b4edc5c20eac15d3f1edb0b6c18c/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Jaded</td><td style="color:var(--muted)">Koe Wetzel</td>
-      <td class="mono">chart:country</td>
-      <td class="fit"><b>core</b> 89%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4192719242" data-url=""
-        data-title="Sunset Marquis" data-artist="Miranda Lambert" data-art="https://cdn-images.dzcdn.net/images/cover/2df33f46c39d45d822fad9959fc9a3b8/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/2df33f46c39d45d822fad9959fc9a3b8/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Sunset Marquis</td><td style="color:var(--muted)">Miranda Lambert</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 89%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4236796502" data-url=""
-        data-title="The Illusion Of Love" data-artist="Laci Kaye Booth" data-art="https://cdn-images.dzcdn.net/images/cover/4925a78209a2a79eb00d280b196ed748/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/4925a78209a2a79eb00d280b196ed748/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">The Illusion Of Love</td><td style="color:var(--muted)">Laci Kaye Booth</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 88%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4234094462" data-url=""
-        data-title="Cowgirl Up" data-artist="Belles" data-art="https://cdn-images.dzcdn.net/images/cover/c8379865d77941150c39c5217c3a3fba/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/c8379865d77941150c39c5217c3a3fba/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Cowgirl Up</td><td style="color:var(--muted)">Belles</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 88%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4208262182" data-url=""
-        data-title="Tennessee" data-artist="Chanel West Coast" data-art="https://cdn-images.dzcdn.net/images/cover/02f8a35c6e57128a02c865dc828a0615/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/02f8a35c6e57128a02c865dc828a0615/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Tennessee</td><td style="color:var(--muted)">Chanel West Coast</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 88%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4217278752" data-url=""
-        data-title="Jamais" data-artist="Joseph Kamel" data-art="https://cdn-images.dzcdn.net/images/cover/617aa1845322af06fd9214010d2f3ff1/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/617aa1845322af06fd9214010d2f3ff1/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Jamais</td><td style="color:var(--muted)">Joseph Kamel</td>
-      <td class="mono">playlist:Futurs Hits</td>
-      <td class="fit"><b>core</b> 88%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4208826162" data-url=""
-        data-title="dance around it" data-artist="Ashley Cooke" data-art="https://cdn-images.dzcdn.net/images/cover/1ebc96369d59c6c5d2d7d16b202cf100/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/1ebc96369d59c6c5d2d7d16b202cf100/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">dance around it</td><td style="color:var(--muted)">Ashley Cooke</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 88%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4214712622" data-url=""
-        data-title="Lost Boys" data-artist="Phoebe Bridgers" data-art="https://cdn-images.dzcdn.net/images/cover/01971eab99b872cd6afb0110a5b8931d/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/01971eab99b872cd6afb0110a5b8931d/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Lost Boys</td><td style="color:var(--muted)">Phoebe Bridgers</td>
-      <td class="mono">chart:alternative</td>
-      <td class="fit"><b>core</b> 88%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4173638732" data-url=""
-        data-title="902180" data-artist="Tyler Hubbard" data-art="https://cdn-images.dzcdn.net/images/cover/be15be5e85e49e8d49ac141d39ec3039/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/be15be5e85e49e8d49ac141d39ec3039/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">902180</td><td style="color:var(--muted)">Tyler Hubbard</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 88%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4204406872" data-url=""
-        data-title="Say It Sober" data-artist="Lanie Gardner" data-art="https://cdn-images.dzcdn.net/images/cover/667f820ed5758d4b3e7126dedd983ed1/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/667f820ed5758d4b3e7126dedd983ed1/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Say It Sober</td><td style="color:var(--muted)">Lanie Gardner</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 88%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4237029512" data-url=""
-        data-title="Everyday Life" data-artist="Corey Kent" data-art="https://cdn-images.dzcdn.net/images/cover/871e4f96325ed9b6ca50818cb0a08602/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/871e4f96325ed9b6ca50818cb0a08602/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Everyday Life</td><td style="color:var(--muted)">Corey Kent</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 88%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4202541942" data-url=""
-        data-title="Want For Nothing" data-artist="Cameron Whitcomb" data-art="https://cdn-images.dzcdn.net/images/cover/d6390f0a800e20ee4f3ba89af5f3ead5/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/d6390f0a800e20ee4f3ba89af5f3ead5/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Want For Nothing</td><td style="color:var(--muted)">Cameron Whitcomb</td>
-      <td class="mono">chart:alternative</td>
-      <td class="fit"><b>core</b> 88%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4192719072" data-url=""
-        data-title="Kinda Want Your Man" data-artist="Mackenzie Carpenter" data-art="https://cdn-images.dzcdn.net/images/cover/dab881f9600d790bcbbca1823a15953a/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/dab881f9600d790bcbbca1823a15953a/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Kinda Want Your Man</td><td style="color:var(--muted)">Mackenzie Carpenter</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 87%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4230970542" data-url=""
-        data-title="ONE STORY HOUSE" data-artist="Alli Walker" data-art="https://cdn-images.dzcdn.net/images/cover/ad296cbd3cc25351682bb2c9887a4080/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/ad296cbd3cc25351682bb2c9887a4080/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">ONE STORY HOUSE</td><td style="color:var(--muted)">Alli Walker</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 87%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4192789922" data-url=""
-        data-title="Bad Girls Never Die" data-artist="Nessa Barrett" data-art="https://cdn-images.dzcdn.net/images/cover/5aee596faf9fa8dcb6aacc28a5f93e77/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/5aee596faf9fa8dcb6aacc28a5f93e77/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Bad Girls Never Die</td><td style="color:var(--muted)">Nessa Barrett</td>
-      <td class="mono">chart:pop</td>
-      <td class="fit"><b>core</b> 87%</td></tr>
-  
-  <tr><td><button class="play" data-dz="3972749391" data-url=""
-        data-title="Her" data-artist="Leanna Crawford" data-art="https://cdn-images.dzcdn.net/images/cover/597cbc5dc45b27cf1976c9e296bca830/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/597cbc5dc45b27cf1976c9e296bca830/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Her</td><td style="color:var(--muted)">Leanna Crawford</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 87%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4248167221" data-url=""
-        data-title="Every Minute Of It" data-artist="Gabby Barrett" data-art="https://cdn-images.dzcdn.net/images/cover/b55408c65596e95acd64e39b10261b8b/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/b55408c65596e95acd64e39b10261b8b/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Every Minute Of It</td><td style="color:var(--muted)">Gabby Barrett</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 87%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4126146831" data-url=""
-        data-title="Hit The Sky" data-artist="Wolf Alice" data-art="https://cdn-images.dzcdn.net/images/cover/237e4bd78cbbaab2c8b47e34d54b2412/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/237e4bd78cbbaab2c8b47e34d54b2412/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Hit The Sky</td><td style="color:var(--muted)">Wolf Alice</td>
-      <td class="mono">playlist:New Folk</td>
-      <td class="fit"><b>core</b> 87%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4131385341" data-url=""
-        data-title="After The Love" data-artist="Matilda Mann" data-art="https://cdn-images.dzcdn.net/images/cover/dd38f9422cebc96bffa807a9519bd1f8/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/dd38f9422cebc96bffa807a9519bd1f8/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">After The Love</td><td style="color:var(--muted)">Matilda Mann</td>
-      <td class="mono">playlist:Alt Pop</td>
-      <td class="fit"><b>core</b> 87%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4171676062" data-url=""
-        data-title="Why Does the Moon" data-artist="Jess Moskaluke" data-art="https://cdn-images.dzcdn.net/images/cover/31d3b609f2b61bc26c00995f493ee336/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/31d3b609f2b61bc26c00995f493ee336/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Why Does the Moon</td><td style="color:var(--muted)">Jess Moskaluke</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 87%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4208691962" data-url=""
-        data-title="Mess" data-artist="Jordan Davis" data-art="https://cdn-images.dzcdn.net/images/cover/8b944c7bb147ded8be1ae7a92a266d1e/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/8b944c7bb147ded8be1ae7a92a266d1e/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Mess</td><td style="color:var(--muted)">Jordan Davis</td>
-      <td class="mono">chart:country,playlist:New Country</td>
-      <td class="fit"><b>core</b> 87%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4236617102" data-url=""
-        data-title="The Ringer" data-artist="Lauren Alaina" data-art="https://cdn-images.dzcdn.net/images/cover/423dad3ae08c6f21a1bb3461f0932963/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/423dad3ae08c6f21a1bb3461f0932963/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">The Ringer</td><td style="color:var(--muted)">Lauren Alaina</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 87%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4209033352" data-url=""
-        data-title="Way To Go (feat. Brooks & Dunn)" data-artist="Zach John King" data-art="https://cdn-images.dzcdn.net/images/cover/b3ad8183c5f342afd9646e1776f22863/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/b3ad8183c5f342afd9646e1776f22863/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Way To Go (feat. Brooks & Dunn)</td><td style="color:var(--muted)">Zach John King</td>
-      <td class="mono">chart:country</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4208701732" data-url=""
-        data-title="Kicked Out Of Bars" data-artist="Josh Ross" data-art="https://cdn-images.dzcdn.net/images/cover/cec40e79d83643ee70031f47dbf5b9ae/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/cec40e79d83643ee70031f47dbf5b9ae/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Kicked Out Of Bars</td><td style="color:var(--muted)">Josh Ross</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4167204822" data-url=""
-        data-title="Been By Now" data-artist="Morgan Wallen" data-art="https://cdn-images.dzcdn.net/images/cover/38e835566214fba0d9f0c71d58e16145/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/38e835566214fba0d9f0c71d58e16145/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Been By Now</td><td style="color:var(--muted)">Morgan Wallen</td>
-      <td class="mono">chart:country,playlist:New Country,rss:most-played</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4017945431" data-url=""
-        data-title="Believer" data-artist="Angela Autumn" data-art="https://cdn-images.dzcdn.net/images/cover/a11b105802176c098709f5bc1918c5e7/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/a11b105802176c098709f5bc1918c5e7/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Believer</td><td style="color:var(--muted)">Angela Autumn</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4180554062" data-url=""
-        data-title="Premonition" data-artist="Juno James" data-art="https://cdn-images.dzcdn.net/images/cover/7128f25f70611cd0f072880542ef59e0/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/7128f25f70611cd0f072880542ef59e0/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Premonition</td><td style="color:var(--muted)">Juno James</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4250841131" data-url=""
-        data-title="One Boot Out The Door" data-artist="Cody Lohden" data-art="https://cdn-images.dzcdn.net/images/cover/5a51e6855e6c9df8e5d615717b17f819/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/5a51e6855e6c9df8e5d615717b17f819/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">One Boot Out The Door</td><td style="color:var(--muted)">Cody Lohden</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4242951532" data-url=""
-        data-title="Young Dumb and Reckless" data-artist="Logan Michael" data-art="https://cdn-images.dzcdn.net/images/cover/2b3cd2447c44391ba29e11cd17df7d03/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/2b3cd2447c44391ba29e11cd17df7d03/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Young Dumb and Reckless</td><td style="color:var(--muted)">Logan Michael</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4250841151" data-url=""
-        data-title="Beautiful Mind" data-artist="Alex Lambert" data-art="https://cdn-images.dzcdn.net/images/cover/7c3b90817437528ea27cb7a3b8ef317a/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/7c3b90817437528ea27cb7a3b8ef317a/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Beautiful Mind</td><td style="color:var(--muted)">Alex Lambert</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4194935092" data-url=""
-        data-title="Hey Babe! We're Getting Married!" data-artist="Hannah Jane Lewis" data-art="https://cdn-images.dzcdn.net/images/cover/109598241572b7f49f438afd1fdd82dd/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/109598241572b7f49f438afd1fdd82dd/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Hey Babe! We're Getting Married!</td><td style="color:var(--muted)">Hannah Jane Lewis</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4250840531" data-url=""
-        data-title="The Way That It Wasn’t" data-artist="Thelma & James" data-art="https://cdn-images.dzcdn.net/images/cover/bd4ef3438026af60f657fddaf17f2291/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/bd4ef3438026af60f657fddaf17f2291/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">The Way That It Wasn’t</td><td style="color:var(--muted)">Thelma & James</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4117880761" data-url=""
-        data-title="Pre-Raphaelite" data-artist="Paris Paloma" data-art="https://cdn-images.dzcdn.net/images/cover/90429c2b0d69d60500e8719bb10ea965/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/90429c2b0d69d60500e8719bb10ea965/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Pre-Raphaelite</td><td style="color:var(--muted)">Paris Paloma</td>
-      <td class="mono">playlist:Alt Pop</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4236073882" data-url=""
-        data-title="Hanging Out In My Head" data-artist="The Strumbellas" data-art="https://cdn-images.dzcdn.net/images/cover/a2bb12e3ff8ebe4670899d409fcce260/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/a2bb12e3ff8ebe4670899d409fcce260/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Hanging Out In My Head</td><td style="color:var(--muted)">The Strumbellas</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 86%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4238474392" data-url=""
-        data-title="Mariposa (Rascal's Version)" data-artist="Peach Tree Rascals" data-art="https://cdn-images.dzcdn.net/images/cover/f5aba784439c8a2a538e8a6006a604df/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/f5aba784439c8a2a538e8a6006a604df/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Mariposa (Rascal's Version)</td><td style="color:var(--muted)">Peach Tree Rascals</td>
-      <td class="mono">playlist:Radar Weekly</td>
-      <td class="fit"><b>core</b> 85%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4127321191" data-url=""
-        data-title="Sleeping" data-artist="Fenne Lily" data-art="https://cdn-images.dzcdn.net/images/cover/880c12b28dece4dad8c583262a7e8908/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/880c12b28dece4dad8c583262a7e8908/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Sleeping</td><td style="color:var(--muted)">Fenne Lily</td>
-      <td class="mono">playlist:New Folk</td>
-      <td class="fit"><b>core</b> 85%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4246128521" data-url=""
-        data-title="Just A Kid" data-artist="Sara Bareilles" data-art="https://cdn-images.dzcdn.net/images/cover/60926b20e26e367cc9e83957933851f2/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/60926b20e26e367cc9e83957933851f2/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Just A Kid</td><td style="color:var(--muted)">Sara Bareilles</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>core</b> 85%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4161107312" data-url=""
-        data-title="She Doesn't Love Me" data-artist="Claud" data-art="https://cdn-images.dzcdn.net/images/cover/b4ec36ec8b621c34e98f161a90a4ac37/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/b4ec36ec8b621c34e98f161a90a4ac37/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">She Doesn't Love Me</td><td style="color:var(--muted)">Claud</td>
-      <td class="mono">playlist:Alt Pop</td>
-      <td class="fit"><b>core</b> 85%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4250840511" data-url=""
-        data-title="small talk" data-artist="Charlie Jeer" data-art="https://cdn-images.dzcdn.net/images/cover/2fbc6a6799e3b5e3152bb1b6358d7e9f/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/2fbc6a6799e3b5e3152bb1b6358d7e9f/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">small talk</td><td style="color:var(--muted)">Charlie Jeer</td>
-      <td class="mono">playlist:Radar Weekly</td>
-      <td class="fit"><b>core</b> 85%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4228933022" data-url=""
-        data-title="A Different Kind of Happiness" data-artist="Nothing But Thieves" data-art="https://cdn-images.dzcdn.net/images/cover/900fbc69a574033327e08a2683582694/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/900fbc69a574033327e08a2683582694/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">A Different Kind of Happiness</td><td style="color:var(--muted)">Nothing But Thieves</td>
-      <td class="mono">playlist:Radar Weekly</td>
-      <td class="fit"><b>close</b> 85%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4250156131" data-url=""
-        data-title="Hers" data-artist="Nell Mescal" data-art="https://cdn-images.dzcdn.net/images/cover/3bc310483e214c2d5a1d5249685446f7/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/3bc310483e214c2d5a1d5249685446f7/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Hers</td><td style="color:var(--muted)">Nell Mescal</td>
-      <td class="mono">playlist:Radar Weekly,playlist:New Folk,playlist:A</td>
-      <td class="fit"><b>close</b> 85%</td></tr>
-  
-  <tr><td><button class="play" data-dz="3917467561" data-url=""
-        data-title="Wild Heart" data-artist="IAN SWEET" data-art="https://cdn-images.dzcdn.net/images/cover/666c5e004757991198f3f6cf02a79d2b/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/666c5e004757991198f3f6cf02a79d2b/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Wild Heart</td><td style="color:var(--muted)">IAN SWEET</td>
-      <td class="mono">playlist:Alt Pop</td>
-      <td class="fit"><b>close</b> 84%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4096325251" data-url=""
-        data-title="Dancing With Her" data-artist="Babygirl" data-art="https://cdn-images.dzcdn.net/images/cover/de5644a98e0b50bd6f00c8fa503a5674/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/de5644a98e0b50bd6f00c8fa503a5674/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Dancing With Her</td><td style="color:var(--muted)">Babygirl</td>
-      <td class="mono">playlist:Alt Pop</td>
-      <td class="fit"><b>close</b> 84%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4233954542" data-url=""
-        data-title="Up There Down Here" data-artist="Tyce Delk" data-art="https://cdn-images.dzcdn.net/images/cover/82be9a2974e893a94f1919b9c8101c38/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/82be9a2974e893a94f1919b9c8101c38/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Up There Down Here</td><td style="color:var(--muted)">Tyce Delk</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>close</b> 84%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4234071772" data-url=""
-        data-title="BRB (from Forgotten Island)" data-artist="H.E.R." data-art="https://cdn-images.dzcdn.net/images/cover/4040827c9ad14c61ed91aaf28ce4bec4/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/4040827c9ad14c61ed91aaf28ce4bec4/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">BRB (from Forgotten Island)</td><td style="color:var(--muted)">H.E.R.</td>
-      <td class="mono">playlist:Radar Weekly</td>
-      <td class="fit"><b>close</b> 84%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4158596032" data-url=""
-        data-title="One song away from crying" data-artist="Rachel Chinouriri" data-art="https://cdn-images.dzcdn.net/images/cover/fcc1cad1dc4aebe80b2263b8c370d050/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/fcc1cad1dc4aebe80b2263b8c370d050/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">One song away from crying</td><td style="color:var(--muted)">Rachel Chinouriri</td>
-      <td class="mono">playlist:Alt Pop</td>
-      <td class="fit"><b>close</b> 84%</td></tr>
-  
-  <tr><td><button class="play" data-dz="4167679422" data-url=""
-        data-title="Stranger Things" data-artist="Shania Twain" data-art="https://cdn-images.dzcdn.net/images/cover/0ce1e4e4615fbd3c3473b284af739535/250x250-000000-80-0-0.jpg">▶</button></td>
-      <td><img class="thumb" src="https://cdn-images.dzcdn.net/images/cover/0ce1e4e4615fbd3c3473b284af739535/250x250-000000-80-0-0.jpg" loading="lazy" alt=""></td>
-      <td style="font-weight:600">Stranger Things</td><td style="color:var(--muted)">Shania Twain</td>
-      <td class="mono">playlist:New Country</td>
-      <td class="fit"><b>close</b> 83%</td></tr>
-  </table>
+  <section>
+    <div class="shead"><h2>Artists carrying this sound</h2>
+    <span class="sub">ranked by how many of their tracks sit inside the family and how close they sit to its center</span>
+    <span class="note">scout signal</span></div>
+    <div class="carry">
+    
+      <a class="c" href="artist-hudson-westbrook.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/bbe6af9a89f7effd83f3f2fde7d4496b/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Hudson Westbrook</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>91%</div>
+      </a>
+    
+      <a class="c" href="artist-carly-pearce.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/25b0ca62e85dc0786bc5ebc31c441016/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Carly Pearce</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>90%</div>
+      </a>
+    
+      <a class="c" href="artist-ashley-kutcher.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/6714c7ba7094a36ab4e3643cc42a2c4a/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Ashley Kutcher</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>90%</div>
+      </a>
+    
+      <a class="c" href="artist-koe-wetzel.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/04e9b4edc5c20eac15d3f1edb0b6c18c/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Koe Wetzel</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>89%</div>
+      </a>
+    
+      <a class="c" href="artist-miranda-lambert.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/2df33f46c39d45d822fad9959fc9a3b8/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Miranda Lambert</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>89%</div>
+      </a>
+    
+      <a class="c" href="artist-laci-kaye-booth.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/4925a78209a2a79eb00d280b196ed748/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Laci Kaye Booth</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>88%</div>
+      </a>
+    
+      <a class="c" href="artist-belles.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/c8379865d77941150c39c5217c3a3fba/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Belles</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>88%</div>
+      </a>
+    
+      <a class="c" href="artist-chanel-west-coast.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/02f8a35c6e57128a02c865dc828a0615/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Chanel West Coast</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>88%</div>
+      </a>
+    
+      <a class="c" href="artist-joseph-kamel.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/617aa1845322af06fd9214010d2f3ff1/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Joseph Kamel</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>88%</div>
+      </a>
+    
+      <a class="c" href="artist-ashley-cooke.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/1ebc96369d59c6c5d2d7d16b202cf100/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Ashley Cooke</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>88%</div>
+      </a>
+    
+      <a class="c" href="artist-phoebe-bridgers.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/01971eab99b872cd6afb0110a5b8931d/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Phoebe Bridgers</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>88%</div>
+      </a>
+    
+      <a class="c" href="artist-tyler-hubbard.html">
+        <img class="face" src="https://cdn-images.dzcdn.net/images/cover/be15be5e85e49e8d49ac141d39ec3039/250x250-000000-80-0-0.jpg" loading="lazy" alt="">
+        <div class="t">Tyler Hubbard</div>
+        <div class="a">1 track</div>
+        <div class="f"><b class="">core</b>88%</div>
+      </a>
+    
+    </div>
+  </section>
 </div>
-<div class="wrap"><footer>
-  A solo-built, self-running product: multi-source ingestion, CLAP audio embeddings, persistent
-  sound families, baseline-relative velocity, Claude analyst notes. Rebuilt daily by an
-  unattended pipeline. <a href="validation-report.html">Clustering validated by ear: 78% genre
-  purity</a>. Previews stream from their source platforms and belong to their rights holders.
-</footer></div>
+<footer><div class="wrap">
+  <div class="grid">
+    <div class="brand">
+      <span class="logo">RADA<i>+</i>R</span>
+      <p>A solo-built, self-running product: multi-source ingestion, CLAP audio embeddings,
+      persistent sound families, baseline-relative velocity and Claude analyst notes, rebuilt
+      daily by an unattended pipeline.</p>
+    </div>
+    <div class="col"><span class="label">Pages</span>
+      <a href="index.html">Sounds</a><a href="elements.html">Elements</a>
+      <a href="artists.html">Artists</a><a href="record.html">Track record</a>
+      <a href="about.html">Method</a></div>
+    <div class="col"><span class="label">Sources</span>
+      <span>Deezer charts</span><span>Editorial playlists</span>
+      <span>Apple most-played</span><span>Reddit</span></div>
+    <div class="col"><span class="label">Run</span>
+      <span>Daily 04:00 UTC</span><span>GitHub Actions</span>
+      <span>Static publish</span><span>Previews expire hourly</span></div>
+  </div>
+  <div class="base">
+    <span>Previews stream from their source platforms and belong to their rights holders</span>
+    <span class="o"><a href="validation-report.html">Clustering validated by ear · 78% genre purity</a></span>
+  </div>
+</div></footer>
 <div id="bar"><div class="wrap">
   <img alt=""><button class="play">▶</button>
   <div class="meta"><div class="t"></div><div class="a"></div></div>
   <div class="prog"><i></i></div>
-  <span class="src">30s PREVIEW</span>
+  <span class="src">30S PREVIEW · FETCHED FRESH</span>
 </div></div>
 <script src="player.js"></script>
 </body></html>

@@ -1,65 +1,124 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Method · Radar</title>
-<meta name="description" content="Radar hears 1,500 new tracks a day, groups the ones that sound alike, and ranks each sound by how fast it is growing.">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<title>Method · RADAR</title>
+<meta name="description" content="Radar fingerprints ~1,500 fresh track appearances every morning, groups what sounds alike, and flags the sounds and production elements outrunning their own baseline. Charts react later.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head><body>
 <nav><div class="wrap">
-  <a class="logo" href="index.html"><span class="eq"><i></i><i></i><i></i></span>RADA<b>R</b></a>
+  <a class="logo" href="index.html">RADA<i>+</i>R</a>
   <a class="item " href="index.html">Sounds</a>
   <a class="item " href="elements.html">Elements</a>
   <a class="item " href="artists.html">Artists</a>
   <a class="item " href="record.html">Track record</a>
   <a class="item on" href="about.html">Method</a>
-  <span class="live">RUN 2026-09-16</span>
+  <span class="status"><span class="dot"></span>PIPELINE OK<span class="sep">|</span>RUN 2026-09-16 · 16:25 UTC</span>
 </div></nav>
 
+
 <div class="hero"><div class="wrap">
-  <h1>Charts say what <i>won</i>.<br>Audio says what's <i>winning</i>.</h1>
-  <p class="sub">Chart trackers work top-down from positions, after the fact. Radar works
-  bottom-up from the audio: a production style quietly accumulating tracks shows up here
-  before any chart moves.</p>
+  <div class="plusrow"><span>+</span><span>+</span><span>+</span><b>+</b><span>+</span></div>
+  <div class="cols">
+    <div>
+      <div class="kicker">The pipeline &middot; six steps &middot; unattended</div>
+      <h1>Charts say what <i>won</i>.<br>Audio says what's <i>winning</i>.</h1>
+    </div>
+    <div>
+      <p class="lede">Chart trackers work top-down from positions, after the fact. Radar works
+      bottom-up from the audio itself: a production style quietly accumulating tracks shows up
+      here before any chart moves. Everything below runs unattended, every morning, on one
+      operator's laptop budget.</p>
+      <div class="kv">
+        <div class="row"><span class="k">Stack</span><span class="v">Python &middot; CLAP &middot; scikit &middot; SQLite &middot; Claude</span></div>
+        <div class="row"><span class="k">Servers</span><span class="v">zero, a GitHub Actions cron</span></div>
+      </div>
+    </div>
+  </div>
 </div></div>
 <div class="wrap">
-  <h2>Six steps, daily</h2>
-  <div class="how">
-    <div><b>1 · Ingest</b>~1,500 track appearances from Deezer charts and editorial playlists,
-    Apple's most-played feed, and Reddit. Everything is stored; only tracks released in the
-    last 60 days go on the radar. Charts stay in as ground truth for scoring calls.</div>
-    <div><b>2 · Listen</b>Each 30s preview becomes an audio fingerprint via CLAP, a model that
-    hears production, instrumentation and mood. Tempo, key and energy come along.</div>
-    <div><b>3 · Group</b>Fingerprints are clustered, then matched to persistent sound families
-    so "this sound" keeps its identity day to day.</div>
-    <div><b>4 · Name</b>Families are named by comparing their fingerprint against hundreds of
-    genre and mood phrases. The names describe what the model hears.</div>
-    <div><b>5 · Measure</b>Each family's share of the day's intake is tracked against its
-    7-day baseline. Growth ≥40% at z ≥ 2 is a flag; raw counts alone never are.</div>
-    <div><b>6 · Explain</b>Claude writes a 3-sentence note for the top sounds from the measured
-    stats only, so it cannot invent viral moments.</div>
-  </div>
-  <h2>Verified by ear</h2>
-  <div class="h2sub">Before anything was built on the embeddings, clustering was tested on 100
-  tracks from five distinct genres: 78% purity, metal 20/20.
-  <a href="validation-report.html" style="color:var(--flare)">Listen and judge</a>. Most "errors"
-  are the model refusing to believe Deezer's classical chart, which contains Pitbull. The model
-  is right.</div>
-  <h2>Under the hood</h2>
-  <div class="h2sub">Python · CLAP + librosa · scikit-learn · SQLite · Claude API · zero servers.
-  A GitHub Actions cron runs everything daily and publishes this static site. Playback fetches
-  fresh preview URLs at click time because stored ones expire within hours.</div>
+  <section>
+    <div class="shead"><h2>Six steps, daily</h2><span class="sub">the whole pipeline, in the order it runs</span>
+    <span class="note">every morning &middot; 06:30 UTC</span></div>
+    <div class="steps" style="grid-template-columns:repeat(3,1fr)">
+      <div class="step"><div class="hd"><b>01</b>ingest</div><p>~1,500 track appearances from Deezer
+      charts, editorial playlists, Apple's most-played feed and Reddit. Everything is stored; only
+      releases from the last 60 days go on the radar. Charts stay in as ground
+      truth for scoring calls.</p></div>
+      <div class="step"><div class="hd"><b>02</b>listen</div><p>Each 30-second preview becomes an
+      audio fingerprint via CLAP, a model that hears production, instrumentation and mood. Tempo,
+      key and energy come along for free.</p></div>
+      <div class="step"><div class="hd"><b>03</b>group</div><p>Fingerprints are clustered, then
+      matched to persistent sound families, so "this sound" keeps its identity from one day to
+      the next.</p></div>
+      <div class="step"><div class="hd"><b>04</b>name</div><p>Families are named by comparing their
+      fingerprint against hundreds of genre and mood phrases. The names describe what the model
+      hears, not what a label wrote.</p></div>
+      <div class="step"><div class="hd"><b>05</b>measure</div><p>Each family's share of the day's
+      intake is tracked against its 7-day baseline. Growth &ge; 40% at z &ge; 2
+      is a flag. Raw counts alone never are.</p></div>
+      <div class="step"><div class="hd"><b>06</b>explain</div><p>Claude writes an analyst note for
+      the top sounds from the measured statistics only, so it cannot invent viral moments that
+      aren't in the data.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead"><h2>Proof &amp; plumbing</h2><span class="sub">tested by ear before anything was built on it</span>
+    <span class="note">100 tracks &middot; 5 genres &middot; blind</span></div>
+    <div class="proof">
+      <div class="card hot"><div class="top"></div><span class="label">Verified by ear</span>
+        <h3>78% genre purity, metal 20/20</h3>
+        <p>Before anything was built on the embeddings, clustering was tested by hand on 100 tracks
+        across five distinct genres. Most remaining "errors" are the model refusing to believe
+        Deezer's classical chart, which contains Pitbull. The model is right.</p></div>
+      <div class="card"><div class="top"></div><span class="label">Under the hood</span>
+        <h3>Zero servers, zero analysts</h3>
+        <p>Python &middot; CLAP + librosa &middot; scikit-learn &middot; SQLite &middot; Claude API.
+        A GitHub Actions cron runs everything daily and publishes this static site. Playback
+        fetches fresh preview URLs at click time because stored ones expire within hours.</p></div>
+      <div class="card">
+        <span class="label" style="display:block;margin-bottom:12px">Run facts</span>
+        <div class="kv">
+          <div class="row"><span class="k">Daily run</span><span class="v">06:30 UTC</span></div>
+          <div class="row"><span class="k">Embedding</span><span class="v">CLAP &middot; 512-d</span></div>
+          <div class="row"><span class="k">Library</span><span class="v">2664 fingerprints</span></div>
+          <div class="row"><span class="k">Rights</span><span class="v">previews stream from source</span></div>
+          <div class="row"><span class="k">Operator</span><span class="v">one</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
-<div class="wrap"><footer>
-  A solo-built, self-running product: multi-source ingestion, CLAP audio embeddings, persistent
-  sound families, baseline-relative velocity, Claude analyst notes. Rebuilt daily by an
-  unattended pipeline. <a href="validation-report.html">Clustering validated by ear: 78% genre
-  purity</a>. Previews stream from their source platforms and belong to their rights holders.
-</footer></div>
+<footer><div class="wrap">
+  <div class="grid">
+    <div class="brand">
+      <span class="logo">RADA<i>+</i>R</span>
+      <p>A solo-built, self-running product: multi-source ingestion, CLAP audio embeddings,
+      persistent sound families, baseline-relative velocity and Claude analyst notes, rebuilt
+      daily by an unattended pipeline.</p>
+    </div>
+    <div class="col"><span class="label">Pages</span>
+      <a href="index.html">Sounds</a><a href="elements.html">Elements</a>
+      <a href="artists.html">Artists</a><a href="record.html">Track record</a>
+      <a href="about.html">Method</a></div>
+    <div class="col"><span class="label">Sources</span>
+      <span>Deezer charts</span><span>Editorial playlists</span>
+      <span>Apple most-played</span><span>Reddit</span></div>
+    <div class="col"><span class="label">Run</span>
+      <span>Daily 04:00 UTC</span><span>GitHub Actions</span>
+      <span>Static publish</span><span>Previews expire hourly</span></div>
+  </div>
+  <div class="base">
+    <span>Previews stream from their source platforms and belong to their rights holders</span>
+    <span class="o"><a href="validation-report.html">Clustering validated by ear · 78% genre purity</a></span>
+  </div>
+</div></footer>
 <div id="bar"><div class="wrap">
   <img alt=""><button class="play">▶</button>
   <div class="meta"><div class="t"></div><div class="a"></div></div>
   <div class="prog"><i></i></div>
-  <span class="src">30s PREVIEW</span>
+  <span class="src">30S PREVIEW · FETCHED FRESH</span>
 </div></div>
 <script src="player.js"></script>
 </body></html>
