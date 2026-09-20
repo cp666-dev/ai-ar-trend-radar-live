@@ -30,10 +30,8 @@ nav a.item{color:var(--mut);font-weight:600;font-size:14px;height:64px;
 nav a.item:hover{color:var(--ink)}
 nav a.item.on{color:var(--ink);border-color:var(--acc)}
 nav .status{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11px;
-            letter-spacing:.08em;color:var(--mut);display:flex;align-items:center;gap:10px}
-nav .status .dot{width:6px;height:6px;border-radius:50%;background:var(--grn);
-                 box-shadow:0 0 8px var(--grn)}
-nav .status .sep{color:var(--dim)}
+            letter-spacing:.08em;color:var(--dim)}
+nav .status b{color:var(--mut);font-weight:500}
 
 /* breadcrumb bar */
 .crumb{border-bottom:1px solid var(--line)}
@@ -55,9 +53,23 @@ nav .status .sep{color:var(--dim)}
 .kicker::before{content:"";width:26px;height:1px;background:var(--acc)}
 h1{font-size:clamp(44px,5.6vw,78px);font-weight:700;letter-spacing:-.035em;line-height:1.0}
 h1 i{font-style:normal;color:var(--acc)}
-.plusrow{display:flex;gap:76px;justify-content:flex-end;font-family:"IBM Plex Mono",monospace;
-         font-size:12px;color:var(--dim);margin-bottom:34px}
 .hero .lede{color:var(--mut);font-size:15.5px;line-height:1.65}
+
+/* terminal-window headline: this product is a scan/detect pipeline, so the
+   hero reads as a command and its live output rather than a marketing banner */
+.term{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.term-bar{display:flex;align-items:center;gap:9px;padding:11px 18px;
+          border-bottom:1px solid var(--line);background:rgba(255,255,255,.025)}
+.term-bar i{width:8px;height:8px;border-radius:50%;background:var(--line2)}
+.term-id{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:10px;
+         letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.term-body{padding:28px 32px 32px}
+.term-cmd{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--dim);margin-bottom:16px}
+.term-cmd b{color:var(--acc);font-weight:500}
+.term-body h1{margin:0}
+.cur{display:inline-block;width:.42em;height:.8em;background:var(--acc);margin-left:5px;
+     vertical-align:-.08em;animation:cur-blink 1.1s steps(1) infinite}
+@keyframes cur-blink{0%,49%{opacity:1}50%,100%{opacity:0}}
 .kv{margin-top:26px}
 .kv .row{display:flex;justify-content:space-between;gap:20px;align-items:baseline;
          border-top:1px solid var(--line);padding:11px 0}
@@ -160,7 +172,8 @@ a.chip:hover{border-color:var(--acc);color:var(--acc)}
 
 /* mover panel */
 .mover{background:var(--panel);border:1px solid var(--line);border-radius:6px;
-       display:grid;grid-template-columns:300px minmax(0,1fr) 360px;gap:0;margin-top:34px}
+       display:grid;grid-template-columns:minmax(280px,32%) minmax(0,1fr) minmax(300px,26%);
+       gap:0;margin-top:34px}
 @media(max-width:1000px){.mover{grid-template-columns:1fr}}
 .mover .art{position:relative;min-height:300px}
 .mover .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
@@ -173,14 +186,16 @@ a.chip:hover{border-color:var(--acc);color:var(--acc)}
 .mover .mid .flag{font-family:"IBM Plex Mono",monospace;font-size:10.5px;text-transform:uppercase;
                   letter-spacing:.14em;color:var(--acc);margin-bottom:14px}
 .mover .mid h3{font-size:clamp(24px,2.6vw,34px);font-weight:700;letter-spacing:-.025em}
+.genretag{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--dim);margin-top:8px}
+.genretag b{color:var(--mut);font-weight:500}
+.genretag i{font-style:normal;color:var(--acc)}
 .mkv{display:flex;gap:44px;margin:24px 0;border-top:1px solid var(--line);
      border-bottom:1px solid var(--line);padding:14px 0}
 .mkv div .label{display:block;margin-bottom:8px}
 .mkv div b{font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:500}
-.mover .mid .anote{margin-top:22px;columns:2;column-gap:44px}
-.mover .mid .anote .who{margin-bottom:10px;column-span:all}
-.mover .mid .anote p{font-size:14.5px;line-height:1.66;max-width:none;break-inside:avoid}
-@media(max-width:1200px){.mover .mid .anote{columns:1}}
+.mover .mid .anote{margin-top:22px}
+.mover .mid .anote .who{margin-bottom:10px}
+.mover .mid .anote p{font-size:14.5px;line-height:1.66;max-width:none}
 .msb{margin-top:26px}
 .msb .toprow{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
 .msb .toprow .label{margin:0}
